@@ -1,0 +1,1472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Z9mDsLCpEeinbMGW0y58sA" name="NewModel">
+  <packagedElement xmi:type="uml:Association" xmi:id="_l5mGMLCqEeinbMGW0y58sA" memberEnd="_l5yTcLCqEeinbMGW0y58sA _l5y6gLCqEeinbMGW0y58sA">
+    <ownedEnd xmi:id="_l5yTcLCqEeinbMGW0y58sA" association="_l5mGMLCqEeinbMGW0y58sA"/>
+    <ownedEnd xmi:id="_l5y6gLCqEeinbMGW0y58sA" association="_l5mGMLCqEeinbMGW0y58sA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_nUYpMLCqEeinbMGW0y58sA" memberEnd="_nUZQQLCqEeinbMGW0y58sA _nUZ3ULCqEeinbMGW0y58sA">
+    <ownedEnd xmi:id="_nUZQQLCqEeinbMGW0y58sA" association="_nUYpMLCqEeinbMGW0y58sA"/>
+    <ownedEnd xmi:id="_nUZ3ULCqEeinbMGW0y58sA" association="_nUYpMLCqEeinbMGW0y58sA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_nsHMsLCqEeinbMGW0y58sA" memberEnd="_nsHzwLCqEeinbMGW0y58sA _nsHzwbCqEeinbMGW0y58sA">
+    <ownedEnd xmi:id="_nsHzwLCqEeinbMGW0y58sA" association="_nsHMsLCqEeinbMGW0y58sA"/>
+    <ownedEnd xmi:id="_nsHzwbCqEeinbMGW0y58sA" association="_nsHMsLCqEeinbMGW0y58sA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_oFXaMLCqEeinbMGW0y58sA" memberEnd="_oFYBQLCqEeinbMGW0y58sA _oFYBQbCqEeinbMGW0y58sA">
+    <ownedEnd xmi:id="_oFYBQLCqEeinbMGW0y58sA" association="_oFXaMLCqEeinbMGW0y58sA"/>
+    <ownedEnd xmi:id="_oFYBQbCqEeinbMGW0y58sA" association="_oFXaMLCqEeinbMGW0y58sA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_oYETwLCqEeinbMGW0y58sA" memberEnd="_oYETwbCqEeinbMGW0y58sA _oYE60LCqEeinbMGW0y58sA">
+    <ownedEnd xmi:id="_oYETwbCqEeinbMGW0y58sA" association="_oYETwLCqEeinbMGW0y58sA"/>
+    <ownedEnd xmi:id="_oYE60LCqEeinbMGW0y58sA" association="_oYETwLCqEeinbMGW0y58sA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_or9gILCqEeinbMGW0y58sA" memberEnd="_or-uQLCqEeinbMGW0y58sA _or-uQbCqEeinbMGW0y58sA">
+    <ownedEnd xmi:id="_or-uQLCqEeinbMGW0y58sA" association="_or9gILCqEeinbMGW0y58sA"/>
+    <ownedEnd xmi:id="_or-uQbCqEeinbMGW0y58sA" association="_or9gILCqEeinbMGW0y58sA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_vIXUILCwEeinbMGW0y58sA" name="고객">
+    <eAnnotations xmi:id="_vIXUIbCwEeinbMGW0y58sA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_vIXUIrCwEeinbMGW0y58sA" key="Human"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_8XckkLCwEeinbMGW0y58sA" name="UC1. 회원가입">
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_VRIcALTEEeiL-cDL6830Cw" name="UC1. 회원가입 activity" node="_tn06ELTEEeiL-cDL6830Cw _uviwELTEEeiL-cDL6830Cw _yZ_okLTEEeiL-cDL6830Cw _0y4ykLTEEeiL-cDL6830Cw _3XTQELTEEeiL-cDL6830Cw _5MkIkLTEEeiL-cDL6830Cw _EghJELTFEeiL-cDL6830Cw _J0j1kLTFEeiL-cDL6830Cw _UHvVkLTFEeiL-cDL6830Cw _gkGIkLTFEeiL-cDL6830Cw _oA7tkLTFEeiL-cDL6830Cw _pm3JkLTFEeiL-cDL6830Cw _uF9LELTFEeiL-cDL6830Cw _0V0moLTFEeiL-cDL6830Cw _2DrPkLTFEeiL-cDL6830Cw _fnlnkLTGEeiL-cDL6830Cw _w2pUkLTGEeiL-cDL6830Cw _yJCwkLTGEeiL-cDL6830Cw">
+      <edge xmi:type="uml:ControlFlow" xmi:id="_H1_3ILTFEeiL-cDL6830Cw" target="_uviwELTEEeiL-cDL6830Cw" source="_tn06ELTEEeiL-cDL6830Cw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_H2AeMLTFEeiL-cDL6830Cw" name="시작_To_회원가입 화면_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_H2BFQLTFEeiL-cDL6830Cw" name="시작_To_회원가입 화면_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_IYVIILTFEeiL-cDL6830Cw" target="_yZ_okLTEEeiL-cDL6830Cw" source="_uviwELTEEeiL-cDL6830Cw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_IYVvMLTFEeiL-cDL6830Cw" name="회원가입 화면_To_ID입력_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_IYVvMbTFEeiL-cDL6830Cw" name="회원가입 화면_To_ID입력_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_I4TosLTFEeiL-cDL6830Cw" target="_EghJELTFEeiL-cDL6830Cw" source="_yZ_okLTEEeiL-cDL6830Cw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_I4UPwLTFEeiL-cDL6830Cw" name="ID입력_To_비정상입력_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_I4UPwbTFEeiL-cDL6830Cw" name="ID입력_To_비정상입력_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_L_9WILTFEeiL-cDL6830Cw" name="yes" target="_J0j1kLTFEeiL-cDL6830Cw" source="_EghJELTFEeiL-cDL6830Cw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_L_9WIbTFEeiL-cDL6830Cw" name="비정상입력_To_사용예제표시_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_L_99MLTFEeiL-cDL6830Cw" name="비정상입력_To_사용예제표시_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_MlfsILTFEeiL-cDL6830Cw" target="_yZ_okLTEEeiL-cDL6830Cw" source="_J0j1kLTFEeiL-cDL6830Cw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_MlgTMLTFEeiL-cDL6830Cw" name="사용예제표시_To_ID입력_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_MlgTMbTFEeiL-cDL6830Cw" name="사용예제표시_To_ID입력_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_P-BHILTFEeiL-cDL6830Cw" name="no" target="_0y4ykLTEEeiL-cDL6830Cw" source="_EghJELTFEeiL-cDL6830Cw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_P-BHIbTFEeiL-cDL6830Cw" name="비정상입력_To_비밀번호 입력_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_P-BHIrTFEeiL-cDL6830Cw" name="비정상입력_To_비밀번호 입력_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_RpvpILTFEeiL-cDL6830Cw" name="ID 중복여부" target="_5MkIkLTEEeiL-cDL6830Cw" source="_yZ_okLTEEeiL-cDL6830Cw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_RpwQMLTFEeiL-cDL6830Cw" name="ID입력_To_ID중복체크_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_RpwQMbTFEeiL-cDL6830Cw" name="ID입력_To_ID중복체크_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_TlQ6oLTFEeiL-cDL6830Cw" name="pw일치여부" target="_3XTQELTEEeiL-cDL6830Cw" source="_0y4ykLTEEeiL-cDL6830Cw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_TlQ6obTFEeiL-cDL6830Cw" name="비밀번호 입력_To_비밀번호 확인_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_TlRhsLTFEeiL-cDL6830Cw" name="비밀번호 입력_To_비밀번호 확인_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_VyLeILTFEeiL-cDL6830Cw" target="_UHvVkLTFEeiL-cDL6830Cw" source="_0y4ykLTEEeiL-cDL6830Cw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_VyMFMLTFEeiL-cDL6830Cw" name="비밀번호 입력_To_비정상입력_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_VyMFMbTFEeiL-cDL6830Cw" name="비밀번호 입력_To_비정상입력_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_dyMBoLTFEeiL-cDL6830Cw" name="yes" target="_0y4ykLTEEeiL-cDL6830Cw" source="_UHvVkLTFEeiL-cDL6830Cw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_dyMosLTFEeiL-cDL6830Cw" name="비정상입력_To_비밀번호 입력_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_dyMosbTFEeiL-cDL6830Cw" name="비정상입력_To_비밀번호 입력_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_izKoMLTFEeiL-cDL6830Cw" target="_gkGIkLTFEeiL-cDL6830Cw" source="_UHvVkLTFEeiL-cDL6830Cw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_izKoMbTFEeiL-cDL6830Cw" name="비정상입력_To_정상입력 확인_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_izLPQLTFEeiL-cDL6830Cw" name="비정상입력_To_정상입력 확인_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_wuM_sLTFEeiL-cDL6830Cw" target="_oA7tkLTFEeiL-cDL6830Cw" source="_gkGIkLTFEeiL-cDL6830Cw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_wuNmwLTFEeiL-cDL6830Cw" name="정상입력 확인_To_이름입력_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_wuNmwbTFEeiL-cDL6830Cw" name="정상입력 확인_To_이름입력_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_yCMXILTFEeiL-cDL6830Cw" target="_uF9LELTFEeiL-cDL6830Cw" source="_pm3JkLTFEeiL-cDL6830Cw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_yCMXIbTFEeiL-cDL6830Cw" name="휴대전화입력_To_SMS 수신여부 체크_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_yCNlQLTFEeiL-cDL6830Cw" name="휴대전화입력_To_SMS 수신여부 체크_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_3bVmELTFEeiL-cDL6830Cw" target="_0V0moLTFEeiL-cDL6830Cw" source="_pm3JkLTFEeiL-cDL6830Cw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_3bWNILTFEeiL-cDL6830Cw" name="휴대전화입력_To_이메일 입력_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_3bWNIbTFEeiL-cDL6830Cw" name="휴대전화입력_To_이메일 입력_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_32WHELTFEeiL-cDL6830Cw" target="_2DrPkLTFEeiL-cDL6830Cw" source="_0V0moLTFEeiL-cDL6830Cw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_32WuILTFEeiL-cDL6830Cw" name="이메일 입력_To_이메일 수신여부_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_32WuIbTFEeiL-cDL6830Cw" name="이메일 입력_To_이메일 수신여부_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_pY0RELTGEeiL-cDL6830Cw" target="_fnlnkLTGEeiL-cDL6830Cw" source="_oA7tkLTFEeiL-cDL6830Cw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_pY04ILTGEeiL-cDL6830Cw" name="이름입력_To_주소 입력_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_pY04IbTGEeiL-cDL6830Cw" name="이름입력_To_주소 입력_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_qugRoLTGEeiL-cDL6830Cw" target="_pm3JkLTFEeiL-cDL6830Cw" source="_fnlnkLTGEeiL-cDL6830Cw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_qug4sLTGEeiL-cDL6830Cw" name="주소 입력_To_휴대전화입력_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_qug4sbTGEeiL-cDL6830Cw" name="주소 입력_To_휴대전화입력_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_zoRHoLTGEeiL-cDL6830Cw" target="_w2pUkLTGEeiL-cDL6830Cw" source="_0V0moLTFEeiL-cDL6830Cw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_zoRHobTGEeiL-cDL6830Cw" name="이메일 입력_To_가입신청_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_zoRHorTGEeiL-cDL6830Cw" name="이메일 입력_To_가입신청_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_0H_wkLTGEeiL-cDL6830Cw" target="_yJCwkLTGEeiL-cDL6830Cw" source="_w2pUkLTGEeiL-cDL6830Cw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_0IAXoLTGEeiL-cDL6830Cw" name="가입신청_To_종료_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_0IAXobTGEeiL-cDL6830Cw" name="가입신청_To_종료_weight"/>
+      </edge>
+      <node xmi:type="uml:InitialNode" xmi:id="_tn06ELTEEeiL-cDL6830Cw" name="시작" outgoing="_H1_3ILTFEeiL-cDL6830Cw"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_uviwELTEEeiL-cDL6830Cw" name="회원가입 화면" incoming="_H1_3ILTFEeiL-cDL6830Cw" outgoing="_IYVIILTFEeiL-cDL6830Cw">
+        <body>// TODO body of OpaqueAction1</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_yZ_okLTEEeiL-cDL6830Cw" name="ID입력" incoming="_IYVIILTFEeiL-cDL6830Cw _MlfsILTFEeiL-cDL6830Cw" outgoing="_I4TosLTFEeiL-cDL6830Cw _RpvpILTFEeiL-cDL6830Cw">
+        <body>// TODO body of OpaqueAction2</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_0y4ykLTEEeiL-cDL6830Cw" name="비밀번호 입력" incoming="_P-BHILTFEeiL-cDL6830Cw _dyMBoLTFEeiL-cDL6830Cw" outgoing="_TlQ6oLTFEeiL-cDL6830Cw _VyLeILTFEeiL-cDL6830Cw">
+        <body>// TODO body of OpaqueAction3</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_3XTQELTEEeiL-cDL6830Cw" name="비밀번호 확인" incoming="_TlQ6oLTFEeiL-cDL6830Cw">
+        <body>// TODO body of OpaqueAction4</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_5MkIkLTEEeiL-cDL6830Cw" name="ID중복체크" incoming="_RpvpILTFEeiL-cDL6830Cw">
+        <body>// TODO body of OpaqueAction5</body>
+      </node>
+      <node xmi:type="uml:DecisionNode" xmi:id="_EghJELTFEeiL-cDL6830Cw" name="비정상입력" incoming="_I4TosLTFEeiL-cDL6830Cw" outgoing="_L_9WILTFEeiL-cDL6830Cw _P-BHILTFEeiL-cDL6830Cw"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_J0j1kLTFEeiL-cDL6830Cw" name="사용예제표시" incoming="_L_9WILTFEeiL-cDL6830Cw" outgoing="_MlfsILTFEeiL-cDL6830Cw">
+        <body>// TODO body of OpaqueAction6</body>
+      </node>
+      <node xmi:type="uml:DecisionNode" xmi:id="_UHvVkLTFEeiL-cDL6830Cw" name="비정상입력" incoming="_VyLeILTFEeiL-cDL6830Cw" outgoing="_dyMBoLTFEeiL-cDL6830Cw _izKoMLTFEeiL-cDL6830Cw"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_gkGIkLTFEeiL-cDL6830Cw" name="정상입력 확인" incoming="_izKoMLTFEeiL-cDL6830Cw" outgoing="_wuM_sLTFEeiL-cDL6830Cw">
+        <body>// TODO body of OpaqueAction7</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_oA7tkLTFEeiL-cDL6830Cw" name="이름입력" incoming="_wuM_sLTFEeiL-cDL6830Cw" outgoing="_pY0RELTGEeiL-cDL6830Cw">
+        <body>// TODO body of OpaqueAction8</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_pm3JkLTFEeiL-cDL6830Cw" name="휴대전화입력" incoming="_qugRoLTGEeiL-cDL6830Cw" outgoing="_yCMXILTFEeiL-cDL6830Cw _3bVmELTFEeiL-cDL6830Cw">
+        <body>// TODO body of OpaqueAction9</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_uF9LELTFEeiL-cDL6830Cw" name="SMS 수신여부 체크" incoming="_yCMXILTFEeiL-cDL6830Cw">
+        <body>// TODO body of OpaqueAction10</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_0V0moLTFEeiL-cDL6830Cw" name="이메일 입력" incoming="_3bVmELTFEeiL-cDL6830Cw" outgoing="_32WHELTFEeiL-cDL6830Cw _zoRHoLTGEeiL-cDL6830Cw">
+        <body>// TODO body of OpaqueAction11</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_2DrPkLTFEeiL-cDL6830Cw" name="이메일 수신여부" incoming="_32WHELTFEeiL-cDL6830Cw">
+        <body>// TODO body of OpaqueAction12</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_fnlnkLTGEeiL-cDL6830Cw" name="주소 입력" incoming="_pY0RELTGEeiL-cDL6830Cw" outgoing="_qugRoLTGEeiL-cDL6830Cw">
+        <body>// TODO body of OpaqueAction13</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_w2pUkLTGEeiL-cDL6830Cw" name="가입신청" incoming="_zoRHoLTGEeiL-cDL6830Cw" outgoing="_0H_wkLTGEeiL-cDL6830Cw">
+        <body>// TODO body of OpaqueAction14</body>
+      </node>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_yJCwkLTGEeiL-cDL6830Cw" name="종료" incoming="_0H_wkLTGEeiL-cDL6830Cw"/>
+    </ownedBehavior>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_-lvoILCwEeinbMGW0y58sA" name="UC2. 상품검색">
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_oHLjYLYhEeifx8zZ2d6EkQ" name="UC2. 상품검색 activity" node="_qbTiILYhEeifx8zZ2d6EkQ _zTttQLYhEeifx8zZ2d6EkQ _0bGMELYhEeifx8zZ2d6EkQ __K3RkLe6EeinstBrmh0j6w _BMRIoLe7EeinstBrmh0j6w _DdRh8Le7EeinstBrmh0j6w _Q5HcALe7EeinstBrmh0j6w _SlYJgLe7EeinstBrmh0j6w _UlgOMLe7EeinstBrmh0j6w _Z-tHgLe7EeinstBrmh0j6w _qSUf8Le7EeinstBrmh0j6w _rhJDgLe7EeinstBrmh0j6w _tFFigLe7EeinstBrmh0j6w _vJg4YLe7EeinstBrmh0j6w _3h9KALe7EeinstBrmh0j6w _6BypgLe7EeinstBrmh0j6w">
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_WiAzoLe6EeinstBrmh0j6w" name="«Activity» 쇼핑몰 상품구매 시나리오" node="_WiAz17e6EeinstBrmh0j6w _WiAz2Le6EeinstBrmh0j6w _WiAz2be6EeinstBrmh0j6w _WiAz2re6EeinstBrmh0j6w _WiAz27e6EeinstBrmh0j6w _WiAz3Le6EeinstBrmh0j6w _WiAz3be6EeinstBrmh0j6w _WiAz3re6EeinstBrmh0j6w _WiAz37e6EeinstBrmh0j6w _WiAz4Le6EeinstBrmh0j6w _WiAz4be6EeinstBrmh0j6w _WiAz4re6EeinstBrmh0j6w _WiAz47e6EeinstBrmh0j6w _WiBasLe6EeinstBrmh0j6w _WiBasbe6EeinstBrmh0j6w _WiBasre6EeinstBrmh0j6w">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_WiAzobe6EeinstBrmh0j6w" target="_WiAz2Le6EeinstBrmh0j6w" source="_WiAz2be6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_WiAzore6EeinstBrmh0j6w" name="검색유형_To_카테고리 검색_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_WiAzo7e6EeinstBrmh0j6w" name="검색유형_To_카테고리 검색_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_WiAzpLe6EeinstBrmh0j6w" target="_WiAz2re6EeinstBrmh0j6w" source="_WiAz2be6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_WiAzpbe6EeinstBrmh0j6w" name="검색유형_To_검색창 검색_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_WiAzpre6EeinstBrmh0j6w" name="검색유형_To_검색창 검색_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_WiAzp7e6EeinstBrmh0j6w" target="_WiAz2be6EeinstBrmh0j6w" source="_WiAz17e6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_WiAzqLe6EeinstBrmh0j6w" name="시작_To_검색유형_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_WiAzqbe6EeinstBrmh0j6w" name="시작_To_검색유형_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_WiAzqre6EeinstBrmh0j6w" target="_WiAz27e6EeinstBrmh0j6w" source="_WiAz2Le6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_WiAzq7e6EeinstBrmh0j6w" name="카테고리 검색_To_제품목록조회_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_WiAzrLe6EeinstBrmh0j6w" name="카테고리 검색_To_제품목록조회_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_WiAzrbe6EeinstBrmh0j6w" target="_WiAz27e6EeinstBrmh0j6w" source="_WiAz2re6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_WiAzrre6EeinstBrmh0j6w" name="검색창 검색_To_제품목록조회_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_WiAzr7e6EeinstBrmh0j6w" name="검색창 검색_To_제품목록조회_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_WiAzsLe6EeinstBrmh0j6w" target="_WiAz3Le6EeinstBrmh0j6w" source="_WiAz27e6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_WiAzsbe6EeinstBrmh0j6w" name="제품목록조회_To_제품상세조회_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_WiAzsre6EeinstBrmh0j6w" name="제품목록조회_To_제품상세조회_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_WiAzs7e6EeinstBrmh0j6w" target="_WiAz3be6EeinstBrmh0j6w" source="_WiAz3Le6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_WiAztLe6EeinstBrmh0j6w" name="제품상세조회_To_구매결정_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_WiAztbe6EeinstBrmh0j6w" name="제품상세조회_To_구매결정_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_WiAztre6EeinstBrmh0j6w" target="_WiAz3re6EeinstBrmh0j6w" source="_WiAz3be6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_WiAzt7e6EeinstBrmh0j6w" name="구매결정_To_장바구니_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_WiAzuLe6EeinstBrmh0j6w" name="구매결정_To_장바구니_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_WiAzube6EeinstBrmh0j6w" target="_WiAz37e6EeinstBrmh0j6w" source="_WiAz3be6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_WiAzure6EeinstBrmh0j6w" name="구매결정_To_결제_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_WiAzu7e6EeinstBrmh0j6w" name="구매결정_To_결제_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_WiAzvLe6EeinstBrmh0j6w" target="_WiAz4Le6EeinstBrmh0j6w" source="_WiAz3re6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_WiAzvbe6EeinstBrmh0j6w" name="장바구니_To_계속쇼핑_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_WiAzvre6EeinstBrmh0j6w" name="장바구니_To_계속쇼핑_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_WiAzv7e6EeinstBrmh0j6w" name="no" target="_WiAz37e6EeinstBrmh0j6w" source="_WiAz4Le6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_WiAzwLe6EeinstBrmh0j6w" name="계속쇼핑_To_결제_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_WiAzwbe6EeinstBrmh0j6w" name="계속쇼핑_To_결제_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_WiAzwre6EeinstBrmh0j6w" target="_WiAz4be6EeinstBrmh0j6w" source="_WiAz37e6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_WiAzw7e6EeinstBrmh0j6w" name="결제_To_로그인 여부_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_WiAzxLe6EeinstBrmh0j6w" name="결제_To_로그인 여부_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_WiAzxbe6EeinstBrmh0j6w" name="yes" target="_WiAz47e6EeinstBrmh0j6w" source="_WiAz4be6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_WiAzxre6EeinstBrmh0j6w" name="로그인 여부_To_결제완료_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_WiAzx7e6EeinstBrmh0j6w" name="로그인 여부_To_결제완료_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_WiAzyLe6EeinstBrmh0j6w" name="no" target="_WiAz4re6EeinstBrmh0j6w" source="_WiAz4be6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_WiAzybe6EeinstBrmh0j6w" name="로그인 여부_To_로그인_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_WiAzyre6EeinstBrmh0j6w" name="로그인 여부_To_로그인_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_WiAzy7e6EeinstBrmh0j6w" name="yes" target="_WiAz2be6EeinstBrmh0j6w" source="_WiAz4Le6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_WiAzzLe6EeinstBrmh0j6w" name="계속쇼핑_To_검색유형_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_WiAzzbe6EeinstBrmh0j6w" name="계속쇼핑_To_검색유형_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_WiAzzre6EeinstBrmh0j6w" target="_WiBasLe6EeinstBrmh0j6w" source="_WiAz47e6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_WiAzz7e6EeinstBrmh0j6w" name="결제완료_To_배송추적_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_WiAz0Le6EeinstBrmh0j6w" name="결제완료_To_배송추적_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_WiAz0be6EeinstBrmh0j6w" target="_WiBasbe6EeinstBrmh0j6w" source="_WiBasLe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_WiAz0re6EeinstBrmh0j6w" name="배송추적_To_후기_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_WiAz07e6EeinstBrmh0j6w" name="배송추적_To_후기_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_WiAz1Le6EeinstBrmh0j6w" target="_WiBasre6EeinstBrmh0j6w" source="_WiBasbe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_WiAz1be6EeinstBrmh0j6w" name="후기_To_종료_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_WiAz1re6EeinstBrmh0j6w" name="후기_To_종료_weight"/>
+        </edge>
+        <node xmi:type="uml:InitialNode" xmi:id="_WiAz17e6EeinstBrmh0j6w" name="시작" outgoing="_WiAzp7e6EeinstBrmh0j6w"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_WiAz2Le6EeinstBrmh0j6w" name="카테고리 검색" incoming="_WiAzobe6EeinstBrmh0j6w" outgoing="_WiAzqre6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction1</body>
+        </node>
+        <node xmi:type="uml:DecisionNode" xmi:id="_WiAz2be6EeinstBrmh0j6w" name="검색유형" incoming="_WiAzp7e6EeinstBrmh0j6w _WiAzy7e6EeinstBrmh0j6w" outgoing="_WiAzobe6EeinstBrmh0j6w _WiAzpLe6EeinstBrmh0j6w"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_WiAz2re6EeinstBrmh0j6w" name="검색창 검색" incoming="_WiAzpLe6EeinstBrmh0j6w" outgoing="_WiAzrbe6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction2</body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_WiAz27e6EeinstBrmh0j6w" name="제품목록조회" incoming="_WiAzqre6EeinstBrmh0j6w _WiAzrbe6EeinstBrmh0j6w" outgoing="_WiAzsLe6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction3</body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_WiAz3Le6EeinstBrmh0j6w" name="제품상세조회" incoming="_WiAzsLe6EeinstBrmh0j6w" outgoing="_WiAzs7e6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction4</body>
+        </node>
+        <node xmi:type="uml:DecisionNode" xmi:id="_WiAz3be6EeinstBrmh0j6w" name="구매결정" incoming="_WiAzs7e6EeinstBrmh0j6w" outgoing="_WiAztre6EeinstBrmh0j6w _WiAzube6EeinstBrmh0j6w"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_WiAz3re6EeinstBrmh0j6w" name="장바구니" incoming="_WiAztre6EeinstBrmh0j6w" outgoing="_WiAzvLe6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction5</body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_WiAz37e6EeinstBrmh0j6w" name="결제" incoming="_WiAzube6EeinstBrmh0j6w _WiAzv7e6EeinstBrmh0j6w" outgoing="_WiAzwre6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction6</body>
+        </node>
+        <node xmi:type="uml:DecisionNode" xmi:id="_WiAz4Le6EeinstBrmh0j6w" name="계속쇼핑" incoming="_WiAzvLe6EeinstBrmh0j6w" outgoing="_WiAzv7e6EeinstBrmh0j6w _WiAzy7e6EeinstBrmh0j6w"/>
+        <node xmi:type="uml:DecisionNode" xmi:id="_WiAz4be6EeinstBrmh0j6w" name="로그인 여부" incoming="_WiAzwre6EeinstBrmh0j6w" outgoing="_WiAzxbe6EeinstBrmh0j6w _WiAzyLe6EeinstBrmh0j6w"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_WiAz4re6EeinstBrmh0j6w" name="로그인" incoming="_WiAzyLe6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction7</body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_WiAz47e6EeinstBrmh0j6w" name="결제완료" incoming="_WiAzxbe6EeinstBrmh0j6w" outgoing="_WiAzzre6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction8</body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_WiBasLe6EeinstBrmh0j6w" name="배송추적" incoming="_WiAzzre6EeinstBrmh0j6w" outgoing="_WiAz0be6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction9</body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_WiBasbe6EeinstBrmh0j6w" name="후기" incoming="_WiAz0be6EeinstBrmh0j6w" outgoing="_WiAz1Le6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction10</body>
+        </node>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_WiBasre6EeinstBrmh0j6w" name="종료" incoming="_WiAz1Le6EeinstBrmh0j6w"/>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_W0g44Le6EeinstBrmh0j6w" name="«Activity» 쇼핑몰 상품구매 시나리오" node="_W0iuJ7e6EeinstBrmh0j6w _W0iuKLe6EeinstBrmh0j6w _W0iuKbe6EeinstBrmh0j6w _W0iuKre6EeinstBrmh0j6w _W0iuK7e6EeinstBrmh0j6w _W0iuLLe6EeinstBrmh0j6w _W0j8MLe6EeinstBrmh0j6w _W0j8Mbe6EeinstBrmh0j6w _W0j8Mre6EeinstBrmh0j6w _W0j8M7e6EeinstBrmh0j6w _W0j8NLe6EeinstBrmh0j6w _W0j8Nbe6EeinstBrmh0j6w _W0j8Nre6EeinstBrmh0j6w _W0j8N7e6EeinstBrmh0j6w _W0j8OLe6EeinstBrmh0j6w _W0j8Obe6EeinstBrmh0j6w">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_W0g44be6EeinstBrmh0j6w" target="_W0iuKLe6EeinstBrmh0j6w" source="_W0iuKbe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_W0g44re6EeinstBrmh0j6w" name="검색유형_To_카테고리 검색_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_W0g447e6EeinstBrmh0j6w" name="검색유형_To_카테고리 검색_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_W0g45Le6EeinstBrmh0j6w" target="_W0iuKre6EeinstBrmh0j6w" source="_W0iuKbe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_W0g45be6EeinstBrmh0j6w" name="검색유형_To_검색창 검색_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_W0g45re6EeinstBrmh0j6w" name="검색유형_To_검색창 검색_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_W0g457e6EeinstBrmh0j6w" target="_W0iuKbe6EeinstBrmh0j6w" source="_W0iuJ7e6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_W0g46Le6EeinstBrmh0j6w" name="시작_To_검색유형_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_W0g46be6EeinstBrmh0j6w" name="시작_To_검색유형_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_W0g46re6EeinstBrmh0j6w" target="_W0iuK7e6EeinstBrmh0j6w" source="_W0iuKLe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_W0g467e6EeinstBrmh0j6w" name="카테고리 검색_To_제품목록조회_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_W0g47Le6EeinstBrmh0j6w" name="카테고리 검색_To_제품목록조회_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_W0g47be6EeinstBrmh0j6w" target="_W0iuK7e6EeinstBrmh0j6w" source="_W0iuKre6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_W0g47re6EeinstBrmh0j6w" name="검색창 검색_To_제품목록조회_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_W0g477e6EeinstBrmh0j6w" name="검색창 검색_To_제품목록조회_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_W0g48Le6EeinstBrmh0j6w" target="_W0iuLLe6EeinstBrmh0j6w" source="_W0iuK7e6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_W0g48be6EeinstBrmh0j6w" name="제품목록조회_To_제품상세조회_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_W0g48re6EeinstBrmh0j6w" name="제품목록조회_To_제품상세조회_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_W0g487e6EeinstBrmh0j6w" target="_W0j8MLe6EeinstBrmh0j6w" source="_W0iuLLe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_W0g49Le6EeinstBrmh0j6w" name="제품상세조회_To_구매결정_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_W0g49be6EeinstBrmh0j6w" name="제품상세조회_To_구매결정_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_W0g49re6EeinstBrmh0j6w" target="_W0j8Mbe6EeinstBrmh0j6w" source="_W0j8MLe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_W0iHALe6EeinstBrmh0j6w" name="구매결정_To_장바구니_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_W0iHAbe6EeinstBrmh0j6w" name="구매결정_To_장바구니_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_W0iHAre6EeinstBrmh0j6w" target="_W0j8Mre6EeinstBrmh0j6w" source="_W0j8MLe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_W0iHA7e6EeinstBrmh0j6w" name="구매결정_To_결제_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_W0iHBLe6EeinstBrmh0j6w" name="구매결정_To_결제_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_W0iHBbe6EeinstBrmh0j6w" target="_W0j8M7e6EeinstBrmh0j6w" source="_W0j8Mbe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_W0iHBre6EeinstBrmh0j6w" name="장바구니_To_계속쇼핑_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_W0iHB7e6EeinstBrmh0j6w" name="장바구니_To_계속쇼핑_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_W0iHCLe6EeinstBrmh0j6w" name="no" target="_W0j8Mre6EeinstBrmh0j6w" source="_W0j8M7e6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_W0iuELe6EeinstBrmh0j6w" name="계속쇼핑_To_결제_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_W0iuEbe6EeinstBrmh0j6w" name="계속쇼핑_To_결제_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_W0iuEre6EeinstBrmh0j6w" target="_W0j8NLe6EeinstBrmh0j6w" source="_W0j8Mre6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_W0iuE7e6EeinstBrmh0j6w" name="결제_To_로그인 여부_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_W0iuFLe6EeinstBrmh0j6w" name="결제_To_로그인 여부_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_W0iuFbe6EeinstBrmh0j6w" name="yes" target="_W0j8Nre6EeinstBrmh0j6w" source="_W0j8NLe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_W0iuFre6EeinstBrmh0j6w" name="로그인 여부_To_결제완료_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_W0iuF7e6EeinstBrmh0j6w" name="로그인 여부_To_결제완료_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_W0iuGLe6EeinstBrmh0j6w" name="no" target="_W0j8Nbe6EeinstBrmh0j6w" source="_W0j8NLe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_W0iuGbe6EeinstBrmh0j6w" name="로그인 여부_To_로그인_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_W0iuGre6EeinstBrmh0j6w" name="로그인 여부_To_로그인_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_W0iuG7e6EeinstBrmh0j6w" name="yes" target="_W0iuKbe6EeinstBrmh0j6w" source="_W0j8M7e6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_W0iuHLe6EeinstBrmh0j6w" name="계속쇼핑_To_검색유형_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_W0iuHbe6EeinstBrmh0j6w" name="계속쇼핑_To_검색유형_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_W0iuHre6EeinstBrmh0j6w" target="_W0j8N7e6EeinstBrmh0j6w" source="_W0j8Nre6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_W0iuH7e6EeinstBrmh0j6w" name="결제완료_To_배송추적_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_W0iuILe6EeinstBrmh0j6w" name="결제완료_To_배송추적_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_W0iuIbe6EeinstBrmh0j6w" target="_W0j8OLe6EeinstBrmh0j6w" source="_W0j8N7e6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_W0iuIre6EeinstBrmh0j6w" name="배송추적_To_후기_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_W0iuI7e6EeinstBrmh0j6w" name="배송추적_To_후기_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_W0iuJLe6EeinstBrmh0j6w" target="_W0j8Obe6EeinstBrmh0j6w" source="_W0j8OLe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_W0iuJbe6EeinstBrmh0j6w" name="후기_To_종료_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_W0iuJre6EeinstBrmh0j6w" name="후기_To_종료_weight"/>
+        </edge>
+        <node xmi:type="uml:InitialNode" xmi:id="_W0iuJ7e6EeinstBrmh0j6w" name="시작" outgoing="_W0g457e6EeinstBrmh0j6w"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_W0iuKLe6EeinstBrmh0j6w" name="카테고리 검색" incoming="_W0g44be6EeinstBrmh0j6w" outgoing="_W0g46re6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction1</body>
+        </node>
+        <node xmi:type="uml:DecisionNode" xmi:id="_W0iuKbe6EeinstBrmh0j6w" name="검색유형" incoming="_W0g457e6EeinstBrmh0j6w _W0iuG7e6EeinstBrmh0j6w" outgoing="_W0g44be6EeinstBrmh0j6w _W0g45Le6EeinstBrmh0j6w"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_W0iuKre6EeinstBrmh0j6w" name="검색창 검색" incoming="_W0g45Le6EeinstBrmh0j6w" outgoing="_W0g47be6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction2</body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_W0iuK7e6EeinstBrmh0j6w" name="제품목록조회" incoming="_W0g46re6EeinstBrmh0j6w _W0g47be6EeinstBrmh0j6w" outgoing="_W0g48Le6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction3</body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_W0iuLLe6EeinstBrmh0j6w" name="제품상세조회" incoming="_W0g48Le6EeinstBrmh0j6w" outgoing="_W0g487e6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction4</body>
+        </node>
+        <node xmi:type="uml:DecisionNode" xmi:id="_W0j8MLe6EeinstBrmh0j6w" name="구매결정" incoming="_W0g487e6EeinstBrmh0j6w" outgoing="_W0g49re6EeinstBrmh0j6w _W0iHAre6EeinstBrmh0j6w"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_W0j8Mbe6EeinstBrmh0j6w" name="장바구니" incoming="_W0g49re6EeinstBrmh0j6w" outgoing="_W0iHBbe6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction5</body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_W0j8Mre6EeinstBrmh0j6w" name="결제" incoming="_W0iHAre6EeinstBrmh0j6w _W0iHCLe6EeinstBrmh0j6w" outgoing="_W0iuEre6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction6</body>
+        </node>
+        <node xmi:type="uml:DecisionNode" xmi:id="_W0j8M7e6EeinstBrmh0j6w" name="계속쇼핑" incoming="_W0iHBbe6EeinstBrmh0j6w" outgoing="_W0iHCLe6EeinstBrmh0j6w _W0iuG7e6EeinstBrmh0j6w"/>
+        <node xmi:type="uml:DecisionNode" xmi:id="_W0j8NLe6EeinstBrmh0j6w" name="로그인 여부" incoming="_W0iuEre6EeinstBrmh0j6w" outgoing="_W0iuFbe6EeinstBrmh0j6w _W0iuGLe6EeinstBrmh0j6w"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_W0j8Nbe6EeinstBrmh0j6w" name="로그인" incoming="_W0iuGLe6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction7</body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_W0j8Nre6EeinstBrmh0j6w" name="결제완료" incoming="_W0iuFbe6EeinstBrmh0j6w" outgoing="_W0iuHre6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction8</body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_W0j8N7e6EeinstBrmh0j6w" name="배송추적" incoming="_W0iuHre6EeinstBrmh0j6w" outgoing="_W0iuIbe6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction9</body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_W0j8OLe6EeinstBrmh0j6w" name="후기" incoming="_W0iuIbe6EeinstBrmh0j6w" outgoing="_W0iuJLe6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction10</body>
+        </node>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_W0j8Obe6EeinstBrmh0j6w" name="종료" incoming="_W0iuJLe6EeinstBrmh0j6w"/>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_XAbN8Le6EeinstBrmh0j6w" name="«Activity» 쇼핑몰 상품구매 시나리오" node="_XAbOJ7e6EeinstBrmh0j6w _XAbOKLe6EeinstBrmh0j6w _XAbOKbe6EeinstBrmh0j6w _XAbOKre6EeinstBrmh0j6w _XAbOK7e6EeinstBrmh0j6w _XAbOLLe6EeinstBrmh0j6w _XAbOLbe6EeinstBrmh0j6w _XAbOLre6EeinstBrmh0j6w _XAbOL7e6EeinstBrmh0j6w _XAbOMLe6EeinstBrmh0j6w _XAbOMbe6EeinstBrmh0j6w _XAbOMre6EeinstBrmh0j6w _XAbOM7e6EeinstBrmh0j6w _XAbONLe6EeinstBrmh0j6w _XAbONbe6EeinstBrmh0j6w _XAbONre6EeinstBrmh0j6w">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_XAbN8be6EeinstBrmh0j6w" target="_XAbOKLe6EeinstBrmh0j6w" source="_XAbOKbe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_XAbN8re6EeinstBrmh0j6w" name="검색유형_To_카테고리 검색_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_XAbN87e6EeinstBrmh0j6w" name="검색유형_To_카테고리 검색_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_XAbN9Le6EeinstBrmh0j6w" target="_XAbOKre6EeinstBrmh0j6w" source="_XAbOKbe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_XAbN9be6EeinstBrmh0j6w" name="검색유형_To_검색창 검색_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_XAbN9re6EeinstBrmh0j6w" name="검색유형_To_검색창 검색_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_XAbN97e6EeinstBrmh0j6w" target="_XAbOKbe6EeinstBrmh0j6w" source="_XAbOJ7e6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_XAbN-Le6EeinstBrmh0j6w" name="시작_To_검색유형_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_XAbN-be6EeinstBrmh0j6w" name="시작_To_검색유형_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_XAbN-re6EeinstBrmh0j6w" target="_XAbOK7e6EeinstBrmh0j6w" source="_XAbOKLe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_XAbN-7e6EeinstBrmh0j6w" name="카테고리 검색_To_제품목록조회_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_XAbN_Le6EeinstBrmh0j6w" name="카테고리 검색_To_제품목록조회_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_XAbN_be6EeinstBrmh0j6w" target="_XAbOK7e6EeinstBrmh0j6w" source="_XAbOKre6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_XAbN_re6EeinstBrmh0j6w" name="검색창 검색_To_제품목록조회_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_XAbN_7e6EeinstBrmh0j6w" name="검색창 검색_To_제품목록조회_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_XAbOALe6EeinstBrmh0j6w" target="_XAbOLLe6EeinstBrmh0j6w" source="_XAbOK7e6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_XAbOAbe6EeinstBrmh0j6w" name="제품목록조회_To_제품상세조회_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_XAbOAre6EeinstBrmh0j6w" name="제품목록조회_To_제품상세조회_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_XAbOA7e6EeinstBrmh0j6w" target="_XAbOLbe6EeinstBrmh0j6w" source="_XAbOLLe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_XAbOBLe6EeinstBrmh0j6w" name="제품상세조회_To_구매결정_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_XAbOBbe6EeinstBrmh0j6w" name="제품상세조회_To_구매결정_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_XAbOBre6EeinstBrmh0j6w" target="_XAbOLre6EeinstBrmh0j6w" source="_XAbOLbe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_XAbOB7e6EeinstBrmh0j6w" name="구매결정_To_장바구니_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_XAbOCLe6EeinstBrmh0j6w" name="구매결정_To_장바구니_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_XAbOCbe6EeinstBrmh0j6w" target="_XAbOL7e6EeinstBrmh0j6w" source="_XAbOLbe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_XAbOCre6EeinstBrmh0j6w" name="구매결정_To_결제_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_XAbOC7e6EeinstBrmh0j6w" name="구매결정_To_결제_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_XAbODLe6EeinstBrmh0j6w" target="_XAbOMLe6EeinstBrmh0j6w" source="_XAbOLre6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_XAbODbe6EeinstBrmh0j6w" name="장바구니_To_계속쇼핑_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_XAbODre6EeinstBrmh0j6w" name="장바구니_To_계속쇼핑_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_XAbOD7e6EeinstBrmh0j6w" name="no" target="_XAbOL7e6EeinstBrmh0j6w" source="_XAbOMLe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_XAbOELe6EeinstBrmh0j6w" name="계속쇼핑_To_결제_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_XAbOEbe6EeinstBrmh0j6w" name="계속쇼핑_To_결제_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_XAbOEre6EeinstBrmh0j6w" target="_XAbOMbe6EeinstBrmh0j6w" source="_XAbOL7e6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_XAbOE7e6EeinstBrmh0j6w" name="결제_To_로그인 여부_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_XAbOFLe6EeinstBrmh0j6w" name="결제_To_로그인 여부_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_XAbOFbe6EeinstBrmh0j6w" name="yes" target="_XAbOM7e6EeinstBrmh0j6w" source="_XAbOMbe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_XAbOFre6EeinstBrmh0j6w" name="로그인 여부_To_결제완료_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_XAbOF7e6EeinstBrmh0j6w" name="로그인 여부_To_결제완료_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_XAbOGLe6EeinstBrmh0j6w" name="no" target="_XAbOMre6EeinstBrmh0j6w" source="_XAbOMbe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_XAbOGbe6EeinstBrmh0j6w" name="로그인 여부_To_로그인_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_XAbOGre6EeinstBrmh0j6w" name="로그인 여부_To_로그인_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_XAbOG7e6EeinstBrmh0j6w" name="yes" target="_XAbOKbe6EeinstBrmh0j6w" source="_XAbOMLe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_XAbOHLe6EeinstBrmh0j6w" name="계속쇼핑_To_검색유형_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_XAbOHbe6EeinstBrmh0j6w" name="계속쇼핑_To_검색유형_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_XAbOHre6EeinstBrmh0j6w" target="_XAbONLe6EeinstBrmh0j6w" source="_XAbOM7e6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_XAbOH7e6EeinstBrmh0j6w" name="결제완료_To_배송추적_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_XAbOILe6EeinstBrmh0j6w" name="결제완료_To_배송추적_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_XAbOIbe6EeinstBrmh0j6w" target="_XAbONbe6EeinstBrmh0j6w" source="_XAbONLe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_XAbOIre6EeinstBrmh0j6w" name="배송추적_To_후기_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_XAbOI7e6EeinstBrmh0j6w" name="배송추적_To_후기_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_XAbOJLe6EeinstBrmh0j6w" target="_XAbONre6EeinstBrmh0j6w" source="_XAbONbe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_XAbOJbe6EeinstBrmh0j6w" name="후기_To_종료_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_XAbOJre6EeinstBrmh0j6w" name="후기_To_종료_weight"/>
+        </edge>
+        <node xmi:type="uml:InitialNode" xmi:id="_XAbOJ7e6EeinstBrmh0j6w" name="시작" outgoing="_XAbN97e6EeinstBrmh0j6w"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_XAbOKLe6EeinstBrmh0j6w" name="카테고리 검색" incoming="_XAbN8be6EeinstBrmh0j6w" outgoing="_XAbN-re6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction1</body>
+        </node>
+        <node xmi:type="uml:DecisionNode" xmi:id="_XAbOKbe6EeinstBrmh0j6w" name="검색유형" incoming="_XAbN97e6EeinstBrmh0j6w _XAbOG7e6EeinstBrmh0j6w" outgoing="_XAbN8be6EeinstBrmh0j6w _XAbN9Le6EeinstBrmh0j6w"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_XAbOKre6EeinstBrmh0j6w" name="검색창 검색" incoming="_XAbN9Le6EeinstBrmh0j6w" outgoing="_XAbN_be6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction2</body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_XAbOK7e6EeinstBrmh0j6w" name="제품목록조회" incoming="_XAbN-re6EeinstBrmh0j6w _XAbN_be6EeinstBrmh0j6w" outgoing="_XAbOALe6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction3</body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_XAbOLLe6EeinstBrmh0j6w" name="제품상세조회" incoming="_XAbOALe6EeinstBrmh0j6w" outgoing="_XAbOA7e6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction4</body>
+        </node>
+        <node xmi:type="uml:DecisionNode" xmi:id="_XAbOLbe6EeinstBrmh0j6w" name="구매결정" incoming="_XAbOA7e6EeinstBrmh0j6w" outgoing="_XAbOBre6EeinstBrmh0j6w _XAbOCbe6EeinstBrmh0j6w"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_XAbOLre6EeinstBrmh0j6w" name="장바구니" incoming="_XAbOBre6EeinstBrmh0j6w" outgoing="_XAbODLe6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction5</body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_XAbOL7e6EeinstBrmh0j6w" name="결제" incoming="_XAbOCbe6EeinstBrmh0j6w _XAbOD7e6EeinstBrmh0j6w" outgoing="_XAbOEre6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction6</body>
+        </node>
+        <node xmi:type="uml:DecisionNode" xmi:id="_XAbOMLe6EeinstBrmh0j6w" name="계속쇼핑" incoming="_XAbODLe6EeinstBrmh0j6w" outgoing="_XAbOD7e6EeinstBrmh0j6w _XAbOG7e6EeinstBrmh0j6w"/>
+        <node xmi:type="uml:DecisionNode" xmi:id="_XAbOMbe6EeinstBrmh0j6w" name="로그인 여부" incoming="_XAbOEre6EeinstBrmh0j6w" outgoing="_XAbOFbe6EeinstBrmh0j6w _XAbOGLe6EeinstBrmh0j6w"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_XAbOMre6EeinstBrmh0j6w" name="로그인" incoming="_XAbOGLe6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction7</body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_XAbOM7e6EeinstBrmh0j6w" name="결제완료" incoming="_XAbOFbe6EeinstBrmh0j6w" outgoing="_XAbOHre6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction8</body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_XAbONLe6EeinstBrmh0j6w" name="배송추적" incoming="_XAbOHre6EeinstBrmh0j6w" outgoing="_XAbOIbe6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction9</body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_XAbONbe6EeinstBrmh0j6w" name="후기" incoming="_XAbOIbe6EeinstBrmh0j6w" outgoing="_XAbOJLe6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction10</body>
+        </node>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_XAbONre6EeinstBrmh0j6w" name="종료" incoming="_XAbOJLe6EeinstBrmh0j6w"/>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_2dEbALe6EeinstBrmh0j6w" name="«Activity» 쇼핑몰 상품구매 시나리오" node="_2dFCRre6EeinstBrmh0j6w _2dFCR7e6EeinstBrmh0j6w _2dFCSLe6EeinstBrmh0j6w _2dFCSbe6EeinstBrmh0j6w _2dFCSre6EeinstBrmh0j6w _2dFCS7e6EeinstBrmh0j6w _2dFCTLe6EeinstBrmh0j6w _2dFCTbe6EeinstBrmh0j6w _2dFCTre6EeinstBrmh0j6w _2dFCT7e6EeinstBrmh0j6w _2dFCULe6EeinstBrmh0j6w _2dFCUbe6EeinstBrmh0j6w _2dFCUre6EeinstBrmh0j6w _2dFCU7e6EeinstBrmh0j6w _2dFCVLe6EeinstBrmh0j6w _2dFCVbe6EeinstBrmh0j6w">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_2dFCELe6EeinstBrmh0j6w" target="_2dFCR7e6EeinstBrmh0j6w" source="_2dFCSLe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_2dFCEbe6EeinstBrmh0j6w" name="검색유형_To_카테고리 검색_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_2dFCEre6EeinstBrmh0j6w" name="검색유형_To_카테고리 검색_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_2dFCE7e6EeinstBrmh0j6w" target="_2dFCSbe6EeinstBrmh0j6w" source="_2dFCSLe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_2dFCFLe6EeinstBrmh0j6w" name="검색유형_To_검색창 검색_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_2dFCFbe6EeinstBrmh0j6w" name="검색유형_To_검색창 검색_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_2dFCFre6EeinstBrmh0j6w" target="_2dFCSLe6EeinstBrmh0j6w" source="_2dFCRre6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_2dFCF7e6EeinstBrmh0j6w" name="시작_To_검색유형_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_2dFCGLe6EeinstBrmh0j6w" name="시작_To_검색유형_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_2dFCGbe6EeinstBrmh0j6w" target="_2dFCSre6EeinstBrmh0j6w" source="_2dFCR7e6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_2dFCGre6EeinstBrmh0j6w" name="카테고리 검색_To_제품목록조회_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_2dFCG7e6EeinstBrmh0j6w" name="카테고리 검색_To_제품목록조회_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_2dFCHLe6EeinstBrmh0j6w" target="_2dFCSre6EeinstBrmh0j6w" source="_2dFCSbe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_2dFCHbe6EeinstBrmh0j6w" name="검색창 검색_To_제품목록조회_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_2dFCHre6EeinstBrmh0j6w" name="검색창 검색_To_제품목록조회_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_2dFCH7e6EeinstBrmh0j6w" target="_2dFCS7e6EeinstBrmh0j6w" source="_2dFCSre6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_2dFCILe6EeinstBrmh0j6w" name="제품목록조회_To_제품상세조회_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_2dFCIbe6EeinstBrmh0j6w" name="제품목록조회_To_제품상세조회_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_2dFCIre6EeinstBrmh0j6w" target="_2dFCTLe6EeinstBrmh0j6w" source="_2dFCS7e6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_2dFCI7e6EeinstBrmh0j6w" name="제품상세조회_To_구매결정_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_2dFCJLe6EeinstBrmh0j6w" name="제품상세조회_To_구매결정_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_2dFCJbe6EeinstBrmh0j6w" target="_2dFCTbe6EeinstBrmh0j6w" source="_2dFCTLe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_2dFCJre6EeinstBrmh0j6w" name="구매결정_To_장바구니_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_2dFCJ7e6EeinstBrmh0j6w" name="구매결정_To_장바구니_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_2dFCKLe6EeinstBrmh0j6w" target="_2dFCTre6EeinstBrmh0j6w" source="_2dFCTLe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_2dFCKbe6EeinstBrmh0j6w" name="구매결정_To_결제_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_2dFCKre6EeinstBrmh0j6w" name="구매결정_To_결제_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_2dFCK7e6EeinstBrmh0j6w" target="_2dFCT7e6EeinstBrmh0j6w" source="_2dFCTbe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_2dFCLLe6EeinstBrmh0j6w" name="장바구니_To_계속쇼핑_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_2dFCLbe6EeinstBrmh0j6w" name="장바구니_To_계속쇼핑_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_2dFCLre6EeinstBrmh0j6w" name="no" target="_2dFCTre6EeinstBrmh0j6w" source="_2dFCT7e6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_2dFCL7e6EeinstBrmh0j6w" name="계속쇼핑_To_결제_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_2dFCMLe6EeinstBrmh0j6w" name="계속쇼핑_To_결제_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_2dFCMbe6EeinstBrmh0j6w" target="_2dFCULe6EeinstBrmh0j6w" source="_2dFCTre6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_2dFCMre6EeinstBrmh0j6w" name="결제_To_로그인 여부_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_2dFCM7e6EeinstBrmh0j6w" name="결제_To_로그인 여부_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_2dFCNLe6EeinstBrmh0j6w" name="yes" target="_2dFCUre6EeinstBrmh0j6w" source="_2dFCULe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_2dFCNbe6EeinstBrmh0j6w" name="로그인 여부_To_결제완료_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_2dFCNre6EeinstBrmh0j6w" name="로그인 여부_To_결제완료_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_2dFCN7e6EeinstBrmh0j6w" name="no" target="_2dFCUbe6EeinstBrmh0j6w" source="_2dFCULe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_2dFCOLe6EeinstBrmh0j6w" name="로그인 여부_To_로그인_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_2dFCObe6EeinstBrmh0j6w" name="로그인 여부_To_로그인_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_2dFCOre6EeinstBrmh0j6w" name="yes" target="_2dFCSLe6EeinstBrmh0j6w" source="_2dFCT7e6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_2dFCO7e6EeinstBrmh0j6w" name="계속쇼핑_To_검색유형_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_2dFCPLe6EeinstBrmh0j6w" name="계속쇼핑_To_검색유형_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_2dFCPbe6EeinstBrmh0j6w" target="_2dFCU7e6EeinstBrmh0j6w" source="_2dFCUre6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_2dFCPre6EeinstBrmh0j6w" name="결제완료_To_배송추적_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_2dFCP7e6EeinstBrmh0j6w" name="결제완료_To_배송추적_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_2dFCQLe6EeinstBrmh0j6w" target="_2dFCVLe6EeinstBrmh0j6w" source="_2dFCU7e6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_2dFCQbe6EeinstBrmh0j6w" name="배송추적_To_후기_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_2dFCQre6EeinstBrmh0j6w" name="배송추적_To_후기_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_2dFCQ7e6EeinstBrmh0j6w" target="_2dFCVbe6EeinstBrmh0j6w" source="_2dFCVLe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_2dFCRLe6EeinstBrmh0j6w" name="후기_To_종료_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_2dFCRbe6EeinstBrmh0j6w" name="후기_To_종료_weight"/>
+        </edge>
+        <node xmi:type="uml:InitialNode" xmi:id="_2dFCRre6EeinstBrmh0j6w" name="시작" outgoing="_2dFCFre6EeinstBrmh0j6w"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_2dFCR7e6EeinstBrmh0j6w" name="카테고리 검색" incoming="_2dFCELe6EeinstBrmh0j6w" outgoing="_2dFCGbe6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction1</body>
+        </node>
+        <node xmi:type="uml:DecisionNode" xmi:id="_2dFCSLe6EeinstBrmh0j6w" name="검색유형" incoming="_2dFCFre6EeinstBrmh0j6w _2dFCOre6EeinstBrmh0j6w" outgoing="_2dFCELe6EeinstBrmh0j6w _2dFCE7e6EeinstBrmh0j6w"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_2dFCSbe6EeinstBrmh0j6w" name="검색창 검색" incoming="_2dFCE7e6EeinstBrmh0j6w" outgoing="_2dFCHLe6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction2</body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_2dFCSre6EeinstBrmh0j6w" name="제품목록조회" incoming="_2dFCGbe6EeinstBrmh0j6w _2dFCHLe6EeinstBrmh0j6w" outgoing="_2dFCH7e6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction3</body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_2dFCS7e6EeinstBrmh0j6w" name="제품상세조회" incoming="_2dFCH7e6EeinstBrmh0j6w" outgoing="_2dFCIre6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction4</body>
+        </node>
+        <node xmi:type="uml:DecisionNode" xmi:id="_2dFCTLe6EeinstBrmh0j6w" name="구매결정" incoming="_2dFCIre6EeinstBrmh0j6w" outgoing="_2dFCJbe6EeinstBrmh0j6w _2dFCKLe6EeinstBrmh0j6w"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_2dFCTbe6EeinstBrmh0j6w" name="장바구니" incoming="_2dFCJbe6EeinstBrmh0j6w" outgoing="_2dFCK7e6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction5</body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_2dFCTre6EeinstBrmh0j6w" name="결제" incoming="_2dFCKLe6EeinstBrmh0j6w _2dFCLre6EeinstBrmh0j6w" outgoing="_2dFCMbe6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction6</body>
+        </node>
+        <node xmi:type="uml:DecisionNode" xmi:id="_2dFCT7e6EeinstBrmh0j6w" name="계속쇼핑" incoming="_2dFCK7e6EeinstBrmh0j6w" outgoing="_2dFCLre6EeinstBrmh0j6w _2dFCOre6EeinstBrmh0j6w"/>
+        <node xmi:type="uml:DecisionNode" xmi:id="_2dFCULe6EeinstBrmh0j6w" name="로그인 여부" incoming="_2dFCMbe6EeinstBrmh0j6w" outgoing="_2dFCNLe6EeinstBrmh0j6w _2dFCN7e6EeinstBrmh0j6w"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_2dFCUbe6EeinstBrmh0j6w" name="로그인" incoming="_2dFCN7e6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction7</body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_2dFCUre6EeinstBrmh0j6w" name="결제완료" incoming="_2dFCNLe6EeinstBrmh0j6w" outgoing="_2dFCPbe6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction8</body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_2dFCU7e6EeinstBrmh0j6w" name="배송추적" incoming="_2dFCPbe6EeinstBrmh0j6w" outgoing="_2dFCQLe6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction9</body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_2dFCVLe6EeinstBrmh0j6w" name="후기" incoming="_2dFCQLe6EeinstBrmh0j6w" outgoing="_2dFCQ7e6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction10</body>
+        </node>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_2dFCVbe6EeinstBrmh0j6w" name="종료" incoming="_2dFCQ7e6EeinstBrmh0j6w"/>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_4Vq7YLe6EeinstBrmh0j6w" name="«Activity» 쇼핑몰 상품구매 시나리오" node="_4Vripre6EeinstBrmh0j6w _4Vrip7e6EeinstBrmh0j6w _4VriqLe6EeinstBrmh0j6w _4Vriqbe6EeinstBrmh0j6w _4Vriqre6EeinstBrmh0j6w _4Vriq7e6EeinstBrmh0j6w _4VrirLe6EeinstBrmh0j6w _4Vrirbe6EeinstBrmh0j6w _4Vrirre6EeinstBrmh0j6w _4Vrir7e6EeinstBrmh0j6w _4VrisLe6EeinstBrmh0j6w _4Vrisbe6EeinstBrmh0j6w _4Vrisre6EeinstBrmh0j6w _4Vris7e6EeinstBrmh0j6w _4VritLe6EeinstBrmh0j6w _4Vritbe6EeinstBrmh0j6w">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_4VricLe6EeinstBrmh0j6w" target="_4Vrip7e6EeinstBrmh0j6w" source="_4VriqLe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_4Vricbe6EeinstBrmh0j6w" name="검색유형_To_카테고리 검색_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_4Vricre6EeinstBrmh0j6w" name="검색유형_To_카테고리 검색_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_4Vric7e6EeinstBrmh0j6w" target="_4Vriqbe6EeinstBrmh0j6w" source="_4VriqLe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_4VridLe6EeinstBrmh0j6w" name="검색유형_To_검색창 검색_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_4Vridbe6EeinstBrmh0j6w" name="검색유형_To_검색창 검색_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_4Vridre6EeinstBrmh0j6w" target="_4VriqLe6EeinstBrmh0j6w" source="_4Vripre6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_4Vrid7e6EeinstBrmh0j6w" name="시작_To_검색유형_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_4VrieLe6EeinstBrmh0j6w" name="시작_To_검색유형_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_4Vriebe6EeinstBrmh0j6w" target="_4Vriqre6EeinstBrmh0j6w" source="_4Vrip7e6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_4Vriere6EeinstBrmh0j6w" name="카테고리 검색_To_제품목록조회_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_4Vrie7e6EeinstBrmh0j6w" name="카테고리 검색_To_제품목록조회_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_4VrifLe6EeinstBrmh0j6w" target="_4Vriqre6EeinstBrmh0j6w" source="_4Vriqbe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_4Vrifbe6EeinstBrmh0j6w" name="검색창 검색_To_제품목록조회_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_4Vrifre6EeinstBrmh0j6w" name="검색창 검색_To_제품목록조회_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_4Vrif7e6EeinstBrmh0j6w" target="_4Vriq7e6EeinstBrmh0j6w" source="_4Vriqre6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_4VrigLe6EeinstBrmh0j6w" name="제품목록조회_To_제품상세조회_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_4Vrigbe6EeinstBrmh0j6w" name="제품목록조회_To_제품상세조회_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_4Vrigre6EeinstBrmh0j6w" target="_4VrirLe6EeinstBrmh0j6w" source="_4Vriq7e6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_4Vrig7e6EeinstBrmh0j6w" name="제품상세조회_To_구매결정_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_4VrihLe6EeinstBrmh0j6w" name="제품상세조회_To_구매결정_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_4Vrihbe6EeinstBrmh0j6w" target="_4Vrirbe6EeinstBrmh0j6w" source="_4VrirLe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_4Vrihre6EeinstBrmh0j6w" name="구매결정_To_장바구니_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_4Vrih7e6EeinstBrmh0j6w" name="구매결정_To_장바구니_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_4VriiLe6EeinstBrmh0j6w" target="_4Vrirre6EeinstBrmh0j6w" source="_4VrirLe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_4Vriibe6EeinstBrmh0j6w" name="구매결정_To_결제_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_4Vriire6EeinstBrmh0j6w" name="구매결정_To_결제_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_4Vrii7e6EeinstBrmh0j6w" target="_4Vrir7e6EeinstBrmh0j6w" source="_4Vrirbe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_4VrijLe6EeinstBrmh0j6w" name="장바구니_To_계속쇼핑_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_4Vrijbe6EeinstBrmh0j6w" name="장바구니_To_계속쇼핑_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_4Vrijre6EeinstBrmh0j6w" name="no" target="_4Vrirre6EeinstBrmh0j6w" source="_4Vrir7e6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_4Vrij7e6EeinstBrmh0j6w" name="계속쇼핑_To_결제_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_4VrikLe6EeinstBrmh0j6w" name="계속쇼핑_To_결제_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_4Vrikbe6EeinstBrmh0j6w" target="_4VrisLe6EeinstBrmh0j6w" source="_4Vrirre6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_4Vrikre6EeinstBrmh0j6w" name="결제_To_로그인 여부_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_4Vrik7e6EeinstBrmh0j6w" name="결제_To_로그인 여부_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_4VrilLe6EeinstBrmh0j6w" name="yes" target="_4Vrisre6EeinstBrmh0j6w" source="_4VrisLe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_4Vrilbe6EeinstBrmh0j6w" name="로그인 여부_To_결제완료_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_4Vrilre6EeinstBrmh0j6w" name="로그인 여부_To_결제완료_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_4Vril7e6EeinstBrmh0j6w" name="no" target="_4Vrisbe6EeinstBrmh0j6w" source="_4VrisLe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_4VrimLe6EeinstBrmh0j6w" name="로그인 여부_To_로그인_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_4Vrimbe6EeinstBrmh0j6w" name="로그인 여부_To_로그인_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_4Vrimre6EeinstBrmh0j6w" name="yes" target="_4VriqLe6EeinstBrmh0j6w" source="_4Vrir7e6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_4Vrim7e6EeinstBrmh0j6w" name="계속쇼핑_To_검색유형_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_4VrinLe6EeinstBrmh0j6w" name="계속쇼핑_To_검색유형_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_4Vrinbe6EeinstBrmh0j6w" target="_4Vris7e6EeinstBrmh0j6w" source="_4Vrisre6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_4Vrinre6EeinstBrmh0j6w" name="결제완료_To_배송추적_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_4Vrin7e6EeinstBrmh0j6w" name="결제완료_To_배송추적_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_4VrioLe6EeinstBrmh0j6w" target="_4VritLe6EeinstBrmh0j6w" source="_4Vris7e6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_4Vriobe6EeinstBrmh0j6w" name="배송추적_To_후기_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_4Vriore6EeinstBrmh0j6w" name="배송추적_To_후기_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_4Vrio7e6EeinstBrmh0j6w" target="_4Vritbe6EeinstBrmh0j6w" source="_4VritLe6EeinstBrmh0j6w">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_4VripLe6EeinstBrmh0j6w" name="후기_To_종료_guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_4Vripbe6EeinstBrmh0j6w" name="후기_To_종료_weight"/>
+        </edge>
+        <node xmi:type="uml:InitialNode" xmi:id="_4Vripre6EeinstBrmh0j6w" name="시작" outgoing="_4Vridre6EeinstBrmh0j6w"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_4Vrip7e6EeinstBrmh0j6w" name="카테고리 검색" incoming="_4VricLe6EeinstBrmh0j6w" outgoing="_4Vriebe6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction1</body>
+        </node>
+        <node xmi:type="uml:DecisionNode" xmi:id="_4VriqLe6EeinstBrmh0j6w" name="검색유형" incoming="_4Vridre6EeinstBrmh0j6w _4Vrimre6EeinstBrmh0j6w" outgoing="_4VricLe6EeinstBrmh0j6w _4Vric7e6EeinstBrmh0j6w"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_4Vriqbe6EeinstBrmh0j6w" name="검색창 검색" incoming="_4Vric7e6EeinstBrmh0j6w" outgoing="_4VrifLe6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction2</body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_4Vriqre6EeinstBrmh0j6w" name="제품목록조회" incoming="_4Vriebe6EeinstBrmh0j6w _4VrifLe6EeinstBrmh0j6w" outgoing="_4Vrif7e6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction3</body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_4Vriq7e6EeinstBrmh0j6w" name="제품상세조회" incoming="_4Vrif7e6EeinstBrmh0j6w" outgoing="_4Vrigre6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction4</body>
+        </node>
+        <node xmi:type="uml:DecisionNode" xmi:id="_4VrirLe6EeinstBrmh0j6w" name="구매결정" incoming="_4Vrigre6EeinstBrmh0j6w" outgoing="_4Vrihbe6EeinstBrmh0j6w _4VriiLe6EeinstBrmh0j6w"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_4Vrirbe6EeinstBrmh0j6w" name="장바구니" incoming="_4Vrihbe6EeinstBrmh0j6w" outgoing="_4Vrii7e6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction5</body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_4Vrirre6EeinstBrmh0j6w" name="결제" incoming="_4VriiLe6EeinstBrmh0j6w _4Vrijre6EeinstBrmh0j6w" outgoing="_4Vrikbe6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction6</body>
+        </node>
+        <node xmi:type="uml:DecisionNode" xmi:id="_4Vrir7e6EeinstBrmh0j6w" name="계속쇼핑" incoming="_4Vrii7e6EeinstBrmh0j6w" outgoing="_4Vrijre6EeinstBrmh0j6w _4Vrimre6EeinstBrmh0j6w"/>
+        <node xmi:type="uml:DecisionNode" xmi:id="_4VrisLe6EeinstBrmh0j6w" name="로그인 여부" incoming="_4Vrikbe6EeinstBrmh0j6w" outgoing="_4VrilLe6EeinstBrmh0j6w _4Vril7e6EeinstBrmh0j6w"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_4Vrisbe6EeinstBrmh0j6w" name="로그인" incoming="_4Vril7e6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction7</body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_4Vrisre6EeinstBrmh0j6w" name="결제완료" incoming="_4VrilLe6EeinstBrmh0j6w" outgoing="_4Vrinbe6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction8</body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_4Vris7e6EeinstBrmh0j6w" name="배송추적" incoming="_4Vrinbe6EeinstBrmh0j6w" outgoing="_4VrioLe6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction9</body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_4VritLe6EeinstBrmh0j6w" name="후기" incoming="_4VrioLe6EeinstBrmh0j6w" outgoing="_4Vrio7e6EeinstBrmh0j6w">
+          <body>// TODO body of OpaqueAction10</body>
+        </node>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_4Vritbe6EeinstBrmh0j6w" name="종료" incoming="_4Vrio7e6EeinstBrmh0j6w"/>
+      </ownedBehavior>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_JjiVkLe7EeinstBrmh0j6w" target="_zTttQLYhEeifx8zZ2d6EkQ" source="__K3RkLe6EeinstBrmh0j6w">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_Jjkx0Le7EeinstBrmh0j6w" name="검색유형_To_카테고리 검색_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_JjstoLe7EeinstBrmh0j6w" name="검색유형_To_카테고리 검색_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_KDkggLe7EeinstBrmh0j6w" target="_0bGMELYhEeifx8zZ2d6EkQ" source="__K3RkLe6EeinstBrmh0j6w">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_KDlHkLe7EeinstBrmh0j6w" name="검색유형_To_검색창 검색_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_KDlHkbe7EeinstBrmh0j6w" name="검색유형_To_검색창 검색_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_KfHNALe7EeinstBrmh0j6w" target="__K3RkLe6EeinstBrmh0j6w" source="_qbTiILYhEeifx8zZ2d6EkQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_KfH0ELe7EeinstBrmh0j6w" name="시작_To_검색유형_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_KfJCMLe7EeinstBrmh0j6w" name="시작_To_검색유형_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_K_rjcLe7EeinstBrmh0j6w" target="_BMRIoLe7EeinstBrmh0j6w" source="_0bGMELYhEeifx8zZ2d6EkQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_K_sKgLe7EeinstBrmh0j6w" name="검색창 검색_To_제품목록조회_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_K_sKgbe7EeinstBrmh0j6w" name="검색창 검색_To_제품목록조회_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_LXaG8Le7EeinstBrmh0j6w" target="_BMRIoLe7EeinstBrmh0j6w" source="_zTttQLYhEeifx8zZ2d6EkQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_LXauALe7EeinstBrmh0j6w" name="카테고리 검색_To_제품목록조회_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_LXbVELe7EeinstBrmh0j6w" name="카테고리 검색_To_제품목록조회_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_QI0ngLe7EeinstBrmh0j6w" target="_DdRh8Le7EeinstBrmh0j6w" source="_BMRIoLe7EeinstBrmh0j6w">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_QI1OkLe7EeinstBrmh0j6w" name="제품목록조회_To_제품상세조회_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_QI1Okbe7EeinstBrmh0j6w" name="제품목록조회_To_제품상세조회_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_SCQ1YLe7EeinstBrmh0j6w" target="_Q5HcALe7EeinstBrmh0j6w" source="_DdRh8Le7EeinstBrmh0j6w">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_SCQ1Ybe7EeinstBrmh0j6w" name="제품상세조회_To_구매결정_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_SCQ1Yre7EeinstBrmh0j6w" name="제품상세조회_To_구매결정_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_WcRikLe7EeinstBrmh0j6w" target="_UlgOMLe7EeinstBrmh0j6w" source="_Q5HcALe7EeinstBrmh0j6w">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_WcRikbe7EeinstBrmh0j6w" name="구매결정_To_결제_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_WcSJoLe7EeinstBrmh0j6w" name="구매결정_To_결제_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_XBHVALe7EeinstBrmh0j6w" target="_SlYJgLe7EeinstBrmh0j6w" source="_Q5HcALe7EeinstBrmh0j6w">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_XBHVAbe7EeinstBrmh0j6w" name="구매결정_To_장바구니_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_XBH8ELe7EeinstBrmh0j6w" name="구매결정_To_장바구니_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_edVO8Le7EeinstBrmh0j6w" name="yes" target="__K3RkLe6EeinstBrmh0j6w" source="_Z-tHgLe7EeinstBrmh0j6w">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_edV2ALe7EeinstBrmh0j6w" name="계속쇼핑_To_검색유형_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_edV2Abe7EeinstBrmh0j6w" name="계속쇼핑_To_검색유형_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_hYNrsLe7EeinstBrmh0j6w" name="no" target="_UlgOMLe7EeinstBrmh0j6w" source="_Z-tHgLe7EeinstBrmh0j6w">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_hYNrsbe7EeinstBrmh0j6w" name="계속쇼핑_To_결제_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_hYNrsre7EeinstBrmh0j6w" name="계속쇼핑_To_결제_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_zDKqgLe7EeinstBrmh0j6w" target="_qSUf8Le7EeinstBrmh0j6w" source="_UlgOMLe7EeinstBrmh0j6w">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_zDKqgbe7EeinstBrmh0j6w" name="결제_To_로그인 여부_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_zDKqgre7EeinstBrmh0j6w" name="결제_To_로그인 여부_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_zbbZgLe7EeinstBrmh0j6w" name="yes" target="_tFFigLe7EeinstBrmh0j6w" source="_qSUf8Le7EeinstBrmh0j6w">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_zbbZgbe7EeinstBrmh0j6w" name="로그인 여부_To_결제완료_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_zbbZgre7EeinstBrmh0j6w" name="로그인 여부_To_결제완료_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_z1mNALe7EeinstBrmh0j6w" name="no" target="_rhJDgLe7EeinstBrmh0j6w" source="_qSUf8Le7EeinstBrmh0j6w">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_z1mNAbe7EeinstBrmh0j6w" name="로그인 여부_To_로그인_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_z1m0ELe7EeinstBrmh0j6w" name="로그인 여부_To_로그인_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_0vpacLe7EeinstBrmh0j6w" target="_vJg4YLe7EeinstBrmh0j6w" source="_tFFigLe7EeinstBrmh0j6w">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_0vqBgLe7EeinstBrmh0j6w" name="결제완료_To_배송추적_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_0vqBgbe7EeinstBrmh0j6w" name="결제완료_To_배송추적_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_7HcqALe7EeinstBrmh0j6w" target="_3h9KALe7EeinstBrmh0j6w" source="_vJg4YLe7EeinstBrmh0j6w">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_7HcqAbe7EeinstBrmh0j6w" name="배송추적_To_후기_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_7HdRELe7EeinstBrmh0j6w" name="배송추적_To_후기_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_7eep8Le7EeinstBrmh0j6w" target="_6BypgLe7EeinstBrmh0j6w" source="_3h9KALe7EeinstBrmh0j6w">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_7eep8be7EeinstBrmh0j6w" name="후기_To_종료_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_7efRALe7EeinstBrmh0j6w" name="후기_To_종료_weight"/>
+      </edge>
+      <node xmi:type="uml:InitialNode" xmi:id="_qbTiILYhEeifx8zZ2d6EkQ" name="시작" outgoing="_KfHNALe7EeinstBrmh0j6w"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_zTttQLYhEeifx8zZ2d6EkQ" name="카테고리 검색" incoming="_JjiVkLe7EeinstBrmh0j6w" outgoing="_LXaG8Le7EeinstBrmh0j6w">
+        <body>// TODO body of OpaqueAction1</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_0bGMELYhEeifx8zZ2d6EkQ" name="검색창 검색" incoming="_KDkggLe7EeinstBrmh0j6w" outgoing="_K_rjcLe7EeinstBrmh0j6w">
+        <body>// TODO body of OpaqueAction2</body>
+      </node>
+      <node xmi:type="uml:DecisionNode" xmi:id="__K3RkLe6EeinstBrmh0j6w" name="검색유형" incoming="_KfHNALe7EeinstBrmh0j6w _edVO8Le7EeinstBrmh0j6w" outgoing="_JjiVkLe7EeinstBrmh0j6w _KDkggLe7EeinstBrmh0j6w"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_BMRIoLe7EeinstBrmh0j6w" name="제품목록조회" incoming="_K_rjcLe7EeinstBrmh0j6w _LXaG8Le7EeinstBrmh0j6w" outgoing="_QI0ngLe7EeinstBrmh0j6w">
+        <body>// TODO body of OpaqueAction3</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_DdRh8Le7EeinstBrmh0j6w" name="제품상세조회" incoming="_QI0ngLe7EeinstBrmh0j6w" outgoing="_SCQ1YLe7EeinstBrmh0j6w">
+        <body>// TODO body of OpaqueAction4</body>
+      </node>
+      <node xmi:type="uml:DecisionNode" xmi:id="_Q5HcALe7EeinstBrmh0j6w" name="구매결정" incoming="_SCQ1YLe7EeinstBrmh0j6w" outgoing="_WcRikLe7EeinstBrmh0j6w _XBHVALe7EeinstBrmh0j6w"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_SlYJgLe7EeinstBrmh0j6w" name="장바구니" incoming="_XBHVALe7EeinstBrmh0j6w">
+        <body>// TODO body of OpaqueAction5</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_UlgOMLe7EeinstBrmh0j6w" name="결제" incoming="_WcRikLe7EeinstBrmh0j6w _hYNrsLe7EeinstBrmh0j6w" outgoing="_zDKqgLe7EeinstBrmh0j6w">
+        <body>// TODO body of OpaqueAction6</body>
+      </node>
+      <node xmi:type="uml:DecisionNode" xmi:id="_Z-tHgLe7EeinstBrmh0j6w" name="계속쇼핑" outgoing="_edVO8Le7EeinstBrmh0j6w _hYNrsLe7EeinstBrmh0j6w"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_qSUf8Le7EeinstBrmh0j6w" name="로그인 여부" incoming="_zDKqgLe7EeinstBrmh0j6w" outgoing="_zbbZgLe7EeinstBrmh0j6w _z1mNALe7EeinstBrmh0j6w"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_rhJDgLe7EeinstBrmh0j6w" name="로그인" incoming="_z1mNALe7EeinstBrmh0j6w">
+        <body>// TODO body of OpaqueAction7</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_tFFigLe7EeinstBrmh0j6w" name="결제완료" incoming="_zbbZgLe7EeinstBrmh0j6w" outgoing="_0vpacLe7EeinstBrmh0j6w">
+        <body>// TODO body of OpaqueAction8</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_vJg4YLe7EeinstBrmh0j6w" name="배송추적" incoming="_0vpacLe7EeinstBrmh0j6w" outgoing="_7HcqALe7EeinstBrmh0j6w">
+        <body>// TODO body of OpaqueAction9</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_3h9KALe7EeinstBrmh0j6w" name="후기" incoming="_7HcqALe7EeinstBrmh0j6w" outgoing="_7eep8Le7EeinstBrmh0j6w">
+        <body>// TODO body of OpaqueAction10</body>
+      </node>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_6BypgLe7EeinstBrmh0j6w" name="종료" incoming="_7eep8Le7EeinstBrmh0j6w"/>
+    </ownedBehavior>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_AiQYILCxEeinbMGW0y58sA" name="UC3. 상품조회">
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_tzd1ALo4EeiIg57ysUex3g" name="UC3. 상품조회 activity"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_B-tvELCxEeinbMGW0y58sA" name="UC4. 구매">
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_SUg5cLyREeiuldlwdyfqZQ" name="UC4. 구매 activity" node="_UVVhsLyREeiuldlwdyfqZQ _e0BuILyREeiuldlwdyfqZQ _g_C0MLyREeiuldlwdyfqZQ _oUc7gLyREeiuldlwdyfqZQ _rb50oLyREeiuldlwdyfqZQ _tstZoLyREeiuldlwdyfqZQ _vk1Y4LyREeiuldlwdyfqZQ _Ep-moLySEeiuldlwdyfqZQ _fo0LoLySEeiuldlwdyfqZQ _khnGkLySEeiuldlwdyfqZQ _lVFx8LySEeiuldlwdyfqZQ _mUbvELySEeiuldlwdyfqZQ _roBIkLySEeiuldlwdyfqZQ _uxI1oLySEeiuldlwdyfqZQ">
+      <edge xmi:type="uml:ControlFlow" xmi:id="_CAI2kLySEeiuldlwdyfqZQ" name="yes" target="_g_C0MLyREeiuldlwdyfqZQ" source="_e0BuILyREeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_CAI2kbySEeiuldlwdyfqZQ" name="배송정보_To_주소입력_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_CAJdoLySEeiuldlwdyfqZQ" name="배송정보_To_주소입력_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_Cd_QMLySEeiuldlwdyfqZQ" target="_e0BuILyREeiuldlwdyfqZQ" source="_UVVhsLyREeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_Cd_QMbySEeiuldlwdyfqZQ" name="시작_To_배송정보_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_CeBFYLySEeiuldlwdyfqZQ" name="시작_To_배송정보_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_RXfbELySEeiuldlwdyfqZQ" name="no" target="_Ep-moLySEeiuldlwdyfqZQ" source="_e0BuILyREeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_RXgCILySEeiuldlwdyfqZQ" name="배송정보_To_결제예정금액_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_RXgCIbySEeiuldlwdyfqZQ" name="배송정보_To_결제예정금액_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_WFA6ILySEeiuldlwdyfqZQ" target="_g_C0MLyREeiuldlwdyfqZQ" source="_oUc7gLyREeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_WFA6IbySEeiuldlwdyfqZQ" name="우편변호입력_To_주소입력_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_WFBhMLySEeiuldlwdyfqZQ" name="우편변호입력_To_주소입력_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_W4gzoLySEeiuldlwdyfqZQ" target="_rb50oLyREeiuldlwdyfqZQ" source="_g_C0MLyREeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_W4hasLySEeiuldlwdyfqZQ" name="주소입력_To_휴대전화입력_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_W4hasbySEeiuldlwdyfqZQ" name="주소입력_To_휴대전화입력_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_XT5IELySEeiuldlwdyfqZQ" target="_tstZoLyREeiuldlwdyfqZQ" source="_rb50oLyREeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_XT5vILySEeiuldlwdyfqZQ" name="휴대전화입력_To_이메일입력_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_XT5vIbySEeiuldlwdyfqZQ" name="휴대전화입력_To_이메일입력_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_XyWlsLySEeiuldlwdyfqZQ" target="_vk1Y4LyREeiuldlwdyfqZQ" source="_tstZoLyREeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_XyWlsbySEeiuldlwdyfqZQ" name="이메일입력_To_배송메시지입력_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_XyXMwLySEeiuldlwdyfqZQ" name="이메일입력_To_배송메시지입력_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_YVH7kLySEeiuldlwdyfqZQ" target="_Ep-moLySEeiuldlwdyfqZQ" source="_vk1Y4LyREeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_YVIioLySEeiuldlwdyfqZQ" name="배송메시지입력_To_결제예정금액_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_YVJJsLySEeiuldlwdyfqZQ" name="배송메시지입력_To_결제예정금액_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_wDsCoLySEeiuldlwdyfqZQ" target="_fo0LoLySEeiuldlwdyfqZQ" source="_Ep-moLySEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_wDspsLySEeiuldlwdyfqZQ" name="결제예정금액_To_결제수단_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_wDspsbySEeiuldlwdyfqZQ" name="결제예정금액_To_결제수단_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_wdoMoLySEeiuldlwdyfqZQ" target="_khnGkLySEeiuldlwdyfqZQ" source="_fo0LoLySEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_wdoMobySEeiuldlwdyfqZQ" name="결제수단_To_환불방법_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_wdozsLySEeiuldlwdyfqZQ" name="결제수단_To_환불방법_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_w2WOoLySEeiuldlwdyfqZQ" target="_lVFx8LySEeiuldlwdyfqZQ" source="_khnGkLySEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_w2WOobySEeiuldlwdyfqZQ" name="환불방법_To_환불계좌정보_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_w2W1sLySEeiuldlwdyfqZQ" name="환불방법_To_환불계좌정보_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_xLdjALySEeiuldlwdyfqZQ" target="_mUbvELySEeiuldlwdyfqZQ" source="_lVFx8LySEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_xLdjAbySEeiuldlwdyfqZQ" name="환불계좌정보_To_주문자 동의_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_xLexILySEeiuldlwdyfqZQ" name="환불계좌정보_To_주문자 동의_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_xi9dALySEeiuldlwdyfqZQ" target="_roBIkLySEeiuldlwdyfqZQ" source="_mUbvELySEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_xi9dAbySEeiuldlwdyfqZQ" name="주문자 동의_To_결제하기_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_xi9dArySEeiuldlwdyfqZQ" name="주문자 동의_To_결제하기_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_x8FHoLySEeiuldlwdyfqZQ" target="_uxI1oLySEeiuldlwdyfqZQ" source="_roBIkLySEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_x8FusLySEeiuldlwdyfqZQ" name="결제하기_To_종료_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_x8FusbySEeiuldlwdyfqZQ" name="결제하기_To_종료_weight"/>
+      </edge>
+      <node xmi:type="uml:InitialNode" xmi:id="_UVVhsLyREeiuldlwdyfqZQ" name="시작" outgoing="_Cd_QMLySEeiuldlwdyfqZQ"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_e0BuILyREeiuldlwdyfqZQ" name="배송정보" incoming="_Cd_QMLySEeiuldlwdyfqZQ" outgoing="_CAI2kLySEeiuldlwdyfqZQ _RXfbELySEeiuldlwdyfqZQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_g_C0MLyREeiuldlwdyfqZQ" name="주소입력" incoming="_CAI2kLySEeiuldlwdyfqZQ _WFA6ILySEeiuldlwdyfqZQ" outgoing="_W4gzoLySEeiuldlwdyfqZQ">
+        <body>// TODO body of OpaqueAction1</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_oUc7gLyREeiuldlwdyfqZQ" name="우편변호입력" outgoing="_WFA6ILySEeiuldlwdyfqZQ">
+        <body>// TODO body of OpaqueAction2</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_rb50oLyREeiuldlwdyfqZQ" name="휴대전화입력" incoming="_W4gzoLySEeiuldlwdyfqZQ" outgoing="_XT5IELySEeiuldlwdyfqZQ">
+        <body>// TODO body of OpaqueAction3</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_tstZoLyREeiuldlwdyfqZQ" name="이메일입력" incoming="_XT5IELySEeiuldlwdyfqZQ" outgoing="_XyWlsLySEeiuldlwdyfqZQ">
+        <body>// TODO body of OpaqueAction4</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_vk1Y4LyREeiuldlwdyfqZQ" name="배송메시지입력" incoming="_XyWlsLySEeiuldlwdyfqZQ" outgoing="_YVH7kLySEeiuldlwdyfqZQ">
+        <body>// TODO body of OpaqueAction5</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_Ep-moLySEeiuldlwdyfqZQ" name="결제예정금액" incoming="_RXfbELySEeiuldlwdyfqZQ _YVH7kLySEeiuldlwdyfqZQ" outgoing="_wDsCoLySEeiuldlwdyfqZQ">
+        <body>// TODO body of OpaqueAction6</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_fo0LoLySEeiuldlwdyfqZQ" name="결제수단" incoming="_wDsCoLySEeiuldlwdyfqZQ" outgoing="_wdoMoLySEeiuldlwdyfqZQ">
+        <body>// TODO body of OpaqueAction7</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_khnGkLySEeiuldlwdyfqZQ" name="환불방법" incoming="_wdoMoLySEeiuldlwdyfqZQ" outgoing="_w2WOoLySEeiuldlwdyfqZQ">
+        <body>// TODO body of OpaqueAction8</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_lVFx8LySEeiuldlwdyfqZQ" name="환불계좌정보" incoming="_w2WOoLySEeiuldlwdyfqZQ" outgoing="_xLdjALySEeiuldlwdyfqZQ">
+        <body>// TODO body of OpaqueAction9</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_mUbvELySEeiuldlwdyfqZQ" name="주문자 동의" incoming="_xLdjALySEeiuldlwdyfqZQ" outgoing="_xi9dALySEeiuldlwdyfqZQ">
+        <body>// TODO body of OpaqueAction10</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_roBIkLySEeiuldlwdyfqZQ" name="결제하기" incoming="_xi9dALySEeiuldlwdyfqZQ" outgoing="_x8FHoLySEeiuldlwdyfqZQ">
+        <body>// TODO body of OpaqueAction11</body>
+      </node>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_uxI1oLySEeiuldlwdyfqZQ" name="종료" incoming="_x8FHoLySEeiuldlwdyfqZQ"/>
+    </ownedBehavior>
+    <include xmi:id="_CP52oLC6EeinbMGW0y58sA" addition="_7FYJoLC5EeinbMGW0y58sA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_DYN4oLCxEeinbMGW0y58sA" name="UC5. 게시판">
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_Qn1DQLyTEeiuldlwdyfqZQ" name="UC5. 게시판 activity" node="_RwIIELyTEeiuldlwdyfqZQ _X2r2oLyTEeiuldlwdyfqZQ _ZrtekLyTEeiuldlwdyfqZQ _ajQKkLyTEeiuldlwdyfqZQ _jqrCELyTEeiuldlwdyfqZQ _nDnT0LyTEeiuldlwdyfqZQ _oseIALyTEeiuldlwdyfqZQ _qOR5ALyTEeiuldlwdyfqZQ _rsDekLyTEeiuldlwdyfqZQ _s-1VELyTEeiuldlwdyfqZQ _veqNgLyTEeiuldlwdyfqZQ _xJZ4ELyTEeiuldlwdyfqZQ _ysIPELyTEeiuldlwdyfqZQ _1-ZRELyTEeiuldlwdyfqZQ _31CCkLyTEeiuldlwdyfqZQ _5s90kLyTEeiuldlwdyfqZQ _7x3EgLyTEeiuldlwdyfqZQ _9ovGkLyTEeiuldlwdyfqZQ _FudQgLyUEeiuldlwdyfqZQ">
+      <edge xmi:type="uml:ControlFlow" xmi:id="_AYOLoLyUEeiuldlwdyfqZQ" target="_X2r2oLyTEeiuldlwdyfqZQ" source="_RwIIELyTEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_AYOysLyUEeiuldlwdyfqZQ" name="시작_To_Community 게시판_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_AYOysbyUEeiuldlwdyfqZQ" name="시작_To_Community 게시판_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_AwLYoLyUEeiuldlwdyfqZQ" target="_ZrtekLyTEeiuldlwdyfqZQ" source="_RwIIELyTEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_AwLYobyUEeiuldlwdyfqZQ" name="시작_To_Review 게시판_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_AwL_sLyUEeiuldlwdyfqZQ" name="시작_To_Review 게시판_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_BL3PELyUEeiuldlwdyfqZQ" target="_ajQKkLyTEeiuldlwdyfqZQ" source="_RwIIELyTEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_BL32ILyUEeiuldlwdyfqZQ" name="시작_To_Gallery 게시판_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_BL32IbyUEeiuldlwdyfqZQ" name="시작_To_Gallery 게시판_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_CQ0sALyUEeiuldlwdyfqZQ" target="_oseIALyTEeiuldlwdyfqZQ" source="_ajQKkLyTEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_CQ1TELyUEeiuldlwdyfqZQ" name="Gallery 게시판_To_글쓰기클릭_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_CQ1TEbyUEeiuldlwdyfqZQ" name="Gallery 게시판_To_글쓰기클릭_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_CeyPgLyUEeiuldlwdyfqZQ" target="_xJZ4ELyTEeiuldlwdyfqZQ" source="_oseIALyTEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_CeyPgbyUEeiuldlwdyfqZQ" name="글쓰기클릭_To_사진추가_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_CeyPgryUEeiuldlwdyfqZQ" name="글쓰기클릭_To_사진추가_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_CqZpoLyUEeiuldlwdyfqZQ" target="_ysIPELyTEeiuldlwdyfqZQ" source="_xJZ4ELyTEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_CqZpobyUEeiuldlwdyfqZQ" name="사진추가_To_코디정보입력_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_CqaQsLyUEeiuldlwdyfqZQ" name="사진추가_To_코디정보입력_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_C6zdILyUEeiuldlwdyfqZQ" target="_1-ZRELyTEeiuldlwdyfqZQ" source="_ysIPELyTEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_C6zdIbyUEeiuldlwdyfqZQ" name="코디정보입력_To_글pw입력_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_C60EMLyUEeiuldlwdyfqZQ" name="코디정보입력_To_글pw입력_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_DGGHILyUEeiuldlwdyfqZQ" target="_31CCkLyTEeiuldlwdyfqZQ" source="_1-ZRELyTEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_DGGHIbyUEeiuldlwdyfqZQ" name="글pw입력_To_완료버튼_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_DGGuMLyUEeiuldlwdyfqZQ" name="글pw입력_To_완료버튼_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_DXfZILyUEeiuldlwdyfqZQ" target="_nDnT0LyTEeiuldlwdyfqZQ" source="_ZrtekLyTEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_DXfZIbyUEeiuldlwdyfqZQ" name="Review 게시판_To_글쓰기클릭_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_DXgAMLyUEeiuldlwdyfqZQ" name="Review 게시판_To_글쓰기클릭_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_DiBOILyUEeiuldlwdyfqZQ" target="_qOR5ALyTEeiuldlwdyfqZQ" source="_nDnT0LyTEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_DiBOIbyUEeiuldlwdyfqZQ" name="글쓰기클릭_To_상품선택_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_DiB1MLyUEeiuldlwdyfqZQ" name="글쓰기클릭_To_상품선택_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_DtEAgLyUEeiuldlwdyfqZQ" target="_rsDekLyTEeiuldlwdyfqZQ" source="_qOR5ALyTEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_DtEAgbyUEeiuldlwdyfqZQ" name="상품선택_To_후기작성_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_DtEAgryUEeiuldlwdyfqZQ" name="상품선택_To_후기작성_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_D8UkgLyUEeiuldlwdyfqZQ" target="_s-1VELyTEeiuldlwdyfqZQ" source="_rsDekLyTEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_D8UkgbyUEeiuldlwdyfqZQ" name="후기작성_To_글pw입력_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_D8UkgryUEeiuldlwdyfqZQ" name="후기작성_To_글pw입력_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_EHAKgLyUEeiuldlwdyfqZQ" target="_veqNgLyTEeiuldlwdyfqZQ" source="_s-1VELyTEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_EHAKgbyUEeiuldlwdyfqZQ" name="글pw입력_To_완료버튼_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_EHAxkLyUEeiuldlwdyfqZQ" name="글pw입력_To_완료버튼_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_EUmhoLyUEeiuldlwdyfqZQ" target="_jqrCELyTEeiuldlwdyfqZQ" source="_X2r2oLyTEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_EUnIsLyUEeiuldlwdyfqZQ" name="Community 게시판_To_글쓰기클릭_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_EUnIsbyUEeiuldlwdyfqZQ" name="Community 게시판_To_글쓰기클릭_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_EelkELyUEeiuldlwdyfqZQ" target="_5s90kLyTEeiuldlwdyfqZQ" source="_jqrCELyTEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_EemLILyUEeiuldlwdyfqZQ" name="글쓰기클릭_To_글내용입력_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_EemLIbyUEeiuldlwdyfqZQ" name="글쓰기클릭_To_글내용입력_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_En0_oLyUEeiuldlwdyfqZQ" target="_7x3EgLyTEeiuldlwdyfqZQ" source="_5s90kLyTEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_En0_obyUEeiuldlwdyfqZQ" name="글내용입력_To_글pw입력_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_En1msLyUEeiuldlwdyfqZQ" name="글내용입력_To_글pw입력_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_E2oQoLyUEeiuldlwdyfqZQ" target="_9ovGkLyTEeiuldlwdyfqZQ" source="_7x3EgLyTEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_E2oQobyUEeiuldlwdyfqZQ" name="글pw입력_To_완료버튼_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_E2o3sLyUEeiuldlwdyfqZQ" name="글pw입력_To_완료버튼_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_HPhaoLyUEeiuldlwdyfqZQ" target="_FudQgLyUEeiuldlwdyfqZQ" source="_veqNgLyTEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_HPhaobyUEeiuldlwdyfqZQ" name="완료버튼_To_종료_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_HPiBsLyUEeiuldlwdyfqZQ" name="완료버튼_To_종료_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_Hgq1ALyUEeiuldlwdyfqZQ" target="_FudQgLyUEeiuldlwdyfqZQ" source="_9ovGkLyTEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_HgrcELyUEeiuldlwdyfqZQ" name="완료버튼_To_종료_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_HgrcEbyUEeiuldlwdyfqZQ" name="완료버튼_To_종료_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_HxKvILyUEeiuldlwdyfqZQ" target="_FudQgLyUEeiuldlwdyfqZQ" source="_31CCkLyTEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_HxLWMLyUEeiuldlwdyfqZQ" name="완료버튼_To_종료_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_HxLWMbyUEeiuldlwdyfqZQ" name="완료버튼_To_종료_weight"/>
+      </edge>
+      <node xmi:type="uml:InitialNode" xmi:id="_RwIIELyTEeiuldlwdyfqZQ" name="시작" outgoing="_AYOLoLyUEeiuldlwdyfqZQ _AwLYoLyUEeiuldlwdyfqZQ _BL3PELyUEeiuldlwdyfqZQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_X2r2oLyTEeiuldlwdyfqZQ" name="Community 게시판" incoming="_AYOLoLyUEeiuldlwdyfqZQ" outgoing="_EUmhoLyUEeiuldlwdyfqZQ">
+        <body>// TODO body of OpaqueAction1</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ZrtekLyTEeiuldlwdyfqZQ" name="Review 게시판" incoming="_AwLYoLyUEeiuldlwdyfqZQ" outgoing="_DXfZILyUEeiuldlwdyfqZQ">
+        <body>// TODO body of OpaqueAction2</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ajQKkLyTEeiuldlwdyfqZQ" name="Gallery 게시판" incoming="_BL3PELyUEeiuldlwdyfqZQ" outgoing="_CQ0sALyUEeiuldlwdyfqZQ">
+        <body>// TODO body of OpaqueAction3</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_jqrCELyTEeiuldlwdyfqZQ" name="글쓰기클릭" incoming="_EUmhoLyUEeiuldlwdyfqZQ" outgoing="_EelkELyUEeiuldlwdyfqZQ">
+        <body>// TODO body of OpaqueAction4</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_nDnT0LyTEeiuldlwdyfqZQ" name="글쓰기클릭" incoming="_DXfZILyUEeiuldlwdyfqZQ" outgoing="_DiBOILyUEeiuldlwdyfqZQ">
+        <body>// TODO body of OpaqueAction4</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_oseIALyTEeiuldlwdyfqZQ" name="글쓰기클릭" incoming="_CQ0sALyUEeiuldlwdyfqZQ" outgoing="_CeyPgLyUEeiuldlwdyfqZQ">
+        <body>// TODO body of OpaqueAction6</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_qOR5ALyTEeiuldlwdyfqZQ" name="상품선택" incoming="_DiBOILyUEeiuldlwdyfqZQ" outgoing="_DtEAgLyUEeiuldlwdyfqZQ">
+        <body>// TODO body of OpaqueAction7</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_rsDekLyTEeiuldlwdyfqZQ" name="후기작성" incoming="_DtEAgLyUEeiuldlwdyfqZQ" outgoing="_D8UkgLyUEeiuldlwdyfqZQ">
+        <body>// TODO body of OpaqueAction8</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_s-1VELyTEeiuldlwdyfqZQ" name="글pw입력" incoming="_D8UkgLyUEeiuldlwdyfqZQ" outgoing="_EHAKgLyUEeiuldlwdyfqZQ">
+        <body>// TODO body of OpaqueAction9</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_veqNgLyTEeiuldlwdyfqZQ" name="완료버튼" incoming="_EHAKgLyUEeiuldlwdyfqZQ" outgoing="_HPhaoLyUEeiuldlwdyfqZQ">
+        <body>// TODO body of OpaqueAction10</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_xJZ4ELyTEeiuldlwdyfqZQ" name="사진추가" incoming="_CeyPgLyUEeiuldlwdyfqZQ" outgoing="_CqZpoLyUEeiuldlwdyfqZQ">
+        <body>// TODO body of OpaqueAction11</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ysIPELyTEeiuldlwdyfqZQ" name="코디정보입력" incoming="_CqZpoLyUEeiuldlwdyfqZQ" outgoing="_C6zdILyUEeiuldlwdyfqZQ">
+        <body>// TODO body of OpaqueAction12</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_1-ZRELyTEeiuldlwdyfqZQ" name="글pw입력" incoming="_C6zdILyUEeiuldlwdyfqZQ" outgoing="_DGGHILyUEeiuldlwdyfqZQ">
+        <body>// TODO body of OpaqueAction13</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_31CCkLyTEeiuldlwdyfqZQ" name="완료버튼" incoming="_DGGHILyUEeiuldlwdyfqZQ" outgoing="_HxKvILyUEeiuldlwdyfqZQ">
+        <body>// TODO body of OpaqueAction14</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_5s90kLyTEeiuldlwdyfqZQ" name="글내용입력" incoming="_EelkELyUEeiuldlwdyfqZQ" outgoing="_En0_oLyUEeiuldlwdyfqZQ">
+        <body>// TODO body of OpaqueAction15</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_7x3EgLyTEeiuldlwdyfqZQ" name="글pw입력" incoming="_En0_oLyUEeiuldlwdyfqZQ" outgoing="_E2oQoLyUEeiuldlwdyfqZQ">
+        <body>// TODO body of OpaqueAction16</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_9ovGkLyTEeiuldlwdyfqZQ" name="완료버튼" incoming="_E2oQoLyUEeiuldlwdyfqZQ" outgoing="_Hgq1ALyUEeiuldlwdyfqZQ">
+        <body>// TODO body of OpaqueAction17</body>
+      </node>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_FudQgLyUEeiuldlwdyfqZQ" name="종료" incoming="_HPhaoLyUEeiuldlwdyfqZQ _Hgq1ALyUEeiuldlwdyfqZQ _HxKvILyUEeiuldlwdyfqZQ"/>
+    </ownedBehavior>
+    <include xmi:id="_CscBoLC6EeinbMGW0y58sA" addition="_7FYJoLC5EeinbMGW0y58sA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_HnqUkLCxEeinbMGW0y58sA" name="UC6. 마이페이지">
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_Bg2OULyZEeiuldlwdyfqZQ" name="UC6. 마이페이지 activity" node="_CQPq8LyZEeiuldlwdyfqZQ _EpYFgLyZEeiuldlwdyfqZQ _GpZcgLyZEeiuldlwdyfqZQ _KNvtALyZEeiuldlwdyfqZQ _LApJkLyZEeiuldlwdyfqZQ _PId6kLyZEeiuldlwdyfqZQ _P88rgLyZEeiuldlwdyfqZQ _Q5_ikLyZEeiuldlwdyfqZQ _RphiELyZEeiuldlwdyfqZQ _dzHKELyZEeiuldlwdyfqZQ _mVc-kLyZEeiuldlwdyfqZQ _qE3PkLyZEeiuldlwdyfqZQ _1b8ckLyZEeiuldlwdyfqZQ">
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ZQM_kLyZEeiuldlwdyfqZQ" target="_EpYFgLyZEeiuldlwdyfqZQ" source="_CQPq8LyZEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_ZQNmoLyZEeiuldlwdyfqZQ" name="시작_To_로그인확인_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ZQONsLyZEeiuldlwdyfqZQ" name="시작_To_로그인확인_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ZfjDILyZEeiuldlwdyfqZQ" name="yes" target="_GpZcgLyZEeiuldlwdyfqZQ" source="_EpYFgLyZEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_ZfjDIbyZEeiuldlwdyfqZQ" name="로그인확인_To_기능선택_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_Zfk4ULyZEeiuldlwdyfqZQ" name="로그인확인_To_기능선택_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ZvLakLyZEeiuldlwdyfqZQ" target="_KNvtALyZEeiuldlwdyfqZQ" source="_GpZcgLyZEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_ZvNPwLyZEeiuldlwdyfqZQ" name="기능선택_To_주문내역조회_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ZvNPwbyZEeiuldlwdyfqZQ" name="기능선택_To_주문내역조회_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_Z9hYkLyZEeiuldlwdyfqZQ" target="_LApJkLyZEeiuldlwdyfqZQ" source="_GpZcgLyZEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_Z9h_oLyZEeiuldlwdyfqZQ" name="기능선택_To_회원정보_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_Z9h_obyZEeiuldlwdyfqZQ" name="기능선택_To_회원정보_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_aL8PELyZEeiuldlwdyfqZQ" target="_PId6kLyZEeiuldlwdyfqZQ" source="_GpZcgLyZEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_aMAggLyZEeiuldlwdyfqZQ" name="기능선택_To_관심상품_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_aMAggbyZEeiuldlwdyfqZQ" name="기능선택_To_관심상품_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_aaIcELyZEeiuldlwdyfqZQ" target="_P88rgLyZEeiuldlwdyfqZQ" source="_GpZcgLyZEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_aaJDILyZEeiuldlwdyfqZQ" name="기능선택_To_적립금_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_aaJqMLyZEeiuldlwdyfqZQ" name="기능선택_To_적립금_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_amyYALyZEeiuldlwdyfqZQ" target="_Q5_ikLyZEeiuldlwdyfqZQ" source="_GpZcgLyZEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_amyYAbyZEeiuldlwdyfqZQ" name="기능선택_To_쿠폰_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_amy_ELyZEeiuldlwdyfqZQ" name="기능선택_To_쿠폰_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_a3qFkLyZEeiuldlwdyfqZQ" target="_RphiELyZEeiuldlwdyfqZQ" source="_GpZcgLyZEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_a3qFkbyZEeiuldlwdyfqZQ" name="기능선택_To_게시물관리_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_a3qFkryZEeiuldlwdyfqZQ" name="기능선택_To_게시물관리_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_jBvyILyZEeiuldlwdyfqZQ" name="no" target="_dzHKELyZEeiuldlwdyfqZQ" source="_EpYFgLyZEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_jBwZMLyZEeiuldlwdyfqZQ" name="로그인확인_To_로그인_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_jBwZMbyZEeiuldlwdyfqZQ" name="로그인확인_To_로그인_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_jYA9ELyZEeiuldlwdyfqZQ" target="_GpZcgLyZEeiuldlwdyfqZQ" source="_dzHKELyZEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_jYA9EbyZEeiuldlwdyfqZQ" name="로그인_To_기능선택_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_jYBkILyZEeiuldlwdyfqZQ" name="로그인_To_기능선택_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_n62PELyZEeiuldlwdyfqZQ" target="_mVc-kLyZEeiuldlwdyfqZQ" source="_PId6kLyZEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_n62PEbyZEeiuldlwdyfqZQ" name="관심상품_To_구매_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_n622ILyZEeiuldlwdyfqZQ" name="관심상품_To_구매_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_sdxAoLyZEeiuldlwdyfqZQ" target="_qE3PkLyZEeiuldlwdyfqZQ" source="_LApJkLyZEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_sdxnsLyZEeiuldlwdyfqZQ" name="회원정보_To_비밀번호변경_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_sdxnsbyZEeiuldlwdyfqZQ" name="회원정보_To_비밀번호변경_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_zQobkLyZEeiuldlwdyfqZQ" target="_KNvtALyZEeiuldlwdyfqZQ" source="_qE3PkLyZEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_zQpCoLyZEeiuldlwdyfqZQ" name="구매_To_주문내역조회_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_zQpCobyZEeiuldlwdyfqZQ" name="구매_To_주문내역조회_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_3JkcALyZEeiuldlwdyfqZQ" target="_1b8ckLyZEeiuldlwdyfqZQ" source="_KNvtALyZEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_3JkcAbyZEeiuldlwdyfqZQ" name="주문내역조회_To_종료_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_3JkcAryZEeiuldlwdyfqZQ" name="주문내역조회_To_종료_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_3bpqgLyZEeiuldlwdyfqZQ" target="_1b8ckLyZEeiuldlwdyfqZQ" source="_mVc-kLyZEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_3bqRkLyZEeiuldlwdyfqZQ" name="비밀번호변경_To_종료_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_3bqRkbyZEeiuldlwdyfqZQ" name="비밀번호변경_To_종료_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_3r6UELyZEeiuldlwdyfqZQ" target="_1b8ckLyZEeiuldlwdyfqZQ" source="_P88rgLyZEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_3r67ILyZEeiuldlwdyfqZQ" name="적립금_To_종료_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_3r67IbyZEeiuldlwdyfqZQ" name="적립금_To_종료_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_37UCALyZEeiuldlwdyfqZQ" target="_1b8ckLyZEeiuldlwdyfqZQ" source="_Q5_ikLyZEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_37UCAbyZEeiuldlwdyfqZQ" name="쿠폰_To_종료_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_37UCAryZEeiuldlwdyfqZQ" name="쿠폰_To_종료_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_4Ph-gLyZEeiuldlwdyfqZQ" target="_1b8ckLyZEeiuldlwdyfqZQ" source="_RphiELyZEeiuldlwdyfqZQ">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_4Ph-gbyZEeiuldlwdyfqZQ" name="게시물관리_To_종료_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_4PilkLyZEeiuldlwdyfqZQ" name="게시물관리_To_종료_weight"/>
+      </edge>
+      <node xmi:type="uml:InitialNode" xmi:id="_CQPq8LyZEeiuldlwdyfqZQ" name="시작" outgoing="_ZQM_kLyZEeiuldlwdyfqZQ"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_EpYFgLyZEeiuldlwdyfqZQ" name="로그인확인" incoming="_ZQM_kLyZEeiuldlwdyfqZQ" outgoing="_ZfjDILyZEeiuldlwdyfqZQ _jBvyILyZEeiuldlwdyfqZQ"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_GpZcgLyZEeiuldlwdyfqZQ" name="기능선택" incoming="_ZfjDILyZEeiuldlwdyfqZQ _jYA9ELyZEeiuldlwdyfqZQ" outgoing="_ZvLakLyZEeiuldlwdyfqZQ _Z9hYkLyZEeiuldlwdyfqZQ _aL8PELyZEeiuldlwdyfqZQ _aaIcELyZEeiuldlwdyfqZQ _amyYALyZEeiuldlwdyfqZQ _a3qFkLyZEeiuldlwdyfqZQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_KNvtALyZEeiuldlwdyfqZQ" name="주문내역조회" incoming="_ZvLakLyZEeiuldlwdyfqZQ _zQobkLyZEeiuldlwdyfqZQ" outgoing="_3JkcALyZEeiuldlwdyfqZQ">
+        <body>// TODO body of OpaqueAction1</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_LApJkLyZEeiuldlwdyfqZQ" name="관심상품" incoming="_Z9hYkLyZEeiuldlwdyfqZQ" outgoing="_sdxAoLyZEeiuldlwdyfqZQ">
+        <body>// TODO body of OpaqueAction2</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_PId6kLyZEeiuldlwdyfqZQ" name="회원정보" incoming="_aL8PELyZEeiuldlwdyfqZQ" outgoing="_n62PELyZEeiuldlwdyfqZQ">
+        <body>// TODO body of OpaqueAction3</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_P88rgLyZEeiuldlwdyfqZQ" name="적립금" incoming="_aaIcELyZEeiuldlwdyfqZQ" outgoing="_3r6UELyZEeiuldlwdyfqZQ">
+        <body>// TODO body of OpaqueAction4</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_Q5_ikLyZEeiuldlwdyfqZQ" name="쿠폰" incoming="_amyYALyZEeiuldlwdyfqZQ" outgoing="_37UCALyZEeiuldlwdyfqZQ">
+        <body>// TODO body of OpaqueAction5</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_RphiELyZEeiuldlwdyfqZQ" name="게시물관리" incoming="_a3qFkLyZEeiuldlwdyfqZQ" outgoing="_4Ph-gLyZEeiuldlwdyfqZQ">
+        <body>// TODO body of OpaqueAction6</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_dzHKELyZEeiuldlwdyfqZQ" name="로그인" incoming="_jBvyILyZEeiuldlwdyfqZQ" outgoing="_jYA9ELyZEeiuldlwdyfqZQ">
+        <body>// TODO body of OpaqueAction7</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_mVc-kLyZEeiuldlwdyfqZQ" name="비밀번호변경" incoming="_n62PELyZEeiuldlwdyfqZQ" outgoing="_3bpqgLyZEeiuldlwdyfqZQ">
+        <body>// TODO body of OpaqueAction8</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_qE3PkLyZEeiuldlwdyfqZQ" name="구매" incoming="_sdxAoLyZEeiuldlwdyfqZQ" outgoing="_zQobkLyZEeiuldlwdyfqZQ">
+        <body>// TODO body of OpaqueAction9</body>
+      </node>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_1b8ckLyZEeiuldlwdyfqZQ" name="종료" incoming="_3JkcALyZEeiuldlwdyfqZQ _3bpqgLyZEeiuldlwdyfqZQ _3r6UELyZEeiuldlwdyfqZQ _37UCALyZEeiuldlwdyfqZQ _4Ph-gLyZEeiuldlwdyfqZQ"/>
+    </ownedBehavior>
+    <include xmi:id="_DSD3MLC6EeinbMGW0y58sA" addition="_7FYJoLC5EeinbMGW0y58sA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_jKNDkLCxEeinbMGW0y58sA" name="Diamond">
+    <eAnnotations xmi:id="_jKNqoLCxEeinbMGW0y58sA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_jKNqobCxEeinbMGW0y58sA" key="Human"/>
+    </eAnnotations>
+    <generalization xmi:id="_vV45ILC4EeinbMGW0y58sA" general="_vIXUILCwEeinbMGW0y58sA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_kB-ZELCxEeinbMGW0y58sA" name="Platinum">
+    <eAnnotations xmi:id="_kB_nMLCxEeinbMGW0y58sA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_kB_nMbCxEeinbMGW0y58sA" key="Human"/>
+    </eAnnotations>
+    <generalization xmi:id="_v_FnILC4EeinbMGW0y58sA" general="_vIXUILCwEeinbMGW0y58sA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_kzf8oLCxEeinbMGW0y58sA" name="Gold">
+    <eAnnotations xmi:id="_kzgjsLCxEeinbMGW0y58sA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_kzgjsbCxEeinbMGW0y58sA" key="Human"/>
+    </eAnnotations>
+    <generalization xmi:id="_weSroLC4EeinbMGW0y58sA" general="_vIXUILCwEeinbMGW0y58sA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_lhlKoLCxEeinbMGW0y58sA" name="Silver">
+    <eAnnotations xmi:id="_lhlKobCxEeinbMGW0y58sA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_lhlKorCxEeinbMGW0y58sA" key="Human"/>
+    </eAnnotations>
+    <generalization xmi:id="_w84sILC4EeinbMGW0y58sA" general="_vIXUILCwEeinbMGW0y58sA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qHQ4ILC4EeinbMGW0y58sA" memberEnd="_qHRfMLC4EeinbMGW0y58sA _qHSGQLC4EeinbMGW0y58sA">
+    <ownedEnd xmi:id="_qHRfMLC4EeinbMGW0y58sA" type="_vIXUILCwEeinbMGW0y58sA" association="_qHQ4ILC4EeinbMGW0y58sA"/>
+    <ownedEnd xmi:id="_qHSGQLC4EeinbMGW0y58sA" type="_8XckkLCwEeinbMGW0y58sA" association="_qHQ4ILC4EeinbMGW0y58sA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_q6JGkLC4EeinbMGW0y58sA" memberEnd="_q6JtoLC4EeinbMGW0y58sA _q6JtobC4EeinbMGW0y58sA">
+    <ownedEnd xmi:id="_q6JtoLC4EeinbMGW0y58sA" type="_vIXUILCwEeinbMGW0y58sA" association="_q6JGkLC4EeinbMGW0y58sA"/>
+    <ownedEnd xmi:id="_q6JtobC4EeinbMGW0y58sA" type="_HnqUkLCxEeinbMGW0y58sA" association="_q6JGkLC4EeinbMGW0y58sA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ri5vsLC4EeinbMGW0y58sA" memberEnd="_ri5vsbC4EeinbMGW0y58sA _ri5vsrC4EeinbMGW0y58sA">
+    <ownedEnd xmi:id="_ri5vsbC4EeinbMGW0y58sA" type="_vIXUILCwEeinbMGW0y58sA" association="_ri5vsLC4EeinbMGW0y58sA"/>
+    <ownedEnd xmi:id="_ri5vsrC4EeinbMGW0y58sA" type="_-lvoILCwEeinbMGW0y58sA" association="_ri5vsLC4EeinbMGW0y58sA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_sNK0sLC4EeinbMGW0y58sA" memberEnd="_sNK0sbC4EeinbMGW0y58sA _sNLbwLC4EeinbMGW0y58sA">
+    <ownedEnd xmi:id="_sNK0sbC4EeinbMGW0y58sA" type="_vIXUILCwEeinbMGW0y58sA" association="_sNK0sLC4EeinbMGW0y58sA"/>
+    <ownedEnd xmi:id="_sNLbwLC4EeinbMGW0y58sA" type="_DYN4oLCxEeinbMGW0y58sA" association="_sNK0sLC4EeinbMGW0y58sA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_s488oLC4EeinbMGW0y58sA" memberEnd="_s49jsLC4EeinbMGW0y58sA _s49jsbC4EeinbMGW0y58sA">
+    <ownedEnd xmi:id="_s49jsLC4EeinbMGW0y58sA" type="_vIXUILCwEeinbMGW0y58sA" association="_s488oLC4EeinbMGW0y58sA"/>
+    <ownedEnd xmi:id="_s49jsbC4EeinbMGW0y58sA" type="_AiQYILCxEeinbMGW0y58sA" association="_s488oLC4EeinbMGW0y58sA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_tfszkLC4EeinbMGW0y58sA" memberEnd="_tfszkbC4EeinbMGW0y58sA _tftaoLC4EeinbMGW0y58sA">
+    <ownedEnd xmi:id="_tfszkbC4EeinbMGW0y58sA" type="_vIXUILCwEeinbMGW0y58sA" association="_tfszkLC4EeinbMGW0y58sA"/>
+    <ownedEnd xmi:id="_tftaoLC4EeinbMGW0y58sA" type="_B-tvELCxEeinbMGW0y58sA" association="_tfszkLC4EeinbMGW0y58sA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_7FYJoLC5EeinbMGW0y58sA" name="UC7. 로그인">
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_iOB4oLS2EeiL-cDL6830Cw" name="UC7. 로그인 activity" node="_adnAkLTHEeiL-cDL6830Cw _cw21kLTHEeiL-cDL6830Cw _ihqWkLTHEeiL-cDL6830Cw _uudDkLTHEeiL-cDL6830Cw _wWv3ELTHEeiL-cDL6830Cw _yVKrkLTHEeiL-cDL6830Cw _0cXBkLTHEeiL-cDL6830Cw _7xpNELTHEeiL-cDL6830Cw _9f4QgLTHEeiL-cDL6830Cw _CEPzkLTIEeiL-cDL6830Cw">
+      <edge xmi:type="uml:ControlFlow" xmi:id="_1ez9ELTHEeiL-cDL6830Cw" target="_cw21kLTHEeiL-cDL6830Cw" source="_adnAkLTHEeiL-cDL6830Cw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_1e0kILTHEeiL-cDL6830Cw" name="시작_To_로그인화면_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_1e0kIbTHEeiL-cDL6830Cw" name="시작_To_로그인화면_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_131hELTHEeiL-cDL6830Cw" target="_ihqWkLTHEeiL-cDL6830Cw" source="_cw21kLTHEeiL-cDL6830Cw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_132IILTHEeiL-cDL6830Cw" name="로그인화면_To_ID입력_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_132IIbTHEeiL-cDL6830Cw" name="로그인화면_To_ID입력_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_2M-qoLTHEeiL-cDL6830Cw" target="_wWv3ELTHEeiL-cDL6830Cw" source="_ihqWkLTHEeiL-cDL6830Cw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_2M_RsLTHEeiL-cDL6830Cw" name="ID입력_To_PW입력_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_2M_RsbTHEeiL-cDL6830Cw" name="ID입력_To_PW입력_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_2dhoELTHEeiL-cDL6830Cw" target="_uudDkLTHEeiL-cDL6830Cw" source="_ihqWkLTHEeiL-cDL6830Cw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_2diPILTHEeiL-cDL6830Cw" name="ID입력_To_ID저장유무 체크_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_2di2MLTHEeiL-cDL6830Cw" name="ID입력_To_ID저장유무 체크_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_2vKKoLTHEeiL-cDL6830Cw" target="_yVKrkLTHEeiL-cDL6830Cw" source="_wWv3ELTHEeiL-cDL6830Cw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_2vKKobTHEeiL-cDL6830Cw" name="PW입력_To_자동로그인기능 체크_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_2vKxsLTHEeiL-cDL6830Cw" name="PW입력_To_자동로그인기능 체크_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_28MhELTHEeiL-cDL6830Cw" target="_0cXBkLTHEeiL-cDL6830Cw" source="_yVKrkLTHEeiL-cDL6830Cw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_28NIILTHEeiL-cDL6830Cw" name="자동로그인기능 체크_To_로그인버튼_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_28NIIbTHEeiL-cDL6830Cw" name="자동로그인기능 체크_To_로그인버튼_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ASC2ILTIEeiL-cDL6830Cw" target="_9f4QgLTHEeiL-cDL6830Cw" source="_0cXBkLTHEeiL-cDL6830Cw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_ASDdMLTIEeiL-cDL6830Cw" name="로그인버튼_To_ID/PW 일치여부_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ASEEQLTIEeiL-cDL6830Cw" name="로그인버튼_To_ID/PW 일치여부_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_A6jAkLTIEeiL-cDL6830Cw" name="yes" target="_7xpNELTHEeiL-cDL6830Cw" source="_9f4QgLTHEeiL-cDL6830Cw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_A6jnoLTIEeiL-cDL6830Cw" name="ID/PW 일치여부_To_로그인완료_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_A6jnobTIEeiL-cDL6830Cw" name="ID/PW 일치여부_To_로그인완료_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_DreQELTIEeiL-cDL6830Cw" name="no" target="_CEPzkLTIEeiL-cDL6830Cw" source="_9f4QgLTHEeiL-cDL6830Cw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_Dre3ILTIEeiL-cDL6830Cw" name="ID/PW 일치여부_To_안내문구_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_DrfeMLTIEeiL-cDL6830Cw" name="ID/PW 일치여부_To_안내문구_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_F8bmELTIEeiL-cDL6830Cw" target="_ihqWkLTHEeiL-cDL6830Cw" source="_CEPzkLTIEeiL-cDL6830Cw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_F8cNILTIEeiL-cDL6830Cw" name="안내문구_To_ID입력_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_F8cNIbTIEeiL-cDL6830Cw" name="안내문구_To_ID입력_weight"/>
+      </edge>
+      <node xmi:type="uml:InitialNode" xmi:id="_adnAkLTHEeiL-cDL6830Cw" name="시작" outgoing="_1ez9ELTHEeiL-cDL6830Cw"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_cw21kLTHEeiL-cDL6830Cw" name="로그인화면" incoming="_1ez9ELTHEeiL-cDL6830Cw" outgoing="_131hELTHEeiL-cDL6830Cw">
+        <body>// TODO body of OpaqueAction1</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ihqWkLTHEeiL-cDL6830Cw" name="ID입력" incoming="_131hELTHEeiL-cDL6830Cw _F8bmELTIEeiL-cDL6830Cw" outgoing="_2M-qoLTHEeiL-cDL6830Cw _2dhoELTHEeiL-cDL6830Cw">
+        <body>// TODO body of OpaqueAction2</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_uudDkLTHEeiL-cDL6830Cw" name="ID저장유무 체크" incoming="_2dhoELTHEeiL-cDL6830Cw">
+        <body>// TODO body of OpaqueAction3</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_wWv3ELTHEeiL-cDL6830Cw" name="PW입력" incoming="_2M-qoLTHEeiL-cDL6830Cw" outgoing="_2vKKoLTHEeiL-cDL6830Cw">
+        <body>// TODO body of OpaqueAction4</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_yVKrkLTHEeiL-cDL6830Cw" name="자동로그인기능 체크" incoming="_2vKKoLTHEeiL-cDL6830Cw" outgoing="_28MhELTHEeiL-cDL6830Cw">
+        <body>// TODO body of OpaqueAction5</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_0cXBkLTHEeiL-cDL6830Cw" name="로그인버튼" incoming="_28MhELTHEeiL-cDL6830Cw" outgoing="_ASC2ILTIEeiL-cDL6830Cw">
+        <body>// TODO body of OpaqueAction6</body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_7xpNELTHEeiL-cDL6830Cw" name="로그인완료" incoming="_A6jAkLTIEeiL-cDL6830Cw">
+        <body>// TODO body of OpaqueAction7</body>
+      </node>
+      <node xmi:type="uml:DecisionNode" xmi:id="_9f4QgLTHEeiL-cDL6830Cw" name="ID/PW 일치여부" incoming="_ASC2ILTIEeiL-cDL6830Cw" outgoing="_A6jAkLTIEeiL-cDL6830Cw _DreQELTIEeiL-cDL6830Cw"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_CEPzkLTIEeiL-cDL6830Cw" name="안내문구" incoming="_DreQELTIEeiL-cDL6830Cw" outgoing="_F8bmELTIEeiL-cDL6830Cw">
+        <body>// TODO body of OpaqueAction8</body>
+      </node>
+    </ownedBehavior>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="__qLxkLC5EeinbMGW0y58sA" name="UC8. 장바구니">
+    <extend xmi:id="_Fg8woLC6EeinbMGW0y58sA" extendedCase="_B-tvELCxEeinbMGW0y58sA"/>
+    <extend xmi:id="_GGaOILC6EeinbMGW0y58sA" extendedCase="_HnqUkLCxEeinbMGW0y58sA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_Lf2_ELC6EeinbMGW0y58sA" name="결제시스템">
+    <eAnnotations xmi:id="_Lf3mILC6EeinbMGW0y58sA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_Lf3mIbC6EeinbMGW0y58sA" key="Human"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_OViLsLC6EeinbMGW0y58sA" memberEnd="_OViywLC6EeinbMGW0y58sA _OViywbC6EeinbMGW0y58sA">
+    <ownedEnd xmi:id="_OViywLC6EeinbMGW0y58sA" type="_B-tvELCxEeinbMGW0y58sA" association="_OViLsLC6EeinbMGW0y58sA"/>
+    <ownedEnd xmi:id="_OViywbC6EeinbMGW0y58sA" type="_Lf2_ELC6EeinbMGW0y58sA" association="_OViLsLC6EeinbMGW0y58sA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_kJw3kLC7EeinbMGW0y58sA" name="UC1.1 회원가입 완료페이지"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_sjkbILC7EeinbMGW0y58sA" name="UC2.1 카테고리"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_4OjbkLC7EeinbMGW0y58sA" name="UC2.2 검색창"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_6e5tkLC7EeinbMGW0y58sA" name="UC2.3 추천상품"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_fs0moLDFEeinbMGW0y58sA" name="UC2.1.1 Best"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_qki-ILDFEeinbMGW0y58sA" name="UC2.1.2 Outer"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_s9M3kLDFEeinbMGW0y58sA" name="UC2.1.3 Top"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_ub9UkLDFEeinbMGW0y58sA" name="UC2.1.4 Bottom"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_wXBTELDFEeinbMGW0y58sA" name="UC2.1.5 Acc"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_-NPKELDHEeinbMGW0y58sA" name="UC4.1 구매페이지"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_XEzgkLDIEeinbMGW0y58sA" name="UC4.2 장바구니"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_tgtwILDMEeinbMGW0y58sA" name="UC4.1.1 결제정보"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_2w-akLDMEeinbMGW0y58sA" name="UC4.1.2 가격정보"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_557vkLDMEeinbMGW0y58sA" name="UC4.1.3 주문정보"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_71YvoLDMEeinbMGW0y58sA" name="UC4.1.4 배송정보"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_ehgzoLDREeinbMGW0y58sA" name="UC5.1 Notice"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_hcv1sLDREeinbMGW0y58sA" name="UC5.2 LookBook"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_lr-PMLDREeinbMGW0y58sA" name="UC5.3 자유게시판"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_p_PbMLDREeinbMGW0y58sA" name="UC5.4 후기갤러리"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_rvnzsLDREeinbMGW0y58sA" name="UC5.5 정보게시판"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_y5TMILDREeinbMGW0y58sA" name="UC5.6 Q&amp;A"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_1xVJMLDREeinbMGW0y58sA" name="UC5.7 Sale"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_E0wsILDSEeinbMGW0y58sA" name="UC6.1. 회원정보관리"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_IbQRsLDSEeinbMGW0y58sA" name="UC6.2 관심상품"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_Kq6nMLDSEeinbMGW0y58sA" name="UC6.3 배송정보"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_NQUjMLDSEeinbMGW0y58sA" name="UC6.4 적립금"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_PFbDoLDSEeinbMGW0y58sA" name="UC6.5 쿠폰"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_Q7iQsLDSEeinbMGW0y58sA" name="UC6.6 게시물관리"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_rtnEsLDVEeinbMGW0y58sA" name="운영자">
+    <eAnnotations xmi:id="_rtnEsbDVEeinbMGW0y58sA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_rtnEsrDVEeinbMGW0y58sA" key="Human"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_2Z5BMLDVEeinbMGW0y58sA" name="UC8. 상품관리">
+    <include xmi:id="_VzPNMLDXEeinbMGW0y58sA" addition="_RiGIILDXEeinbMGW0y58sA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_4VGwsLDVEeinbMGW0y58sA" name="UC9. 회원정보관리">
+    <include xmi:id="_XqGoMLDXEeinbMGW0y58sA" addition="_RiGIILDXEeinbMGW0y58sA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_5s_wsLDVEeinbMGW0y58sA" name="UC11. 게시판 관리">
+    <include xmi:id="_YKrlsLDXEeinbMGW0y58sA" addition="_RiGIILDXEeinbMGW0y58sA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_6ZE-ILDWEeinbMGW0y58sA" name="UC10. 결제관리">
+    <include xmi:id="_XGK0sLDXEeinbMGW0y58sA" addition="_RiGIILDXEeinbMGW0y58sA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_-Ww7sLDWEeinbMGW0y58sA" name="UC12. 문의답변">
+    <include xmi:id="_Wb03MLDXEeinbMGW0y58sA" addition="_RiGIILDXEeinbMGW0y58sA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JvS6MLDXEeinbMGW0y58sA" memberEnd="_JvThQLDXEeinbMGW0y58sA _JvThQbDXEeinbMGW0y58sA">
+    <ownedEnd xmi:id="_JvThQLDXEeinbMGW0y58sA" type="_rtnEsLDVEeinbMGW0y58sA" association="_JvS6MLDXEeinbMGW0y58sA"/>
+    <ownedEnd xmi:id="_JvThQbDXEeinbMGW0y58sA" type="_2Z5BMLDVEeinbMGW0y58sA" association="_JvS6MLDXEeinbMGW0y58sA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_KK_XsLDXEeinbMGW0y58sA" memberEnd="_KK_XsbDXEeinbMGW0y58sA _KK_XsrDXEeinbMGW0y58sA">
+    <ownedEnd xmi:id="_KK_XsbDXEeinbMGW0y58sA" type="_rtnEsLDVEeinbMGW0y58sA" association="_KK_XsLDXEeinbMGW0y58sA"/>
+    <ownedEnd xmi:id="_KK_XsrDXEeinbMGW0y58sA" type="_4VGwsLDVEeinbMGW0y58sA" association="_KK_XsLDXEeinbMGW0y58sA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_K9pjsLDXEeinbMGW0y58sA" memberEnd="_K9pjsbDXEeinbMGW0y58sA _K9qKwLDXEeinbMGW0y58sA">
+    <ownedEnd xmi:id="_K9pjsbDXEeinbMGW0y58sA" type="_rtnEsLDVEeinbMGW0y58sA" association="_K9pjsLDXEeinbMGW0y58sA"/>
+    <ownedEnd xmi:id="_K9qKwLDXEeinbMGW0y58sA" type="_6ZE-ILDWEeinbMGW0y58sA" association="_K9pjsLDXEeinbMGW0y58sA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_LvsrsLDXEeinbMGW0y58sA" memberEnd="_LvtSwLDXEeinbMGW0y58sA _LvtSwbDXEeinbMGW0y58sA">
+    <ownedEnd xmi:id="_LvtSwLDXEeinbMGW0y58sA" type="_rtnEsLDVEeinbMGW0y58sA" association="_LvsrsLDXEeinbMGW0y58sA"/>
+    <ownedEnd xmi:id="_LvtSwbDXEeinbMGW0y58sA" type="_5s_wsLDVEeinbMGW0y58sA" association="_LvsrsLDXEeinbMGW0y58sA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_MeKUMLDXEeinbMGW0y58sA" memberEnd="_MeK7QLDXEeinbMGW0y58sA _MeK7QbDXEeinbMGW0y58sA">
+    <ownedEnd xmi:id="_MeK7QLDXEeinbMGW0y58sA" type="_rtnEsLDVEeinbMGW0y58sA" association="_MeKUMLDXEeinbMGW0y58sA"/>
+    <ownedEnd xmi:id="_MeK7QbDXEeinbMGW0y58sA" type="_-Ww7sLDWEeinbMGW0y58sA" association="_MeKUMLDXEeinbMGW0y58sA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_RiGIILDXEeinbMGW0y58sA" name="UC7. 로그인"/>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_xQdLcLS1EeiL-cDL6830Cw" name="«Activity» 쇼핑몰 상품구매 시나리오" node="_-TRhgLS1EeiL-cDL6830Cw _B3z_QLS2EeiL-cDL6830Cw _G-IY0LS2EeiL-cDL6830Cw _LXTYgLS2EeiL-cDL6830Cw _GFsoELTOEeiL-cDL6830Cw _IXHRELTOEeiL-cDL6830Cw _BssyELTPEeiL-cDL6830Cw _D-zXkLTPEeiL-cDL6830Cw _FLemELTPEeiL-cDL6830Cw _IwXCELTPEeiL-cDL6830Cw _NAQxALTPEeiL-cDL6830Cw _QWlMkLTPEeiL-cDL6830Cw _RmnRELTPEeiL-cDL6830Cw _psg6ELTPEeiL-cDL6830Cw _rqx9kLTPEeiL-cDL6830Cw _u4ZJELTPEeiL-cDL6830Cw">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PazDILS2EeiL-cDL6830Cw" target="_B3z_QLS2EeiL-cDL6830Cw" source="_G-IY0LS2EeiL-cDL6830Cw">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_Pa0RQLS2EeiL-cDL6830Cw" name="검색유형_To_카테고리 검색_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Pa1fYLS2EeiL-cDL6830Cw" name="검색유형_To_카테고리 검색_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_P2BmkLS2EeiL-cDL6830Cw" target="_LXTYgLS2EeiL-cDL6830Cw" source="_G-IY0LS2EeiL-cDL6830Cw">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_P2CNoLS2EeiL-cDL6830Cw" name="검색유형_To_검색창 검색_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_P2C0sLS2EeiL-cDL6830Cw" name="검색유형_To_검색창 검색_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Twf4ELS2EeiL-cDL6830Cw" target="_G-IY0LS2EeiL-cDL6830Cw" source="_-TRhgLS1EeiL-cDL6830Cw">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_TwgfILS2EeiL-cDL6830Cw" name="시작_To_검색유형_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_TwgfIbS2EeiL-cDL6830Cw" name="시작_To_검색유형_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_JljaILTOEeiL-cDL6830Cw" target="_GFsoELTOEeiL-cDL6830Cw" source="_B3z_QLS2EeiL-cDL6830Cw">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_JljaIbTOEeiL-cDL6830Cw" name="카테고리 검색_To_제품목록조회_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_JlkBMLTOEeiL-cDL6830Cw" name="카테고리 검색_To_제품목록조회_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_K7EbkLTOEeiL-cDL6830Cw" target="_GFsoELTOEeiL-cDL6830Cw" source="_LXTYgLS2EeiL-cDL6830Cw">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_K7EbkbTOEeiL-cDL6830Cw" name="검색창 검색_To_제품목록조회_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_K7EbkrTOEeiL-cDL6830Cw" name="검색창 검색_To_제품목록조회_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_MinBILTOEeiL-cDL6830Cw" target="_IXHRELTOEeiL-cDL6830Cw" source="_GFsoELTOEeiL-cDL6830Cw">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_MinoMLTOEeiL-cDL6830Cw" name="제품목록조회_To_제품상세조회_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_MinoMbTOEeiL-cDL6830Cw" name="제품목록조회_To_제품상세조회_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_GaTJoLTPEeiL-cDL6830Cw" target="_BssyELTPEeiL-cDL6830Cw" source="_IXHRELTOEeiL-cDL6830Cw">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_GaTJobTPEeiL-cDL6830Cw" name="제품상세조회_To_구매결정_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_GaTwsLTPEeiL-cDL6830Cw" name="제품상세조회_To_구매결정_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_G0ADELTPEeiL-cDL6830Cw" target="_D-zXkLTPEeiL-cDL6830Cw" source="_BssyELTPEeiL-cDL6830Cw">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_G0AqILTPEeiL-cDL6830Cw" name="구매결정_To_장바구니_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_G0AqIbTPEeiL-cDL6830Cw" name="구매결정_To_장바구니_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_HanXILTPEeiL-cDL6830Cw" target="_FLemELTPEeiL-cDL6830Cw" source="_BssyELTPEeiL-cDL6830Cw">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_HanXIbTPEeiL-cDL6830Cw" name="구매결정_To_결제_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Han-MLTPEeiL-cDL6830Cw" name="구매결정_To_결제_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_KV0kALTPEeiL-cDL6830Cw" target="_IwXCELTPEeiL-cDL6830Cw" source="_D-zXkLTPEeiL-cDL6830Cw">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_KV0kAbTPEeiL-cDL6830Cw" name="장바구니_To_계속쇼핑_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_KV1LELTPEeiL-cDL6830Cw" name="장바구니_To_계속쇼핑_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_LljtkLTPEeiL-cDL6830Cw" name="no" target="_FLemELTPEeiL-cDL6830Cw" source="_IwXCELTPEeiL-cDL6830Cw">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_LlkUoLTPEeiL-cDL6830Cw" name="계속쇼핑_To_결제_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Llk7sLTPEeiL-cDL6830Cw" name="계속쇼핑_To_결제_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_OfLmELTPEeiL-cDL6830Cw" target="_NAQxALTPEeiL-cDL6830Cw" source="_FLemELTPEeiL-cDL6830Cw">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_OfMNILTPEeiL-cDL6830Cw" name="결제_To_로그인 여부_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_OfMNIbTPEeiL-cDL6830Cw" name="결제_To_로그인 여부_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_V-6uELTPEeiL-cDL6830Cw" name="yes" target="_RmnRELTPEeiL-cDL6830Cw" source="_NAQxALTPEeiL-cDL6830Cw">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_V-7VILTPEeiL-cDL6830Cw" name="로그인 여부_To_결제완료_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_V-7VIbTPEeiL-cDL6830Cw" name="로그인 여부_To_결제완료_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_WZslkLTPEeiL-cDL6830Cw" name="no" target="_QWlMkLTPEeiL-cDL6830Cw" source="_NAQxALTPEeiL-cDL6830Cw">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_WZtMoLTPEeiL-cDL6830Cw" name="로그인 여부_To_로그인_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_WZtzsLTPEeiL-cDL6830Cw" name="로그인 여부_To_로그인_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_i_DjkLTPEeiL-cDL6830Cw" name="yes" target="_G-IY0LS2EeiL-cDL6830Cw" source="_IwXCELTPEeiL-cDL6830Cw">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_i_DjkbTPEeiL-cDL6830Cw" name="계속쇼핑_To_검색유형_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_i_DjkrTPEeiL-cDL6830Cw" name="계속쇼핑_To_검색유형_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_rUp8kLTPEeiL-cDL6830Cw" target="_psg6ELTPEeiL-cDL6830Cw" source="_RmnRELTPEeiL-cDL6830Cw">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_rUqjoLTPEeiL-cDL6830Cw" name="결제완료_To_배송추적_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_rUqjobTPEeiL-cDL6830Cw" name="결제완료_To_배송추적_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_t_73ELTPEeiL-cDL6830Cw" target="_rqx9kLTPEeiL-cDL6830Cw" source="_psg6ELTPEeiL-cDL6830Cw">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_t_73EbTPEeiL-cDL6830Cw" name="배송추적_To_후기_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_t_73ErTPEeiL-cDL6830Cw" name="배송추적_To_후기_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_wA8skLTPEeiL-cDL6830Cw" target="_u4ZJELTPEeiL-cDL6830Cw" source="_rqx9kLTPEeiL-cDL6830Cw">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_wA8skbTPEeiL-cDL6830Cw" name="후기_To_종료_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_wA8skrTPEeiL-cDL6830Cw" name="후기_To_종료_weight"/>
+    </edge>
+    <node xmi:type="uml:InitialNode" xmi:id="_-TRhgLS1EeiL-cDL6830Cw" name="시작" outgoing="_Twf4ELS2EeiL-cDL6830Cw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_B3z_QLS2EeiL-cDL6830Cw" name="카테고리 검색" incoming="_PazDILS2EeiL-cDL6830Cw" outgoing="_JljaILTOEeiL-cDL6830Cw">
+      <body>// TODO body of OpaqueAction1</body>
+    </node>
+    <node xmi:type="uml:DecisionNode" xmi:id="_G-IY0LS2EeiL-cDL6830Cw" name="검색유형" incoming="_Twf4ELS2EeiL-cDL6830Cw _i_DjkLTPEeiL-cDL6830Cw" outgoing="_PazDILS2EeiL-cDL6830Cw _P2BmkLS2EeiL-cDL6830Cw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_LXTYgLS2EeiL-cDL6830Cw" name="검색창 검색" incoming="_P2BmkLS2EeiL-cDL6830Cw" outgoing="_K7EbkLTOEeiL-cDL6830Cw">
+      <body>// TODO body of OpaqueAction2</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_GFsoELTOEeiL-cDL6830Cw" name="제품목록조회" incoming="_JljaILTOEeiL-cDL6830Cw _K7EbkLTOEeiL-cDL6830Cw" outgoing="_MinBILTOEeiL-cDL6830Cw">
+      <body>// TODO body of OpaqueAction3</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_IXHRELTOEeiL-cDL6830Cw" name="제품상세조회" incoming="_MinBILTOEeiL-cDL6830Cw" outgoing="_GaTJoLTPEeiL-cDL6830Cw">
+      <body>// TODO body of OpaqueAction4</body>
+    </node>
+    <node xmi:type="uml:DecisionNode" xmi:id="_BssyELTPEeiL-cDL6830Cw" name="구매결정" incoming="_GaTJoLTPEeiL-cDL6830Cw" outgoing="_G0ADELTPEeiL-cDL6830Cw _HanXILTPEeiL-cDL6830Cw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_D-zXkLTPEeiL-cDL6830Cw" name="장바구니" incoming="_G0ADELTPEeiL-cDL6830Cw" outgoing="_KV0kALTPEeiL-cDL6830Cw">
+      <body>// TODO body of OpaqueAction5</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_FLemELTPEeiL-cDL6830Cw" name="결제" incoming="_HanXILTPEeiL-cDL6830Cw _LljtkLTPEeiL-cDL6830Cw" outgoing="_OfLmELTPEeiL-cDL6830Cw">
+      <body>// TODO body of OpaqueAction6</body>
+    </node>
+    <node xmi:type="uml:DecisionNode" xmi:id="_IwXCELTPEeiL-cDL6830Cw" name="계속쇼핑" incoming="_KV0kALTPEeiL-cDL6830Cw" outgoing="_LljtkLTPEeiL-cDL6830Cw _i_DjkLTPEeiL-cDL6830Cw"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_NAQxALTPEeiL-cDL6830Cw" name="로그인 여부" incoming="_OfLmELTPEeiL-cDL6830Cw" outgoing="_V-6uELTPEeiL-cDL6830Cw _WZslkLTPEeiL-cDL6830Cw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_QWlMkLTPEeiL-cDL6830Cw" name="로그인" incoming="_WZslkLTPEeiL-cDL6830Cw">
+      <body>// TODO body of OpaqueAction7</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_RmnRELTPEeiL-cDL6830Cw" name="결제완료" incoming="_V-6uELTPEeiL-cDL6830Cw" outgoing="_rUp8kLTPEeiL-cDL6830Cw">
+      <body>// TODO body of OpaqueAction8</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_psg6ELTPEeiL-cDL6830Cw" name="배송추적" incoming="_rUp8kLTPEeiL-cDL6830Cw" outgoing="_t_73ELTPEeiL-cDL6830Cw">
+      <body>// TODO body of OpaqueAction9</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_rqx9kLTPEeiL-cDL6830Cw" name="후기" incoming="_t_73ELTPEeiL-cDL6830Cw" outgoing="_wA8skLTPEeiL-cDL6830Cw">
+      <body>// TODO body of OpaqueAction10</body>
+    </node>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_u4ZJELTPEeiL-cDL6830Cw" name="종료" incoming="_wA8skLTPEeiL-cDL6830Cw"/>
+  </packagedElement>
+</uml:Model>
