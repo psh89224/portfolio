@@ -36,4 +36,9 @@ public class HomeController {
 		return "home";
 	}
 	
+	@RequestMapping("/join.do")
+	public String join(Model model) throws Exception {
+		return "join";
+	}
+	
 }
