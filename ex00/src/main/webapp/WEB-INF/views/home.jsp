@@ -16,6 +16,9 @@
 }
 header {
 	min-height: 60px;
+	position:fixed;
+	top:0;
+	width:100%;
 }
 nav {
 	min-height: 30px;
@@ -49,17 +52,17 @@ nav {
 	<div>
 	<div>
 		<section class="block-center">
-			<img id ="banner" alt="" src="../image/main.png">
+			<img id ="banner" alt="" src="image/main.png">
 			<p class="w3-text-gray">items</p>
 				<ul id="product-list" class="w3-grayscale">
 					<li>
-						<img alt="" src="">
+						<img alt="" src="image/image1.png">
 						<p>상품이름<br>
 						<b>가격</b>
 						</p>
 					</li>
 					<li>
-						<img alt="" src="">
+						<img alt="" src="image/image1.png">
 						<p>상품이름<br>
 						<b>가격</b>
 						</p>

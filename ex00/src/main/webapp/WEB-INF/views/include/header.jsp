@@ -1,6 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-
+<style type="text/css">
+header {
+	position:fixed;
+	top:0;
+	width:100%;
+}
+</style>
 <header class="block-center w3-display-container">
 	<div id="logo" class="w3-display-left w3-xlarge"><a href="/">쇼핑몰</a></div>
 		<ul id ="gnb" class="w3-display-right">
