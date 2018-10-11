@@ -8,6 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -39,6 +40,22 @@ public class HomeController {
 	@RequestMapping("/join.do")
 	public String join(Model model) throws Exception {
 		return "join";
+	}
+	
+	@RequestMapping("/header.do")
+	public String header(Model model) throws Exception {
+		return "include/header";
+	}
+	
+	@RequestMapping("/nav.do")
+	public String nav(@ModelAttribute NavDTO navDTO, Model model) throws Exception {
+		model.addAttribute("menu",navDTO.getMenu());
+		return "include/nav";
+	}
+	
+	@RequestMapping("/footer.do")
+	public String footer(Model model) throws Exception {
+		return "include/footer";
 	}
 	
 }
