@@ -6,3 +6,8 @@ a {outline: 0;}
 a:HOVER, a:ACTIVE, a:FOCUS {outline: 0;}
 ul {list-style-type: none; margin: 0; padding: 0;}
 li  {margin: 0;	padding: 0;}
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}

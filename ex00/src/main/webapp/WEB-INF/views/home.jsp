@@ -16,14 +16,16 @@
 header {
 	min-height: 60px;
 	position: fixed;
-	top: 0;
-	left: 0;
+	top: 0px;
+	left: 0px;
 	width: 100%;
 }
 nav {
-	position: absolute;
+	position: fixed;
 	left: 0px;
-	width: 100%;	
+	width: 200px;
+	float: left;
+	border-right: 1px solid #ddd;	
 }
 #nav li {
 	display: block;
@@ -47,10 +49,17 @@ nav {
 }
 body {
 margin-left: 300px;
-
 }
 #center li {
 align: center;
+}
+.section-tabbox-left {
+	clear: both;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #333;
+}
+.container {
+margin-left: 270px;
 }
 </style>
 </head>
@@ -64,10 +73,9 @@ align: center;
 		<c:import url="/nav.do?menu=0"/>
 	</div>
 	
-	<div>
+<div class="container">	
 	<div>
 		<section class="block-center">
-			<!-- <img id ="banner" src="/image/main.png"> -->
 			<img id="banner" src="/resources/image/main.png">
 			<p class="w3-text-gray" align="right">4 items</p>
 				<ul id="product-list" class="w3-grayscale">
@@ -97,27 +105,11 @@ align: center;
 					</li>
 				</ul>
 		</section>
-	</div>
-	</div>
-	
+	</div>	
 	
 	<div class="w3-border-bottom">
 		<c:import url="/footer.do"/>
 	</div>
+</div>
 </body>
 </html>
-
-<!--  main content -->
-<!-- <section class="content">
-	<div class="row">
-		left column
-		<div class="col-md-12">
-			general form elements
-			<div class="box">
-				<div class="box-header with-border">
-					<h3 class="box-title">HOMEdfdff PAGE</h3>
-				</div>
-			</div>
-		</div>
-	</div>
-</section> -->
