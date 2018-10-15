@@ -42,6 +42,11 @@ public class HomeController {
 		return "join";
 	}
 	
+	@RequestMapping("/login.do")
+	public String login(Model model) throws Exception {
+		return "login";
+	}
+	
 	@RequestMapping("/header.do")
 	public String header(Model model) throws Exception {
 		return "include/header";

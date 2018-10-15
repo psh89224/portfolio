@@ -1,17 +1,35 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="/resources/bootstrap/css/bootstrap.css">
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<link type="text/css" rel="stylesheet" href="/resources/bootstrap/css/common.css"/>
 
-<style type="text/css">
+<!-- <style type="text/css">
 .left-area {
-	float: left;
+	float: right;
 	width: 270px;
 	border-right: 1px solid #333;
 }
-</style>
+.section-tabbox-left .tabBox {
+	padding: 0 15px 15px;
+}
+.section-tabbox-left {
+	clear: both;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #333;
+}
+.sub-multi {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+	box-sizing: border-box;
+}
+.snb-multi li {
+	display: table-cell;
+	width: 10%;
+	vertical-align: middle;
+}
+</style> -->
 
 <div class="left-area">
 	<nav>
@@ -25,14 +43,14 @@
 			<li><a href="#" <c:if test="${menu == 6}"></c:if>>SALE</a></li>
 			<li><a href="#" <c:if test="${menu == 7}"></c:if>>Q & A</a></li>
 			<li><a href="#" <c:if test="${menu == 8}"></c:if>>AboutUs</a></li>	
-		</ul><br><br><br><br><br>
+		</ul><br><br><br><br><br><br><br><br>
 		
 		<!-- 좌측 하단 탭 -->
 		<div class="section-tabbox-left">
 			<div class="tabBox">
-				<ul id="nav" class="snb-multi">
+				<ul class="snb snb-multi">
 					<li class="box-tab-btn" data-for="ranking">
-						<a href="javascript:void(0);" onclick="cycleLeftTab('ranking'); return false;"><span>랭킹</span></a>
+						<a href="javascript:void(0);" onclick="cycleLeftTab('ranking'); return false;"><span id=center>랭킹</span></a>
 					</li>
 					<li class="box-tab-btn" data-for="new">
 						<a href="javascript:void(0);" onclick="cycleLeftTab('new_upd'); return false;"><span>신상품</span></a>

@@ -7,17 +7,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>JOIN</title>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link type="text/css" rel="stylesheet" href="<c:url value ="/resources/bootstrap/css/common.css"/>">
-
-<style type="text/css">
-input {
-	display: block;
-	margin: 5px;
-}
+<link rel="stylesheet" href="/resources/bootstrap/css/bootstrap.css">
+<link type="text/css" rel="stylesheet" href="/resources/bootstrap/css/common.css"/>
+<!-- <style type="text/css">
 .block-center {
 	width: 1024px;
 	margin: auto;
-	display:block;
+	display: block;
 }
 header {
 	min-height: 60px;
@@ -27,11 +23,22 @@ header {
 	width: 100%;
 }
 nav {
-	position: fixed;
+	position: absolute;
 	left: 0px;
 	width: 200px;
 	float: left;
-	border-right: 1px solid #ddd;	
+	border-right: 1px solid #333;	
+}
+body {
+margin-left: 300px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #efefef;
+  text-align: center;
 }
 #nav li {
 	display: block;
@@ -43,31 +50,7 @@ nav {
 	display: inline;
 	margin-right: 10px;
 }
-#banner {
-	width: 100%;
-}
-#product-list li {
-	width: 24%;
-	display: inline-block;
-}
-#product-list img {
-	width: 100%;
-}
-body {
-margin-left: 300px;
-}
-#center li {
-align: center;
-}
-.section-tabbox-left {
-	clear: both;
-	padding-bottom: 5px;
-	border-bottom: 1px solid #333;
-}
-.container {
-margin-left: 270px;
-}
-</style>
+</style> -->
 </head>
 
 <body>
@@ -96,6 +79,9 @@ margin-left: 270px;
 				<input type="submit" value="가입하기">
 			</form>
 		</div>
+	</div>
+	<div class="footer">
+		<c:import url="/footer.do"/>
 	</div>
 </body>
 </html>
