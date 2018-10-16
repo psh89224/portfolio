@@ -7,9 +7,8 @@
 <title>Home</title>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="/resources/bootstrap/css/bootstrap.css">
-<!-- <link type="text/css" rel="stylesheet" href="/resources/bootstrap/css/common.css"> -->
-<!-- <style type="text/css">
-.block-center {
+<style type="text/css">
+/* .block-center {
 	width: 1024px;
 	margin: auto;
 	display:block;
@@ -20,13 +19,14 @@ header {
 	top: 0px;
 	left: 0px;
 	width: 100%;
+	background-color:#ecf0f1;
 }
 nav {
 	position: absolute;
 	left: 0px;
 	width: 120px;
 	float: left;
-	border-right: 1px solid #333;	
+	border-right: 1px solid #333;
 }
 body {
 margin-left: 300px;
@@ -58,13 +58,13 @@ margin-left: 300px;
 }
 #product-list img {
 	width: 100%;
-}
+} */
 
-</style> -->
+</style>
 </head>
 
 <body>
-<div class="frame">
+
 <!-- header -->
 	<div class="header">
 		<div class="w3-border-bottom">
@@ -115,7 +115,6 @@ margin-left: 300px;
 </div>
 	<div class="footer">
 		<c:import url="/footer.do"/>
-	</div>
 	</div>
 </body>
 </html>

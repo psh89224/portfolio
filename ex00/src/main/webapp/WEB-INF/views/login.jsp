@@ -13,7 +13,7 @@ html, body {
 	height: 100%;
 }
 header {
-	height: 60px;
+	height: 120px;
 	background-color: lightblue;
 }
 footer {
@@ -45,38 +45,45 @@ footer {
 	overflow: hidden;
 	background-color: yellow;
 }
-#gnb li {
-	display: inline;
+#right ul {
 	margin-right: 10px;
 }
+#display-right li {
+	display: inline-block;
+	margin-right: 10px;
+	top: 50%;
+	
+} 
 </style>
 <body>
 
 	<div class="wrapper">
 	
 		<header>
-			<div class="w3-display-left w3-xlarge"><a href="/">쇼핑몰</a></div>
-			<ul id ="gnb" class="w3-display-right">
-				<li><a href="login.do">LOGIN</a></li>
-				<li><a href="join.do">JOIN</a></li>
-				<li><a href="#">CART</a></li>
-				<li><a href="#">ORDER</a></li>
-				<li><a href="member/main.do">MY PAGE</a></li>
-				<li><a href="#">SEARCH</a></li>
-				<li><a href="logout">로그아웃</a></li>		
-			</ul>
-
+			<div><a href="/">쇼핑몰</a></div>
+			
+				<ul id="display-right">
+					<li><a href="login.do">LOGIN</a></li>
+					<li><a href="join.do">JOIN</a></li>
+					<li><a href="#">CART</a></li>
+					<li><a href="#">ORDER</a></li>
+					<li><a href="member/main.do">MY PAGE</a></li>
+					<li><a href="#">SEARCH</a></li>
+					<li><a href="logout">로그아웃</a></li>		
+				</ul>
+		
 		</header>
 		
 		<div class="container">
 			<div class="nav">
 				<ul class="nav-list">
 					<li class="nav-item">NOTICE</li>
+					<li class="nav-item">nav</li>
 				</ul>
 			</div>
 			
 			<div class="content">
-				<h1>HEllo</h1>
+				<h1>content 내용</h1>
 			</div>
 		</div>
 		

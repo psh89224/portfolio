@@ -2,7 +2,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="/resources/bootstrap/css/bootstrap.css">
-<link type="text/css" rel="stylesheet" href="/resources/bootstrap/css/common.css"/>
 
 <!-- <style type="text/css">
 .left-area {

@@ -8,7 +8,6 @@
 <title>JOIN</title>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="/resources/bootstrap/css/bootstrap.css">
-<link type="text/css" rel="stylesheet" href="/resources/bootstrap/css/common.css"/>
 <!-- <style type="text/css">
 .block-center {
 	width: 1024px;
@@ -54,8 +53,10 @@ margin-left: 300px;
 </head>
 
 <body>
-	<div class="w3-border-bottom">
-		<c:import url="/header.do"/>
+	<div class="header">
+		<div class="w3-border-bottom">
+			<c:import url="/header.do"/>
+		</div>
 	</div>
 	
 	<div class="w3-border-bottom">
@@ -63,19 +64,19 @@ margin-left: 300px;
 	</div>
 	
 	<div class="container">
-		<div class="block-center">
+		<div class="block-center" align="center">
 			<p>회 원 가 입</p>
 			<hr>
 			<form>
-				<input type="text" name="username" placeholder="아이디를 입력하세요" required="required">
-				<form:errors path="username" />
-				<input type="text" name="password" placeholder="비밀번호를 입력하세요" required="required">
-				<form:errors path="password" />
-				<input type="text" name="name" placeholder="이름을 입력하세요">
-				<input type="text" name="email" placeholder="이메일을 입력하세요">
-				<form:errors path="email" />
-				<input type="text" name="phone" placeholder="전화번호를 입력하세요">
-				<input type="text" name="address" placeholder="주소를 입력하세요">
+				I D : <input type="text" name="username" placeholder="아이디를 입력하세요" required="required">
+				<form:errors path="username" /><br>
+				P A S S W O R D : <input type="text" name="password" placeholder="비밀번호를 입력하세요" required="required">
+				<form:errors path="password" /><br>
+				N A M E : <input type="text" name="name" placeholder="이름을 입력하세요"><br>
+				E - M A I L : <input type="text" name="email" placeholder="이메일을 입력하세요">
+				<form:errors path="email" /><br>
+				P H O N E : <input type="text" name="phone" placeholder="전화번호를 입력하세요"><br>
+				A D D R E S S : <input type="text" name="address" placeholder="주소를 입력하세요"><br>
 				<input type="submit" value="가입하기">
 			</form>
 		</div>
