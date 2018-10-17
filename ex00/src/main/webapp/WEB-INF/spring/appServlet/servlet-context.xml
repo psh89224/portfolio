@@ -22,6 +22,15 @@
 	</beans:bean>
 	
 	<context:component-scan base-package="org.zerock.controller" />
-		
+	
+	<!-- LoginInterceptor 설정 -->
+	<beans:bean id="loginInterceptor" class="org.zerock.interceptor.LoginInterceptor"></beans:bean>
+		<interceptors>
+			<interceptor>
+				<mapping path="/member/loginPost"/>
+				<beans:ref bean="loginInterceptor"/>
+			</interceptor>
+		</interceptors>
+	
 	
 </beans:beans>

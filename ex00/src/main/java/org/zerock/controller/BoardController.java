@@ -46,6 +46,10 @@ public class BoardController {
 		logger.info("show all list..............");
 		model.addAttribute("list", service.listAll());
 	}
+	@RequestMapping("/login.do")
+	public String login(Model model) throws Exception {
+		return "login";
+	}
 	
 	// Á¶È¸
 	@RequestMapping(value="/read", method=RequestMethod.GET)

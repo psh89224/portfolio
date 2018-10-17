@@ -11,8 +11,7 @@
 			<li><a href="#">CART</a></li>
 			<li><a href="#">ORDER</a></li>
 			<li><a href="member/main.do">MY PAGE</a></li>
-			<li><a href="#">SEARCH</a></li>
-			<li><a href="logout">로그아웃</a></li>		
+			<li><a href="#">SEARCH</a></li>		
 		</ul>
 </header>
 <!-- <header>

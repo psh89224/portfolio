@@ -7,7 +7,9 @@ import javax.inject.Inject;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.stereotype.Repository;
+import org.zerock.controller.LoginDTO;
 import org.zerock.domain.MemberVO;
+
 
 @Repository
 public class MemberDAOImpl implements MemberDAO{
@@ -41,5 +43,11 @@ public class MemberDAOImpl implements MemberDAO{
 		paramMap.put("userpw", userpw);
 		
 		return sqlSession.selectOne(namespace+".readWithPW", paramMap);
+	}
+	
+	// ·Î±×ÀÎ
+	@Override
+	public MemberVO login(LoginDTO dto) throws Exception {
+		return sqlSession.selectOne(namespace +".login", dto);
 	}
 }

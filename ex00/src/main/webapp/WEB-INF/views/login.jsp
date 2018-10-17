@@ -6,91 +6,30 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>로그인 화면</title>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-html, body {
-	margin: 0;
-	width: 100%;
-	height: 100%;
-}
-header {
-	height: 120px;
-	background-color: lightblue;
-}
-footer {
-	height: 60px;
-	background-color: gray;
-}
-.wrapper {
-	width: 100%;
-	margin: 0 auto;
-}
-.container {
-	position: relative;
-	width: 100%;
-	height: 800px;
-}
-.nav {
-	display: inline-block;
-	width: 250px;
-	height: 100%;
-	background-color: green;
-	margin: 0;
-}
-.content {
-	display: inline-block;
-	height: 100%;
-	position: absolute;
-	left: 250px;
-	right: 0;
-	overflow: hidden;
-	background-color: yellow;
-}
-#right ul {
-	margin-right: 10px;
-}
-#display-right li {
-	display: inline-block;
-	margin-right: 10px;
-	top: 50%;
-	
-} 
-</style>
+<link rel="stylesheet" href="/resources/bootstrap/css/bootstrap.css">
 <body>
 
-	<div class="wrapper">
-	
-		<header>
-			<div><a href="/">쇼핑몰</a></div>
-			
-				<ul id="display-right">
-					<li><a href="login.do">LOGIN</a></li>
-					<li><a href="join.do">JOIN</a></li>
-					<li><a href="#">CART</a></li>
-					<li><a href="#">ORDER</a></li>
-					<li><a href="member/main.do">MY PAGE</a></li>
-					<li><a href="#">SEARCH</a></li>
-					<li><a href="logout">로그아웃</a></li>		
-				</ul>
-		
-		</header>
-		
-		<div class="container">
-			<div class="nav">
-				<ul class="nav-list">
-					<li class="nav-item">NOTICE</li>
-					<li class="nav-item">nav</li>
-				</ul>
-			</div>
-			
-			<div class="content">
-				<h1>content 내용</h1>
-			</div>
+<!-- header -->
+	<div class="header">
+		<div class="w3-border-bottom">
+			<c:import url="/header.do"/>
 		</div>
+	</div>
+<!-- //header -->
+	
 		
-		<footer>
-		</footer>
-		
+	<div class="nav">
+	<div class="w3-border-bottom">
+		<c:import url="/nav.do?menu=0"/>
+	</div>
 	</div>
 
+	<form action="/loginPost" method="post">
+		<div>
+			<input type="text" name="userid" placeholder="USER ID" />
+			<input type="password" name="userpw" placeholder="USER PW" />
+			<button type="submit">Sign In</button>
+		</div>
+	</form>
 </body>
 </html>
