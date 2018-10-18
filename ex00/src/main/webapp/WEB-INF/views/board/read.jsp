@@ -41,9 +41,11 @@
 
 
 				<div class="box-footer">
-					<button type="submit" class="btn btn-warning">Modify</button>
-					<button type="submit" class="btn btn-danger">REMOVE</button>
-					<button type="submit" class="btn btn-primary">LIST ALL</button>
+				<c:if test="${login.userid == boardVO.writer}">
+					<button type="submit" class="btn btn-warning" id="modifyBtn">Modify</button>
+					<button type="submit" class="btn btn-danger" id="removeBtn">REMOVE</button>
+				</c:if>
+					<button type="submit" class="btn btn-primary" id="listBtn">LIST ALL</button>
 				</div>
 				
 				<script>				

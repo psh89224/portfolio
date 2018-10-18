@@ -25,7 +25,7 @@
 		<div class="block-center" align="center">
 			<p>회 원 가 입</p>
 			<hr>
-			<form:form commandName="actionSignUpDTO" action="actionSignUp.do" method="post">
+			<form action="/join" method="post">
 				<input type="text" name="userid" placeholder="아이디를 입력하세요" required="required">
 				<form:errors path="userid" /><br>
 				<input type="password" name="userpw" placeholder="비밀번호를 입력하세요" required="required">
@@ -36,7 +36,7 @@
 				<form:errors path="email" /><br>
 				<input type="text" name="interest_pro" placeholder="관심상품을 입력하세요"><br>
 				<input type="submit" value="가입하기">
-			</form:form>
+			</form>
 		</div>
 	</div>
 	<div class="footer">

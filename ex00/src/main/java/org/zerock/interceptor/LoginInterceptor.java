@@ -26,7 +26,12 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
 			
 			logger.info("new login success");
 			session.setAttribute(LOGIN, memberVO);
-			response.sendRedirect("/");
+			//response.sendRedirect("/");
+			
+			// sendRedirect 작업에 'dest' 정보사용
+			Object dest = session.getAttribute("dest");
+			response.sendRedirect(dest != null ? (String)dest:"/");
+					
 		}
 	}
 	

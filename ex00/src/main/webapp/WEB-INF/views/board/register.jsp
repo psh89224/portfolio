@@ -29,7 +29,7 @@
 						</div>
 						<div class="form-group">
 							<label for="exampleInputEmail1">Writer</label> <input type="text"
-								name="writer" class="form-control" placeholer="Enter Writer">
+								name="writer" class="form-control" value="${member.userid}" readonly>
 						</div>
 					</div>
 

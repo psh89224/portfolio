@@ -9,17 +9,17 @@
 	select now()
 </select>
 
-<insert id="insertMember">
+<insert id="join">
 	insert into tbl_member (userid, userpw, username, address, email, interest_pro) values
-	(#{userid}, #{userpw}, #{username}, ,#{address}, #{email}, #{interest_pro})
+	(#{userid}, #{userpw}, #{username} ,#{address}, #{email}, #{interest_pro})
 </insert>
 
-<select id="selectMember" resultType="org.zerock.domain.MemberVO">
+<select id="selectMember" resultType="MemberVO">
 	select * from tbl_member
 	where userid = #{userid}
 </select>
 
-<select id="readWithPW" resultType="org.zerock.domain.MemberVO">
+<select id="readWithPW" resultType="MemberVO">
 	select * from tbl_member
 	where userid = #{userid} and userpw = #{userpw}
 </select>

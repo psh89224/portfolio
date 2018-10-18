@@ -10,7 +10,7 @@
 			<li><a href="../join.do">JOIN</a></li>
 			<li><a href="#">CART</a></li>
 			<li><a href="#">ORDER</a></li>
-			<li><a href="member/main.do">MY PAGE</a></li>
+			<li><a href="#">MY PAGE</a></li>
 			<li><a href="#">SEARCH</a></li>		
 		</ul>
 </header>

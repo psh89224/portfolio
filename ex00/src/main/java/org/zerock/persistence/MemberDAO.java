@@ -1,7 +1,7 @@
 package org.zerock.persistence;
 
 import org.apache.ibatis.annotations.Param;
-import org.zerock.controller.LoginDTO;
+import org.zerock.domain.LoginDTO;
 import org.zerock.domain.MemberVO;
 
 public interface MemberDAO {
@@ -16,6 +16,9 @@ public interface MemberDAO {
 	
 	// 로그인
 	public MemberVO login(LoginDTO dto) throws Exception;
+	
+	// 회원가입
+	public void join(MemberVO vo) throws Exception;
 	
 	public static int selectMember(@Param("userid") String userid) {
 		return 0;

@@ -14,7 +14,7 @@ import org.zerock.domain.BoardVO;
 import org.zerock.service.BoardService;
 
 @Controller
-@RequestMapping("/board/*")
+@RequestMapping("/board")
 public class BoardController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(BoardController.class);

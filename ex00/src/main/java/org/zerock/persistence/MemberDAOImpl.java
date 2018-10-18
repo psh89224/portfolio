@@ -7,7 +7,7 @@ import javax.inject.Inject;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.stereotype.Repository;
-import org.zerock.controller.LoginDTO;
+import org.zerock.domain.LoginDTO;
 import org.zerock.domain.MemberVO;
 
 
@@ -49,5 +49,11 @@ public class MemberDAOImpl implements MemberDAO{
 	@Override
 	public MemberVO login(LoginDTO dto) throws Exception {
 		return sqlSession.selectOne(namespace +".login", dto);
+	}
+	
+	// 회원가입
+	@Override
+	public void join(MemberVO vo) throws Exception {
+		sqlSession.insert(namespace+".join",vo);
 	}
 }

@@ -113,8 +113,9 @@ margin-left: 300px;
 		</section>
 	</div>
 </div>
-	<div class="footer">
-		<c:import url="/footer.do"/>
-	</div>
+<div class="footer">
+	<c:import url="/footer.do"/>
+</div>
+	
 </body>
 </html>

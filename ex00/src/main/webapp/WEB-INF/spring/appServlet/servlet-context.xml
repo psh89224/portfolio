@@ -23,14 +23,19 @@
 	
 	<context:component-scan base-package="org.zerock.controller" />
 	
-	<!-- LoginInterceptor 설정 -->
+	<!-- LoginInterceptor (로그인 안된 이용자를 튕겨내는) 설정 -->
+	<beans:bean id="authInterceptor" class="org.zerock.interceptor.AuthInterceptor"></beans:bean>
 	<beans:bean id="loginInterceptor" class="org.zerock.interceptor.LoginInterceptor"></beans:bean>
 		<interceptors>
 			<interceptor>
-				<mapping path="/member/loginPost"/>
+				<mapping path="/loginPost"/>
 				<beans:ref bean="loginInterceptor"/>
 			</interceptor>
+			<interceptor>	<!-- 인터셉터할 페이지 추가 -->
+				<mapping path="/borad/register" />
+				<mapping path="/board/modifyPage" />
+				<mapping path="/board/removePage" />				
+				<beans:ref bean="authInterceptor" />
+			</interceptor>			
 		</interceptors>
-	
-	
 </beans:beans>

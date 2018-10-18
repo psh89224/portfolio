@@ -1,4 +1,4 @@
-package org.zerock.controller;
+package org.zerock.domain;
 
 public class LoginDTO {
 	private String userid;
