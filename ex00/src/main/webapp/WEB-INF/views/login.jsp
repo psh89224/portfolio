@@ -9,27 +9,44 @@
 <link rel="stylesheet" href="/resources/bootstrap/css/bootstrap.css">
 <body>
 
-<!-- header -->
 	<div class="header">
 		<div class="w3-border-bottom">
 			<c:import url="/header.do"/>
 		</div>
 	</div>
-<!-- //header -->
-	
-		
 	<div class="nav">
-	<div class="w3-border-bottom">
-		<c:import url="/nav.do?menu=0"/>
-	</div>
+		<div class="w3-border-bottom">
+			<c:import url="/nav.do?menu=0"/>
+		</div>
 	</div>
 
-	<form action="/loginPost" method="post">
-		<div>
-			<input type="text" name="userid" placeholder="USER ID" />
-			<input type="password" name="userpw" placeholder="USER PW" />
-			<button type="submit">Sign In</button>
+
+	<div class="container">
+		<div class="block-center" align="center">
+			<p>로 그 인</p>
+			<hr>
+			<form action="/loginPost" method="post">
+				<div class="form-group has-feedback">
+					<input type="text" name="userid" placeholder="USER ID" />
+					<span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+				</div>
+				<div class="form-group has-feedback">
+					<input type="password" name="userpw" placeholder="USER PW" />
+					<span class="glyphicon glyphicon-lock form-control-feedback"></span>
+				</div>
+				<div class="row">
+				<div class="col-xs-8">
+					<div class="checkbox icheck">
+						<label>
+							<input type="checkbox" name="useCookie"> 아이디 저장
+						</label>
+					</div>
+				</div>
+				</div>
+				
+					<button type="submit" class="btn btn-primary btn-block btn-flat" style="width:200px">Sign In</button>
+				
+			</form>
 		</div>
-	</form>
-</body>
+	</div>
 </html>

@@ -28,7 +28,7 @@
 			<form:form commandName="actionSignUpDTO" action="actionSignUp.do" method="post">
 				<input type="text" name="userid" placeholder="아이디를 입력하세요" required="required">
 				<form:errors path="userid" /><br>
-				<input type="text" name="userpw" placeholder="비밀번호를 입력하세요" required="required">
+				<input type="password" name="userpw" placeholder="비밀번호를 입력하세요" required="required">
 				<form:errors path="userpw" /><br>
 				<input type="text" name="username" placeholder="이름을 입력하세요"><br>
 				<input type="text" name="address" placeholder="주소를 입력하세요"><br>
