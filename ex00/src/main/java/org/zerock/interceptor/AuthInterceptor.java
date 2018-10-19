@@ -25,11 +25,11 @@ public class AuthInterceptor extends HandlerInterceptorAdapter {
 			response.sendRedirect("/login");
 			return false;
 		}
-		return false;
+		return true;
 	}
 	
 	// 로그인인터셉터 --> 로그인 후 원래 가려고 했던 페이지로 이동해주는 기능
-	private void saveDest(HttpServletRequest req) {
+	private String saveDest(HttpServletRequest req) {
 		
 		String uri = req.getRequestURI();
 		String query = req.getQueryString();
@@ -45,5 +45,6 @@ public class AuthInterceptor extends HandlerInterceptorAdapter {
 			System.out.println("dest: " + (uri + query));
 			req.getSession().setAttribute("dest", uri + query);
 		}
+		return uri + query;
 	}
 }

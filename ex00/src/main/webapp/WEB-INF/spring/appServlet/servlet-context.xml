@@ -32,10 +32,13 @@
 				<beans:ref bean="loginInterceptor"/>
 			</interceptor>
 			<interceptor>	<!-- 인터셉터할 페이지 추가 -->
-				<mapping path="/borad/register" />
+				<mapping path="/board/listAll" />
+				<mapping path="/board/register" />
 				<mapping path="/board/modifyPage" />
 				<mapping path="/board/removePage" />				
 				<beans:ref bean="authInterceptor" />
 			</interceptor>			
 		</interceptors>
+	
+	
 </beans:beans>
