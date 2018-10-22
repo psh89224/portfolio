@@ -16,7 +16,7 @@
 			<li><a href="#" <c:if test="${menu == 0}"></c:if>>NOTICE</a></li>
 			<li><a href="#" <c:if test="${menu == 1}"></c:if>>SHOP</a></li>
 			<li><a href="#" <c:if test="${menu == 2}"></c:if>>LOOKBOOK</a></li>
-			<li><a href="/board/listAll">FREEBOARD</a></li>
+			<li><a href="/board/listPage">FREEBOARD</a></li>
 			<li><a href="#" <c:if test="${menu == 4}"></c:if>>REVIEW</a></li>
 			<li><a href="#" <c:if test="${menu == 5}"></c:if>>GALLERY</a></li>
 			<li><a href="#" <c:if test="${menu == 6}"></c:if>>SALE</a></li>

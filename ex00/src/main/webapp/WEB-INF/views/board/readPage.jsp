@@ -45,8 +45,14 @@
 					<button type="submit" class="btn btn-warning" id="modifyBtn">Modify</button>
 					<button type="submit" class="btn btn-danger" id="removeBtn">REMOVE</button>
 				</c:if>
-					<button type="submit" class="btn btn-primary" id="listBtn">LIST ALL</button>
+					<button type="submit" class="btn btn-primary" id="goListBtn">GO LIST</button>
 				</div>
+				
+				<form role="form" action="modifyPage" method="post">
+					<input type="hidden" name="bno" value="${boardVO.bno}">
+					<input type="hidden" name="page" value="${cri.page}">
+					<input type="hidden" name="perPageNum" value="${cri.perPageNum}">
+				</form>
 				
 				<!-- 댓글 추가 부분 -->
 				<c:if test="${not empty login}">
@@ -77,18 +83,33 @@
 						console.log(formObj);
 						
 						$(".btn-warning").on("click", function(){
-							formObj.attr("action", "/board/modify");
+							formObj.attr("action", "/board/modifyPage");
 							formObj.attr("method", "get");		
 							formObj.submit();
 						});
 						
 						$(".btn-danger").on("click", function(){
-							formObj.attr("action", "/board/remove");
+							formObj.attr("action", "/board/removePage");
 							formObj.submit();
 						});
 						
 						$(".btn-primary").on("click", function(){
-							self.location = "/board/listAll";
+							self.location = "/board/listPage";
+						});
+						
+						$(".goListBtn").on("click", function() {
+							formObj.attr("method", "get");
+							formObj.attr("action", "/board/listPage");
+							formObj.submit();
+						});
+						$("removeBtn").on("click", function() {
+							formObj.attr("action", "/board/removePage");
+							formObj.submit();
+						});
+						$(".modifyBtn").on("click", function() {
+							formObj.attr("action", "/board/modifyPage");
+							formObj.attr("method", "get");
+							formObj.submit();
 						});
 						
 					});
