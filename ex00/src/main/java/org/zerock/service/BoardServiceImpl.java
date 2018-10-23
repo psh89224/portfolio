@@ -42,11 +42,11 @@ public class BoardServiceImpl implements BoardService{
 	
 	@Override
 	public List<BoardVO> listCriteria(Criteria cri) throws Exception {
-		return dao.listCriteria(cri);
+		return dao.listSearch(cri);
 	}
 	
 	@Override
-	public int listCountCriteria(Criteria cri) throws Exception {
-		return dao.countPaging(cri);
+	public int listSearchCount(Criteria cri) throws Exception {
+		return dao.listSearchCount(cri);
 	}
 }

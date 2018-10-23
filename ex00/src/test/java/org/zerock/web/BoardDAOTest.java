@@ -75,4 +75,23 @@ private static Logger logger = LoggerFactory.getLogger(BoardDAOTest.class);
 			logger.info(boardVO.getBno() + ":" +boardVO.getTitle());
 		}
 	}
+	
+	// 동적 sql 테스트
+	@Test
+	public void testDynamic1() throws Exception {
+		Criteria cri = new Criteria();
+		cri.setPage(1);
+		cri.setKeyword("글");
+		cri.setSearchType("t");
+		
+		logger.info("==============");
+		
+		List<BoardVO> list = dao.listSearch(cri);
+		
+		for (BoardVO boardVO : list) {
+			logger.info(boardVO.getBno() + ": " + boardVO.getTitle());
+		}
+		logger.info("-----------------");
+		logger.info("COUNT : " + dao.listSearchCount(cri));
+	}
 }

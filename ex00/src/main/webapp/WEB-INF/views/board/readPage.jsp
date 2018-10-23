@@ -23,29 +23,26 @@
 
 				<div class="box-body">
 					<div class="form-group">
-						<label for="exampleInputEmail1">Title</label> <input type="text"
-							name="title" class="form-control" value="${boardVO.title}"
-							readonly="readonly">
+						<label for="exampleInputEmail1">제목</label> 
+						<input type="text" name="title" class="form-control" value="${boardVO.title}" readonly="readonly">
 					</div>
 					<div class="form-group">
-						<label for="exampleInputPassword1">Content</label>
-						<textarea class="form=control" name="content" rows="3"
-							readonly="readonly">${boardVO.content}</textarea>
+						<label for="exampleInputPassword1">내용</label>
+						<textarea class="form=control" name="content" rows="3" readonly="readonly">${boardVO.content}</textarea>
 					</div>
 					<div class="form-group">
-						<label for="exampleInputEmail1">Writer</label> <input type="text"
-							name="writer" class="form-control" value="${boardVO.writer}"
-							readonly="readonly">
+						<label for="exampleInputEmail1">작성자</label>
+						<input type="text" name="writer" class="form-control" value="${boardVO.writer}" readonly="readonly">
 					</div>
 				</div>
 
 
 				<div class="box-footer">
 				<c:if test="${login.userid == boardVO.writer}">
-					<button type="submit" class="btn btn-warning" id="modifyBtn">Modify</button>
-					<button type="submit" class="btn btn-danger" id="removeBtn">REMOVE</button>
+					<button type="submit" class="btn btn-warning" id="modifyBtn">수정</button>
+					<button type="submit" class="btn btn-danger" id="removeBtn">삭제</button>
 				</c:if>
-					<button type="submit" class="btn btn-primary" id="goListBtn">GO LIST</button>
+					<button type="submit" class="btn btn-primary" id="goListBtn">목록으로</button>
 				</div>
 				
 				<form role="form" action="modifyPage" method="post">
@@ -82,7 +79,7 @@
 						//console.log('formObj: ', formObj);
 						console.log(formObj);
 						
-						$(".btn-warning").on("click", function(){
+						/* $(".btn-warning").on("click", function(){
 							formObj.attr("action", "/board/modifyPage");
 							formObj.attr("method", "get");		
 							formObj.submit();
@@ -95,18 +92,18 @@
 						
 						$(".btn-primary").on("click", function(){
 							self.location = "/board/listPage";
-						});
+						}); */
 						
-						$(".goListBtn").on("click", function() {
+						$("#goListBtn").on("click", function() {
 							formObj.attr("method", "get");
 							formObj.attr("action", "/board/listPage");
 							formObj.submit();
 						});
-						$("removeBtn").on("click", function() {
+						$("#removeBtn").on("click", function() {
 							formObj.attr("action", "/board/removePage");
 							formObj.submit();
 						});
-						$(".modifyBtn").on("click", function() {
+						$("#modifyBtn").on("click", function() {
 							formObj.attr("action", "/board/modifyPage");
 							formObj.attr("method", "get");
 							formObj.submit();

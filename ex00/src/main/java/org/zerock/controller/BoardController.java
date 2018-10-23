@@ -17,7 +17,7 @@ import org.zerock.domain.PageMaker;
 import org.zerock.service.BoardService;
 
 @Controller
-@RequestMapping("/board")
+@RequestMapping("/board/*")
 public class BoardController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(BoardController.class);
@@ -117,18 +117,19 @@ public class BoardController {
 		return "redirect:/board/listAll";
 	}*/
 	
-	// 其捞隆 贸府
+	// 其捞隆 贸府 + Search 钦魔
 	@RequestMapping(value ="/listPage", method = RequestMethod.GET)
 		public void listPage(@ModelAttribute("cri")Criteria cri, Model model) throws Exception {
 		
 		logger.info(cri.toString());
+		logger.info(cri.toString1());
 		
 		model.addAttribute("list", service.listCriteria(cri));
 		PageMaker pageMaker = new PageMaker();
 		pageMaker.setCri(cri);
-		pageMaker.setTotalCount(service.listCountCriteria(cri));
+		//pageMaker.setTotalCount(service.listCountCriteria(cri));
+		pageMaker.setTotalCount(service.listSearchCount(cri));
 		
 		model.addAttribute("pageMaker", pageMaker);
 	}
-	
 }

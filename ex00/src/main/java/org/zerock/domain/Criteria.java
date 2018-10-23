@@ -5,6 +5,9 @@ public class Criteria {
 	private int page;
 	private int perPageNum;
 	
+	private String searchType;	// 검색에 필요한 String
+	private String keyword;		// 검색에 필요한 String
+	
 	public Criteria() {
 		this.page = 1;
 		this.perPageNum = 10;
@@ -19,7 +22,7 @@ public class Criteria {
 	}
 	
 	public void setPerPageNum(int perPageNum) {
-		if(perPageNum <= 0 || perPageNum > 100) {
+		if(perPageNum != 10) {
 			this.perPageNum = 10;
 			return;
 		}
@@ -40,8 +43,27 @@ public class Criteria {
 		return this.perPageNum;
 	}
 	
+	// 검색에 필요한 SearchCriteria
+	public String getSearchType() {
+		return searchType;
+	}
+	public void setSearchType(String searchType) {
+		this.searchType = searchType;
+	}
+	public String getKeyword() {
+		return keyword;
+	}
+	public void setKeyword(String keyword) {
+		this.keyword = keyword;
+	}
+	
+	
+	
 	@Override
 	public String toString() {
 		return "Criteria [page=" +page+ ", " + "perPageNum=" +perPageNum+ "]";
+	}
+	public String toString1() {
+		return toString() + "Criteria" + "[searchType=" +searchType+ ", keyword=" +keyword+ "]";
 	}
 }

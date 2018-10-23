@@ -12,7 +12,7 @@
 			<!-- general form elements -->
 			<div class="box">
 				<div class="box-header with-border">
-					<h3 class="box-title">HOME PAGE</h3>
+					<h3 class="box-title">수정화면</h3>
 				</div>
 				
 				<form role="form" action="modifyPage" method="post">
@@ -21,30 +21,30 @@
 				
 					<div class="box-body">
 						<div class="form-group">
-							<label for="exampleInputEmail1">BNO</label>
+							<label for="exampleInputEmail1">글번호</label>
 							<input type="text" name="bno" class="form-control" value="${boardVO.bno}" readonly="readonly">
 						</div>
 						
 						<div class="form-group">
-							<label for="exampleInputEmail1">Title</label>
+							<label for="exampleInputEmail1">제목</label>
 							<input type="text" name="title" class="form-control" value="${boardVO.title }">
 						</div>
 						
 						<div class="form-group">
-							<label for="exampleInputPassword1">Content</label>
+							<label for="exampleInputPassword1">내용</label>
 							<textarea class="form-control" name="content" rows="3">${boardVO.content}</textarea>
 						</div>
 						
 						<div class="form-group">
-							<label for="exampleInputEmail1">Writer</label>
+							<label for="exampleInputEmail1">작성자</label>
 							<input type="text" name="writer" class="form-control" value="${boardVO.writer}" readonly="readonly">
 						</div>
 					</div>
 				</form>
 				
 				<div class="box-footer">
-					<button type="submit" class="btn btn-primary">SAVE</button>
-					<button type="submit" class="btn btn-warning">CANCEL</button>
+					<button type="submit" class="btn btn-primary">저장</button>
+					<button type="submit" class="btn btn-warning">취소</button>
 				</div>
 				
 				<script>

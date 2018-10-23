@@ -1,5 +1,8 @@
 package org.zerock.domain;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+
 import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
 
@@ -19,12 +22,13 @@ public class PageMaker {
 		this.cri = cri;
 	}
 	
+	// 페이징처리
 	public void setTotalCount(int totalCount) {
 		this.totalCount = totalCount;
 		
 		calcData();
 	}
-	
+	// 페이징처리	
 	private void calcData() {
 		endPage = (int) (Math.ceil(cri.getPage() / (double) displayPageNum) * displayPageNum);
 		startPage = (endPage - displayPageNum) + 1;
@@ -88,6 +92,7 @@ public class PageMaker {
 		return cri;
 	}
 	
+	// 목록페이지 기억하기
 	public String makeQuery(int page) {
 		
 		UriComponents uriComponents = UriComponentsBuilder.newInstance()
@@ -99,6 +104,26 @@ public class PageMaker {
 	
 	}
 	
+	// 검색 처리
+	public String makeSearch(int page) {
+		UriComponents uriComponents = UriComponentsBuilder.newInstance()
+				.queryParam("page", page)
+				.queryParam("perPageNum", cri.getPerPageNum())
+				.queryParam("searchType", ((Criteria) cri).getSearchType())
+				.queryParam("keyword", encoding(((Criteria) cri).getKeyword())).build();
+		
+		return uriComponents.toUriString();
+	}
 	
-
+	private String encoding(String keyword) {
+		if (keyword == null || keyword.trim().length() == 0 ) {
+			return "";
+		}
+		
+		try {
+			return URLEncoder.encode(keyword, "UTF-8");
+		} catch (UnsupportedEncodingException e) {
+			return "";
+		}
+	}
 }
