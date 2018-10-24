@@ -58,11 +58,12 @@ public class Criteria {
 	}
 	
 	
-	
+	// 其捞隆 贸府
 	@Override
 	public String toString() {
 		return "Criteria [page=" +page+ ", " + "perPageNum=" +perPageNum+ "]";
 	}
+	// 八祸 贸府
 	public String toString1() {
 		return toString() + "Criteria" + "[searchType=" +searchType+ ", keyword=" +keyword+ "]";
 	}

@@ -38,7 +38,7 @@ public class BoardController {
 		
 		service.regist(board);
 		
-		rttr.addFlashAttribute("result", "success");
+		rttr.addFlashAttribute("msg", "success");
 		
 		return "redirect:/board/listPage";
 	}
@@ -76,6 +76,8 @@ public class BoardController {
 		service.remove(bno);
 		rttr.addAttribute("page", cri.getPage());
 		rttr.addAttribute("perPageNum", cri.getPerPageNum());
+		rttr.addAttribute("searchType", cri.getSearchType());
+		rttr.addAttribute("keyword", cri.getKeyword());
 		rttr.addFlashAttribute("msg", "SUCCESS");
 		
 		return "redirect:/board/listPage";
@@ -91,12 +93,15 @@ public class BoardController {
 	@RequestMapping(value="/modifyPage", method=RequestMethod.POST)
 	public String modifyPagingPOST(BoardVO board, Criteria cri, RedirectAttributes rttr) throws Exception {
 		
-		//logger.info("mod post........");
-		
+		logger.info(cri.toString());
 		service.modify(board);
 		rttr.addAttribute("page", cri.getPage());
 		rttr.addAttribute("perPageNum", cri.getPerPageNum());
+		rttr.addAttribute("searchType", cri.getSearchType());
+		rttr.addAttribute("keyword", cri.getKeyword());
 		rttr.addFlashAttribute("msg", "SUCCESS");
+		
+		logger.info(rttr.toString());
 		
 		return "redirect:/board/listPage";
 	}
