@@ -4,6 +4,10 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.js"></script>
+<script
+src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+crossorigin="anonymous"></script>
 <%@ include file="../include/header.jsp"%>	<!-- 경로 확인 -->
 
 <!--  main content -->
@@ -53,31 +57,10 @@
 					<input type="hidden" name="keyword" value="${cri.keyword}">
 				</form>
 				
-				
-				<%-- <!-- 로그인아이디 댓글추가부분 -->
-				<c:if test="${not empty login}">
-					<div class="box-body">
-						<label for="exampleInputEmail1">작성자</label>
-						<input class="form-control" type="text" placeholder="USER ID" id="newReplyWriter" value="${login.userid}" readonly="readonly">
-						<label for="exampleInputEmail1">댓글 추가</label>
-						<input class="form-control" type="text" placeholder="REPLY TEXT" id="newReplyWriter">
-					</div>
-					
-					<div class="box-footer">
-						<button type="submit" class="btn btn-primary" id="replyAddBtn">댓글 추가</button>
-					</div>
-				</c:if>
-				
-				<c:if test="${empty login}">
-					<div class="box-body">
-						<div><a href="javascript:goLogin();">로그인 하세요</a></div>
-					</div>
-				</c:if> --%>
-				
 				<!-- 댓글부분 -->
 				<div class="box-body">
 					<label for="newReplyWriter">작성자</label>
-					<input class="form-control" type="text" placeholder="USERID" id="newReplyWriter">
+					<input class="form-control" type="text" placeholder="USERID" id="newReplyWriter" >
 					<label for="newReplyText">내용</label>
 					<input class="form-control" type="text" placeholder="REPLY 내용" id="newReplyText">
 				</div>
@@ -87,7 +70,7 @@
 				
 				<!-- The Time line -->
 				<ul class="timeline">
-					<li class="time-label" id="repliesDiv"><span class="bg-green">댓글 목록</span></li>
+					<li class="time-label" id="repliesDiv"><span class="bg-green"></span></li>
 				</ul>
 				
 				<div class="text-center">
@@ -158,7 +141,7 @@ $(document).ready(function(){
 		<h3 class="timeline-header"><strong>{{rno}}</strong> -{{replyer}}</h3>
 		<div class="timeline-body">{{replytext}}</div>
 			<div class="timeline-footer">
-				<a class="btn btn-primary btn-xs" data-toggle="modal" data-target="#modifyModal">Modify</a>
+				<a class="btn btn-primary btn-xs" data-toggle="modal" data-target="#modifyModal">수정</a>
 			</div>	
 	</div>
 </li>
@@ -188,6 +171,8 @@ var printData = function (replyArr, target, templateObject) {
 var bno = ${boardVO.bno};
 var replyPage = 1;
 
+getPage("/replies/"+bno+"/"+replyPage);
+
 function getPage(pageInfo) {
 	$.getJSON(pageInfo, function(data) {
 		printData(data.list, $("#repliesDiv"), $("#template"));
@@ -214,13 +199,13 @@ var printPaging = function(pageMaker, target) {
 	target.html(str);
 };
 
-<!-- p. 438 댓글 목록의 이벤트 처리-->
+/* <!-- p. 438 댓글 목록의 이벤트 처리-->
 $("#repliesDiv").on("click", function() {
 	if ($(".timeline li").size() > 1) {
 		return;
 	}
 	getPage("/replies/" + bno + "/1");
-});
+}); */
 
 <!-- p. 439 댓글 페이징 이벤트처리-->
 $(".pagination").on("click", "li a", function(event) {
@@ -267,13 +252,15 @@ $("#replyModBtn").on("click", function() {
 	$.ajax({
 		type: 'put', url: '/replies/' +rno,
 		headers: {"Content-Type": "application/json", "X-HTTP-Method-Override": "PUT"},
-		data: JSON.stringfy({replytext:replytext}),
+		data: JSON.stringify({replytext:replytext}),
 		dataType: 'text',
 		success: function(result) {
 			console.log("result: " +result);
 			if(result == 'SUCCESS') {
 				alert("수정 되었습니다.");
 				getPage("/replies/" +bno+"/" +replyPage);
+			}else{
+				alert("adsf142");
 			}
 		}
 	})
