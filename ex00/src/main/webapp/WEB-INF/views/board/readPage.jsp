@@ -14,7 +14,7 @@
 			<!-- general form elements -->
 			<div class="box box-success">
 				<div class="box-header with-border">
-					<h3 class="box-title">READ PAGE</h3>
+					<h3 class="box-title">${boardVO.title}</h3>
 				</div>
 
 				<form role="form" method="post">
@@ -53,6 +53,27 @@
 					<input type="hidden" name="keyword" value="${cri.keyword}">
 				</form>
 				
+				
+				<%-- <!-- 로그인아이디 댓글추가부분 -->
+				<c:if test="${not empty login}">
+					<div class="box-body">
+						<label for="exampleInputEmail1">작성자</label>
+						<input class="form-control" type="text" placeholder="USER ID" id="newReplyWriter" value="${login.userid}" readonly="readonly">
+						<label for="exampleInputEmail1">댓글 추가</label>
+						<input class="form-control" type="text" placeholder="REPLY TEXT" id="newReplyWriter">
+					</div>
+					
+					<div class="box-footer">
+						<button type="submit" class="btn btn-primary" id="replyAddBtn">댓글 추가</button>
+					</div>
+				</c:if>
+				
+				<c:if test="${empty login}">
+					<div class="box-body">
+						<div><a href="javascript:goLogin();">로그인 하세요</a></div>
+					</div>
+				</c:if> --%>
+				
 				<!-- 댓글부분 -->
 				<div class="box-body">
 					<label for="newReplyWriter">작성자</label>
@@ -75,48 +96,31 @@
 				<!-- p.442 수정과 삭제를 위한 Modal 창 -->
 				<div id="modifyModal" class="modal modal-primary fade" role="dialog">
 					<div class="modal-dialog">
-					<!-- Modal content -->
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal">&times;</button>
-							<h4 class="modal-title"></h4>
+						<!-- Modal content -->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title"></h4>
+							</div>
+							<div class="modal-body" data-rno>
+								<p><input type="text" id="replytext" class="form-control"></p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-info" id="replyModBtn">수정</button>
+								<button type="button" class="btn btn-danger" id="replyDelBtn">삭제</button>
+								<button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+							</div>
 						</div>
-						<div class="modal-body" data-rno>
-							<p><input type="text" id="replytext" class="form-control"></p>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-info" id="replyModBtn">수정</button>
-							<button type="button" class="btn btn-danger" id="replyDelBtn">삭제</button>
-							<button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
-						</div>
-					</div>
 					</div>				
 				</div>
+				
+				
 			</div>
 		</div>
 	</div>
 </section>
-	
-				<%-- <!-- 댓글 추가 부분 -->
-				<c:if test="${not empty login}">
-					<div class="box-body">
-						<label for="exampleInputEmail1">작성자</label>
-						<input class="form-control" type="text" placeholder="USER ID" id="newReplyWriter" value="${login.userid}" readonly="readonly">
-						<label for="exampleInputEmail1">댓글 추가</label>
-						<input class="form-control" type="text" placeholder="REPLY TEXT" id="newReplyWriter">
-					</div>
-					
-					<div class="box-footer">
-						<button type="submit" class="btn btn-primary" id="replyAddBtn">댓글 추가</button>
-					</div>
-				</c:if>
-				
-				<c:if test="${empty login}">
-					<div class="box-body">
-						<div><a href="javascript:goLogin();">로그인 하세요</a></div>
-					</div>
-				</c:if> --%>
-				
+
+<!-- 수정,삭제,목록으로 -->
 <script>				
 $(document).ready(function(){
 	
@@ -142,8 +146,8 @@ $(document).ready(function(){
 });
 </script>
 				
-<!-- 댓글 handlerbars -->
-<script id="template" type="text/x-handelbars-template">
+<!-- p.434 댓글 handlerbars -->
+<script id="template" type="text/x-handlebars-template">
 {{#each .}}
 <li class="replyLi" data-rno={{rno}}>
 <i class="fa fa-comments bg-blue"></i>
@@ -154,14 +158,14 @@ $(document).ready(function(){
 		<h3 class="timeline-header"><strong>{{rno}}</strong> -{{replyer}}</h3>
 		<div class="timeline-body">{{replytext}}</div>
 			<div class="timeline-footer">
-				<a class="btn btn-primary btn-xs" data-toggle="model" data-target="#modifyModal">Modify</a>
+				<a class="btn btn-primary btn-xs" data-toggle="modal" data-target="#modifyModal">Modify</a>
 			</div>	
 	</div>
 </li>
 {{/each}}
 </script>
 
-<!-- prrettifyDate에 대한 javascript처리 -->
+<!-- p.435 prrettifyDate에 대한 javascript처리 -->
 <script>
 Handlebars.registerHelper("prettifyDate", function(timeValue) {
 	var dateObj = new Date(timeValue);
@@ -172,6 +176,7 @@ Handlebars.registerHelper("prettifyDate", function(timeValue) {
 });
 
 var printData = function (replyArr, target, templateObject) {
+	
 	var template = Handlebars.compile(templateObject.html());
 	
 	var html = template(replyArr);
@@ -204,7 +209,7 @@ var printPaging = function(pageMaker, target) {
 	}
 	
 	if(pageMaker.next) {
-		str += "<li><a href='"+(pageMaker.endPage+1)+"'> << </a></li>";
+		str += "<li><a href='"+(pageMaker.endPage+1)+"'> >> </a></li>";
 	}
 	target.html(str);
 };
@@ -226,13 +231,11 @@ $(".pagination").on("click", "li a", function(event) {
 });
 <!-- p.440 댓글 등록 이벤트 처리-->
 $("#replyAddBtn").on("click", function() {
-	alert("123");
 	var replyerObj = $("#newReplyWriter");
 	var replytextObj = $("#newReplyText");
 	var replyer = replyerObj.val();
 	var replytext = replytextObj.val();
 	
-	alert("asdf");
 	$.ajax({
 		type: 'post', url: '/replies/',
 		headers: {"Content-Type": "application/json",  "X-HTTP-Method-Override": "POST"},
@@ -293,5 +296,7 @@ $("#replyDelBtn").on("click", function() {
 });
 </script>
 
-<%@include file="../include/footer.jsp"%>
+<div class="footer">
+	<c:import url="/footer.do"/>
+</div>
 <!-- 경로 확인 -->

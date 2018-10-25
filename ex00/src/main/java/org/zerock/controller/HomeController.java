@@ -63,4 +63,9 @@ public class HomeController {
 	public String footer(Model model) throws Exception {
 		return "include/footer";
 	}
+	
+	// p.396 ´ñ±Û Å×½ºÆ®
+	@RequestMapping(value = "/test", method = RequestMethod.GET)
+	public void ajaxTest() {
+	}
 }
