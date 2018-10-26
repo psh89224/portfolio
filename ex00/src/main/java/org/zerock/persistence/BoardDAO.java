@@ -23,8 +23,16 @@ public interface BoardDAO {
 	
 	public int countPaging(Criteria cri) throws Exception;
 	
+	// 검색
 	public List<BoardVO> listSearch(Criteria cri) throws Exception;
 	
+	// 검색 페이지?
 	public int listSearchCount(Criteria cri) throws Exception;
+	
+	// 댓글 카운트
+	public void updateReplyCnt(Integer bno, int amount) throws Exception;
+	
+	// 게시글 조회수
+	public void updateViewCnt(Integer bno) throws Exception;
 
 }

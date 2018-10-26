@@ -48,7 +48,7 @@
 
 <select id="listCriteria" resultType="BoardVO">
 	<![CDATA[
-		select bno, title, content, writer, regdate, viewcnt
+		select bno, title, content, writer, regdate, viewcnt, replycnt
 		from tbl_board
 		where bno > 0
 		order by bno desc, regdate desc
@@ -74,7 +74,6 @@
 	]]>
 	<!-- <include refid="search"></include> -->
 	
-	
 	<if test="searchType != null">
 		<if test="searchType == 't'.toString()"> and title like CONCAT('%', #{keyword}, '%')</if>
 		<if test="searchType == 'c'.toString()"> and content like CONCAT('%', #{keyword}, '%')</if>
@@ -88,13 +87,13 @@
 													OR writer like CONCAT('%', #{keyword}, '%'))</if>
 	</if>
 	
-	
 	<![CDATA[
 	order by bno desc
 	limit #{pageStart}, #{perPageNum}
 	]]>
 </select>
 
+<!-- 검색 페이지 -->
 <select id="listSearchCount" resultType="int">
 	<![CDATA[
 		select count(bno)
@@ -103,4 +102,12 @@
 	]]>
 	<!-- <include refid="search"></include> -->
 </select>
+<!-- 댓글 카운트 -->
+<update id="updateReplyCnt">
+	update tbl_board set replycnt = replycnt + #{amount} where bno = #{bno}
+</update>
+<!-- 게시글 조회수 -->
+<update id="updateViewCnt">
+	update tbl_board set viewcnt = viewcnt +1 where bno = #{bno}
+</update>
 </mapper>

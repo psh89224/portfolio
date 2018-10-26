@@ -39,5 +39,9 @@
 	select count(bno) from tbl_reply where bno=#{bno}
 </select>
 
+<!-- 댓글삭제시 게시물번호 가져오기 -->
+<select id="getBno" resultType="int">
+	select bno from tbl_reply where rno = #{rno}
+</select>
 
 </mapper>

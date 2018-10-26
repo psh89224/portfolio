@@ -50,9 +50,16 @@ public class ReplyDAOImpl implements ReplyDAO {
 		return session.selectList(namespace + ".listPage", paramMap);
 	}
 	
+	// 댓글 카운트
 	@Override
 	public int count(Integer bno) throws Exception {
 		return session.selectOne(namespace + ".count", bno);
+	}
+	
+	// 댓글 삭제시 해당게시물 번호 가져오기
+	@Override
+	public int getBno(Integer rno) throws Exception {
+		return session.selectOne(namespace + ".getBno", rno);
 	}
 
 }
