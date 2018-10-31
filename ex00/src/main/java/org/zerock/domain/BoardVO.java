@@ -11,6 +11,7 @@ public class BoardVO {
 	private Date regdate;
 	private int viewcnt;
 	private int replycnt;
+	private int groupno;
 	
 	public Integer getBno() {
 		return bno;
@@ -54,5 +55,12 @@ public class BoardVO {
 	public void setReplycnt(int replycnt) {
 		this.replycnt = replycnt;
 	}
+	public int getGroupno() {
+		return groupno;
+	}
+	public void setGroupno(int groupno) {
+		this.groupno = groupno;
+	}
+	
 	
 }
