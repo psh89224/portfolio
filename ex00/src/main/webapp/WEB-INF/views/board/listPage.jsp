@@ -32,7 +32,7 @@
 					<c:forEach items = "${list}" var = "boardVO">
 					<tr>
 						<td>${boardVO.bno}</td>
-						<td><a href='/board/readPage${pageMaker.makeSearch(pageMaker.cri.page)}&bno=${boardVO.bno}'>${boardVO.title}<strong>[${boardVO.replycnt}]</strong></a></td>
+						<td><a href='/board/readPage${pageMaker.makeSearch(pageMaker.cri.page)}&bno=${boardVO.bno}&post=${post}'>${boardVO.title}<strong>[${boardVO.replycnt}]</strong></a></td>
 						<td>${boardVO.writer}</td>
 						<td><fmt:formatDate pattern="yyyy-MM-dd HH:mm"
 						value="${boardVO.regdate}" /></td>
@@ -55,7 +55,7 @@
 					</select>
 					<input type="text" name='keyword' id="keywordInput" value="${cri.keyword}">
 					<button id="searchBtn">검색</button>
-					<button id="newBtn">새 글작성</button>
+					<a href="/board/register?post=${post}"><button id="newBtn">새 글작성</button></a>
 				</div></div>
 				
 				<!-- 페이징 아래 번호 -->
@@ -75,19 +75,18 @@
 						</c:if>
 					</ul>
 				</div>
-				
+				<input type="hidden" name="post" id="post" value="${post}">
 				<script>
 					$(document).ready(function() {
 						$('#searchBtn').on("click", function(event) {
 							
 							self.location = "/board/listPage"
 							+ '${pageMaker.makeQuery(1)}'
+							+ '&post='
+							+ $("#post").val()
 							+ "&searchType="
 							+ $("select option:selected").val()
 							+ "&keyword=" + encodeURIComponent($('#keywordInput').val());
-						});
-						$('#newBtn').on("click", function(evt) {
-							self.location = "register";
 						});
 					});
 				</script>

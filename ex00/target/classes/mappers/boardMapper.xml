@@ -6,8 +6,11 @@
 <mapper namespace = "org.zerock.mapper.BoardMapper">
 
 <insert id="create">
-	insert into tbl_board (title, content, writer)
-	values (#{title}, #{content}, #{writer})
+	insert into tbl_board (title, content, writer, post_category_idx)
+	values (#{title}, #{content}, #{writer}, #{post_category_idx})
+	<selectKey resultType="int" keyProperty="bno" order="AFTER">
+		SELECT LAST_INSERT_ID()
+	</selectKey>
 </insert>
 
 <select id="read" resultType="org.zerock.domain.BoardVO">
@@ -40,7 +43,8 @@
 <![CDATA[
 	select bno, title, content, writer, regdate, viewcnt
 	from tbl_board
-	where groupno=#{groupno} and bno > 0
+	where bno > 0
+	and post_category_idx = #{idx}
 	order by bno desc, regdate desc
 	limit #{page}, 10
 ]]>
@@ -48,9 +52,10 @@
 
 <select id="listCriteria" resultType="BoardVO">
 	<![CDATA[
-		select bno, title, content, writer, regdate, viewcnt, replycnt
+		select bno, title, content, writer, regdate, viewcnt
 		from tbl_board
 		where bno > 0
+		and post_category_idx = #{idx}
 		order by bno desc, regdate desc
 		limit #{pageStart}, #{perPageNum}
 	]]>
@@ -70,6 +75,7 @@
 		select *
 		from tbl_board
 		where bno > 0
+		and post_category_idx = #{idx}
 	]]>
 	<!-- <include refid="search"></include> -->
 	
@@ -109,4 +115,15 @@
 <update id="updateViewCnt">
 	update tbl_board set viewcnt = viewcnt +1 where bno = #{bno}
 </update>
+<!--  post list 가져오기 -->
+<select id="selectPost" resultType="NavDTO">
+	select * from post_category
+</select>
+<select id="selectPost2" resultType="Post2VO">
+	select * from topcategory where post_category_idx = 2
+</select>
+<insert id="insertImage">
+	insert into imgfile (img_name, tbl_board_bno)
+	values (#{img_name}, #{tbl_board_bno})
+</insert>
 </mapper>

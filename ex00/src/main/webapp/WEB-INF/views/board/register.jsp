@@ -16,6 +16,7 @@
 				
 				
 				<form role="form" method="post">
+				<input type="hidden" name="post_category_idx" value="${post}">
 					<div class="box-body">
 						<div class="form-group">
 							<label for="exampleInputEmail1">제목</label> <input type="text"
@@ -25,6 +26,9 @@
 							<label for="exampleInputPassword1">내용</label>
 							<textarea class="form-control" name="content" rows="3"
 								placeholder="Enter..."></textarea>
+						</div>
+						<div class="form-group">
+							<input type="file" name="img_name">
 						</div>
 						<div class="form-group">
 							<label for="exampleInputEmail1">작성자</label> <input type="text"

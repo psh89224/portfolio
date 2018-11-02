@@ -14,6 +14,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.zerock.domain.BoardVO;
 import org.zerock.domain.Criteria;
 import org.zerock.domain.PageMaker;
+import org.zerock.domain.fileVO;
 import org.zerock.service.BoardService;
 
 @Controller
@@ -27,26 +28,30 @@ public class BoardController {
 	
 	// 등록
 	@RequestMapping(value = "/register", method=RequestMethod.GET)
-	public void registerGET(BoardVO board, Model model) throws Exception {
+	public void registerGET(@ModelAttribute("post") int post) throws Exception {
 		logger.info("register get .......");
+		
 	}
 	
 	@RequestMapping(value = "/register", method=RequestMethod.POST)
-	public String registPOST(BoardVO board, RedirectAttributes rttr) throws Exception {
+	public String registPOST(BoardVO board, RedirectAttributes rttr, fileVO fileVO, @RequestParam("post")int post) throws Exception {
 		logger.info("regist post .......");
 		logger.info(board.toString());
 		
-		service.regist(board);
+		System.out.println("files = " + fileVO.getImg_name());
+		
+		service.regist(board, fileVO);
 		
 		rttr.addFlashAttribute("msg", "success");
 		
-		return "redirect:/board/listPage";
+		return "redirect:/board/listPage?post="+post;
 	}
 	
 	// 조회	
 	@RequestMapping(value="/readPage", method=RequestMethod.GET)
-	public void read(@RequestParam("bno") int bno, @ModelAttribute("cri") Criteria cri, Model model) throws Exception {
+	public void read(@RequestParam("bno") int bno, @ModelAttribute("cri") Criteria cri, Model model, @ModelAttribute("post") int post) throws Exception {
 		model.addAttribute(service.read(bno));
+		
 	}
 	
 	// 삭제
@@ -88,10 +93,11 @@ public class BoardController {
 	
 	// 목록조회 + 페이징 처리 + Search 합침
 	@RequestMapping(value ="/listPage", method = RequestMethod.GET)
-		public void listPage(@ModelAttribute("cri")Criteria cri, Model model) throws Exception {
+		public void listPage(@ModelAttribute("cri")Criteria cri, Model model, @ModelAttribute("post") int post) throws Exception {
 		
 		logger.info(cri.toString());
 		logger.info(cri.toString1());
+		cri.setIdx(post);
 		
 		model.addAttribute("list", service.listCriteria(cri));
 		PageMaker pageMaker = new PageMaker();

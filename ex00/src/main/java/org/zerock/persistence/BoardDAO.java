@@ -4,6 +4,9 @@ import java.util.List;
 
 import org.zerock.domain.BoardVO;
 import org.zerock.domain.Criteria;
+import org.zerock.domain.NavDTO;
+import org.zerock.domain.Post2VO;
+import org.zerock.domain.fileVO;
 
 public interface BoardDAO {
 	
@@ -34,5 +37,11 @@ public interface BoardDAO {
 	
 	// 게시글 조회수
 	public void updateViewCnt(Integer bno) throws Exception;
+	
+	//게시판 리스트
+	public List<NavDTO> selectPost() throws Exception;
+	public List<Post2VO> selectPost2() throws Exception;
+	
+	public void insertImage(fileVO fileVO) throws Exception;
 
 }

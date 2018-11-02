@@ -4,10 +4,13 @@ import java.util.List;
 
 import org.zerock.domain.BoardVO;
 import org.zerock.domain.Criteria;
+import org.zerock.domain.NavDTO;
+import org.zerock.domain.Post2VO;
+import org.zerock.domain.fileVO;
 
 public interface BoardService {
 	
-	public void regist(BoardVO board) throws Exception;
+	public void regist(BoardVO board, fileVO fileVO) throws Exception;
 	
 	public BoardVO read(Integer bno) throws Exception;
 	
@@ -20,5 +23,9 @@ public interface BoardService {
 	public List<BoardVO> listCriteria(Criteria cri) throws Exception;
 	
 	public int listSearchCount(Criteria cri) throws Exception;
+	
+	//게시판 리스트
+	public List<NavDTO> selectPost() throws Exception;
+	public List<Post2VO> selectPost2() throws Exception;
  
 }

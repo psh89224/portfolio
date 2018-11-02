@@ -10,6 +10,9 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.stereotype.Repository;
 import org.zerock.domain.BoardVO;
 import org.zerock.domain.Criteria;
+import org.zerock.domain.NavDTO;
+import org.zerock.domain.Post2VO;
+import org.zerock.domain.fileVO;
 
 @Repository
 public class BoardDAOImpl implements BoardDAO {
@@ -93,5 +96,19 @@ public class BoardDAOImpl implements BoardDAO {
 	@Override
 	public void updateViewCnt(Integer bno) throws Exception {
 		session.update(namespace + ".updateViewCnt", bno);
+	}
+	
+	//게시판 리스트
+	@Override
+	public List<NavDTO> selectPost() throws Exception {
+		return session.selectList(namespace + ".selectPost");		
+	}
+	@Override
+	public List<Post2VO> selectPost2() throws Exception {
+		return session.selectList(namespace + ".selectPost2");		
+	}
+	@Override
+	public void insertImage(fileVO fileVO) throws Exception {
+		session.insert(namespace+".insertImage", fileVO);
 	}
 }

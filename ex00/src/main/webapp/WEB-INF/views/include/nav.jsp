@@ -7,21 +7,16 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="/resources/bootstrap/css/bootstrap.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 
-<div class="left-area">
-	<nav>
+<%-- <div class="left-area">
 		<ul id="nav">
-			<li><a href="#" <c:if test="${menu == 0}"></c:if>>NOTICE</a></li>
-			<li><a href="#" <c:if test="${menu == 1}"></c:if>>SHOP</a></li>
-			<li><a href="#" <c:if test="${menu == 2}"></c:if>>LOOKBOOK</a></li>
-			<li><a href="/board/listPage">FREEBOARD</a></li>
-			<li><a href="#" <c:if test="${menu == 4}"></c:if>>REVIEW</a></li>
-			<li><a href="#" <c:if test="${menu == 5}"></c:if>>GALLERY</a></li>
-			<li><a href="#" <c:if test="${menu == 6}"></c:if>>SALE</a></li>
-			<li><a href="#" <c:if test="${menu == 7}"></c:if>>Q & A</a></li>
-			<li><a href="#" <c:if test="${menu == 8}"></c:if>>AboutUs</a></li>	
+		<c:forEach var="postVO" items="${postVOs}">
+			<li><a href="#">${postVO.post_name}</a></li>
+		</c:forEach>
 		</ul><br><br><br><br><br><br><br><br>
 		
 		<!-- 좌측 하단 탭 -->
@@ -44,7 +39,41 @@
 				</div>
 			</div>
 		</div>
+ --%>
 
+    <div id="wrapper">
+        <div class="overlay"></div>
+    
+        <!-- Sidebar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                       Brand
+                    </a>
+                </li>
+                <c:forEach var="postVO" items="${postVOs}">
+                
+                <li class="dropdown">
+                  <a href="/board/listPage?post=${postVO.idx}" class="dropdown-toggle" <c:if test="${postVO.idx eq 2}">
+                  			 data-toggle="dropdown"
+                  		</c:if>>
+                  	${postVO.post_name}
+                  		<c:if test="${postVO.idx eq 2}">
+                  			<span class="caret"></span>
+                  		</c:if>
+                  	</a>
+                  	
+                  <c:if test="${postVO.idx eq 2 }">
+                  	<ul class="dropdown-menu" role="menu">
+                  		<c:forEach var="post2VO" items="${post2VOs}">
+                    	<li class="dropdown-header">${post2VO.title}</li>
+                        </c:forEach>
+                  	</ul>
+                  	</c:if>
+                </li>
+                </c:forEach>
+            </ul>
 
 	</nav>
 </div>

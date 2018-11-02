@@ -46,7 +46,7 @@ crossorigin="anonymous"></script>
 					<button type="submit" class="btn btn-warning" id="modifyBtn">수정</button>
 					<button type="submit" class="btn btn-danger" id="removeBtn">삭제</button>
 				</c:if>
-					<button type="submit" class="btn btn-primary" id="goListBtn">목록으로</button>
+					<a href="/board/listPage?post=${post}"><button id="goListBtn">목록으로</button></a>
 				</div>
 				
 				<form role="form" action="modifyPage" method="post">
@@ -110,12 +110,7 @@ $(document).ready(function(){
 	var formObj = $("form[role='form']");
 	
 	console.log(formObj);
-	
-	$("#goListBtn").on("click", function() {
-		formObj.attr("method", "get");
-		formObj.attr("action", "/board/listPage");
-		formObj.submit();
-	});
+
 	$("#removeBtn").on("click", function() {
 		formObj.attr("action", "/board/removePage");
 		formObj.submit();
