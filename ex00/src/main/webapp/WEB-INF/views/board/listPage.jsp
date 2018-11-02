@@ -41,6 +41,10 @@
 					</c:forEach>
 				</table>
 				
+				
+				
+				
+				
 				<!-- 검색창 -->
 				<div class="text-center">
 				<div class="box-body">
