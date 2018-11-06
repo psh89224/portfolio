@@ -1,7 +1,7 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
 <div class="header">
 	<div class="w3-border-bottom"> <c:import url="/header.do"/> </div>
@@ -16,11 +16,13 @@
 		<div class="col-md-12">
 			<!-- general form elements -->
 			<div class="box">
-			<c:forEach var="postVO" items="${postVOs}">
+			
 				<div class="box-header with-border">
-					<h3 class="box-title">${postVO.post_name}</h3>
+				<%-- <c:forEach var="postVO" items="${postVOs}"> --%>
+					<h3 class="box-title">게시판이름 가져오기${postVO.post_name}</h3>
+				<%-- </c:forEach> --%>
 				</div>				
-			</c:forEach>
+			
 			
 			
 				<table class="table table-bordered">

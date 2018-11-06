@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.zerock.domain.BoardVO;
 import org.zerock.domain.Criteria;
-import org.zerock.domain.PageMaker;
 import org.zerock.domain.FileVO;
+import org.zerock.domain.PageMaker;
 import org.zerock.service.BoardService;
 
 @Controller
@@ -30,7 +30,6 @@ public class BoardController {
 	@RequestMapping(value = "/register", method=RequestMethod.GET)
 	public void registerGET(@ModelAttribute("post") int post) throws Exception {
 		logger.info("register get .......");
-		
 	}
 	
 	@RequestMapping(value = "/register", method=RequestMethod.POST)
@@ -51,7 +50,6 @@ public class BoardController {
 	@RequestMapping(value="/readPage", method=RequestMethod.GET)
 	public void read(@RequestParam("bno") int bno, @ModelAttribute("cri") Criteria cri, Model model, @ModelAttribute("post") int post) throws Exception {
 		model.addAttribute(service.read(bno));
-		
 	}
 	
 	// 삭제
@@ -91,7 +89,7 @@ public class BoardController {
 		return "redirect:/board/listPage";
 	}
 	
-	// 목록조회 + 페이징 처리 + Search 합침
+	// 목록조회 + 페이징 처리 + Search
 	@RequestMapping(value ="/listPage", method = RequestMethod.GET)
 		public void listPage(@ModelAttribute("cri")Criteria cri, Model model, @ModelAttribute("post") int post) throws Exception {
 		
@@ -100,11 +98,10 @@ public class BoardController {
 		cri.setIdx(post);
 		
 		model.addAttribute("list", service.listCriteria(cri));
+		
 		PageMaker pageMaker = new PageMaker();
 		pageMaker.setCri(cri);
-		//pageMaker.setTotalCount(service.listCountCriteria(cri));
 		pageMaker.setTotalCount(service.listSearchCount(cri));
-		
 		model.addAttribute("pageMaker", pageMaker);
 	}
 }

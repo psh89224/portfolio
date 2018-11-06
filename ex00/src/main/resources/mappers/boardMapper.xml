@@ -29,27 +29,7 @@
 </delete>
 
 <!-- 목록보기 -->
-<!-- <select id ="listAll" resultType="org.zerock.domain.BoardVO">
-<![CDATA[
-	select bno, title, content, writer, regdate, viewcnt
-	from tbl_board
-	where  bno > 0
-	order by bno desc, regdate desc
-]]>
-</select> -->
-
 <!--  페이징처리 -->
-<select id="listPage" resultType="BoardVO">
-<![CDATA[
-	select bno, title, content, writer, regdate, viewcnt
-	from tbl_board
-	where bno > 0
-	and post_category_idx = #{idx}
-	order by bno desc, regdate desc
-	limit #{page}, 10
-]]>
-</select>
-
 <select id="listCriteria" resultType="BoardVO">
 	<![CDATA[
 		select bno, title, content, writer, regdate, viewcnt
