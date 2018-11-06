@@ -39,8 +39,9 @@
 			</form>
 		</div>
 	</div>
+
+</body>
 	<div class="footer">
 		<c:import url="/footer.do"/>
 	</div>
-</body>
 </html>

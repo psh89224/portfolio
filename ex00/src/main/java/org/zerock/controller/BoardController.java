@@ -14,7 +14,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.zerock.domain.BoardVO;
 import org.zerock.domain.Criteria;
 import org.zerock.domain.PageMaker;
-import org.zerock.domain.fileVO;
+import org.zerock.domain.FileVO;
 import org.zerock.service.BoardService;
 
 @Controller
@@ -34,7 +34,7 @@ public class BoardController {
 	}
 	
 	@RequestMapping(value = "/register", method=RequestMethod.POST)
-	public String registPOST(BoardVO board, RedirectAttributes rttr, fileVO fileVO, @RequestParam("post")int post) throws Exception {
+	public String registPOST(BoardVO board, RedirectAttributes rttr, FileVO fileVO, @RequestParam("post")int post) throws Exception {
 		logger.info("regist post .......");
 		logger.info(board.toString());
 		

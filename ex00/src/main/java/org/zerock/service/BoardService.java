@@ -6,11 +6,11 @@ import org.zerock.domain.BoardVO;
 import org.zerock.domain.Criteria;
 import org.zerock.domain.NavDTO;
 import org.zerock.domain.Post2VO;
-import org.zerock.domain.fileVO;
+import org.zerock.domain.FileVO;
 
 public interface BoardService {
 	
-	public void regist(BoardVO board, fileVO fileVO) throws Exception;
+	public void regist(BoardVO board, FileVO fileVO) throws Exception;
 	
 	public BoardVO read(Integer bno) throws Exception;
 	

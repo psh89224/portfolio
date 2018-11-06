@@ -12,7 +12,7 @@ import org.zerock.domain.BoardVO;
 import org.zerock.domain.Criteria;
 import org.zerock.domain.NavDTO;
 import org.zerock.domain.Post2VO;
-import org.zerock.domain.fileVO;
+import org.zerock.domain.FileVO;
 
 @Repository
 public class BoardDAOImpl implements BoardDAO {
@@ -108,7 +108,7 @@ public class BoardDAOImpl implements BoardDAO {
 		return session.selectList(namespace + ".selectPost2");		
 	}
 	@Override
-	public void insertImage(fileVO fileVO) throws Exception {
+	public void insertImage(FileVO fileVO) throws Exception {
 		session.insert(namespace+".insertImage", fileVO);
 	}
 }

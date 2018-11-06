@@ -41,39 +41,34 @@
 		</div>
  --%>
 
-    <div id="wrapper">
-        <div class="overlay"></div>
-    
-        <!-- Sidebar -->
+<div id="wrapper">
+	<div class="overlay"></div>
+    	<!-- Sidebar -->
         <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
             <ul class="nav sidebar-nav">
                 <li class="sidebar-brand">
-                    <a href="#">
-                       Brand
-                    </a>
+                    <a href="#"> Brand </a>
                 </li>
-                <c:forEach var="postVO" items="${postVOs}">
                 
-                <li class="dropdown">
-                  <a href="/board/listPage?post=${postVO.idx}" class="dropdown-toggle" <c:if test="${postVO.idx eq 2}">
-                  			 data-toggle="dropdown"
-                  		</c:if>>
-                  	${postVO.post_name}
-                  		<c:if test="${postVO.idx eq 2}">
-                  			<span class="caret"></span>
-                  		</c:if>
-                  	</a>
-                  	
-                  <c:if test="${postVO.idx eq 2 }">
-                  	<ul class="dropdown-menu" role="menu">
-                  		<c:forEach var="post2VO" items="${post2VOs}">
-                    	<li class="dropdown-header">${post2VO.title}</li>
-                        </c:forEach>
-                  	</ul>
-                  	</c:if>
-                </li>
+                <c:forEach var="postVO" items="${postVOs}">
+	                <li class="dropdown">
+	                  <a href="/board/listPage?post=${postVO.idx}" class="dropdown-toggle" 
+		                  <c:if test="${postVO.idx eq 2}">data-toggle="dropdown"</c:if>>
+		                  	${postVO.post_name}
+		                  		<c:if test="${postVO.idx eq 2}">
+		                  			<span class="caret"></span>
+		                  		</c:if>
+	                  </a>
+	                  	
+	                  <c:if test="${postVO.idx eq 2 }">
+	                  	<ul class="dropdown-menu" role="menu">
+	                  		<c:forEach var="post2VO" items="${post2VOs}">
+	                    		<li class="dropdown-header">${post2VO.title}</li>
+	                        </c:forEach>
+	                  	</ul>
+	                  </c:if>
+	                </li>
                 </c:forEach>
             </ul>
-
-	</nav>
+		</nav>
 </div>

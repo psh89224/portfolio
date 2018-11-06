@@ -11,7 +11,7 @@ import org.zerock.domain.BoardVO;
 import org.zerock.domain.Criteria;
 import org.zerock.domain.NavDTO;
 import org.zerock.domain.Post2VO;
-import org.zerock.domain.fileVO;
+import org.zerock.domain.FileVO;
 import org.zerock.persistence.BoardDAO;
 
 @Service
@@ -22,7 +22,7 @@ public class BoardServiceImpl implements BoardService{
 	
 	@Transactional
 	@Override
-	public void regist(BoardVO board, fileVO fileVO) throws Exception {
+	public void regist(BoardVO board, FileVO fileVO) throws Exception {
 		dao.create(board);
 		System.out.println("absdbsa"+board.getBno());
 		fileVO.setTbl_board_bno(board.getBno());

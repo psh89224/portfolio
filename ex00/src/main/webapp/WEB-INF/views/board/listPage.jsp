@@ -4,22 +4,25 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 <div class="header">
-		<div class="w3-border-bottom">
-			<c:import url="/header.do"/>
-		</div>
-	</div>
+	<div class="w3-border-bottom"> <c:import url="/header.do"/> </div>
+</div>
 
 
 <!--  main content -->
+<body>
 <section class="content">
 	<div class="row">
 		<!-- left column -->
 		<div class="col-md-12">
 			<!-- general form elements -->
 			<div class="box">
+			<c:forEach var="postVO" items="${postVOs}">
 				<div class="box-header with-border">
-					<h3 class="box-title">자유게시판</h3>
+					<h3 class="box-title">${postVO.post_name}</h3>
 				</div>				
+			</c:forEach>
+			
+			
 				<table class="table table-bordered">
 					<tr>
 						<th style="width: 10px">번호</th>
@@ -95,5 +98,8 @@
 	</div>
 </section>
 
-<%@include file="../include/footer.jsp"%>
+<div class="footer">
+	<div class="w3-border-top"> <c:import url="/footer.do"/> </div>
+</div>
+</body>
 <!-- 경로 확인 -->

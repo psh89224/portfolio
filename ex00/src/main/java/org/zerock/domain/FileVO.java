@@ -1,6 +1,6 @@
 package org.zerock.domain;
 
-public class fileVO {
+public class FileVO {
 	private int img_idx;
 	private String img_name;
 	private int tbl_board_bno;

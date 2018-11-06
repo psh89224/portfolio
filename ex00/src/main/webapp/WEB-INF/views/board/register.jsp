@@ -13,8 +13,7 @@
 				<div class="box-header with-border">
 					<h3 class="box-title">글 작성</h3>
 				</div>
-				
-				
+						
 				<form role="form" method="post">
 				<input type="hidden" name="post_category_idx" value="${post}">
 					<div class="box-body">

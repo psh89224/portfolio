@@ -64,57 +64,50 @@ margin-left: 300px;
 </head>
 
 <body>
-
-<!-- header -->
 	<div class="header">
-		<div class="w3-border-bottom">
-			<c:import url="/header.do"/>
+		<div class="w3-border-bottom"> <c:import url="/header.do"/> </div>
+	</div>
+	<div class="nav">
+		<c:import url="/nav.do"/>
+	</div>
+	<div class="container">	
+
+	
+		<div>
+			<section class="block-center">
+				<img id="banner" src="/resources/image/main.png">
+				<p class="w3-text-gray" align="right">4 items</p>
+					<ul id="product-list" class="w3-grayscale">
+						<li>
+							<img src="/resources/image/image1.jpg">
+							<p align=center>상품이름<br>
+							<b>가격</b>
+							</p>
+						</li>
+						<li>
+							<img src="/resources/image/image1.jpg">
+							<p align=center>상품이름<br>
+							<b>가격</b>
+							</p>
+						</li>
+						<li>
+							<img src="/resources/image/image1.jpg">
+							<p align=center>상품이름<br>
+							<b>가격</b>
+							</p>
+						</li>
+						<li>
+							<img src="/resources/image/image1.jpg">
+							<p align=center>상품이름<br>
+							<b>가격</b>
+							</p>
+						</li>
+					</ul>
+			</section>
 		</div>
 	</div>
-<!-- //header -->
-	
-	<div class="container">	
-	<div class="nav">
-	<div class="w3-border-bottom">
-		<c:import url="/nav.do?menu=0"/>
-	</div>
-	</div>
-	
-	<div>
-		<section class="block-center">
-			<img id="banner" src="/resources/image/main.png">
-			<p class="w3-text-gray" align="right">4 items</p>
-				<ul id="product-list" class="w3-grayscale">
-					<li>
-						<img src="/resources/image/image1.jpg">
-						<p align=center>상품이름<br>
-						<b>가격</b>
-						</p>
-					</li>
-					<li>
-						<img src="/resources/image/image1.jpg">
-						<p align=center>상품이름<br>
-						<b>가격</b>
-						</p>
-					</li>
-					<li>
-						<img src="/resources/image/image1.jpg">
-						<p align=center>상품이름<br>
-						<b>가격</b>
-						</p>
-					</li>
-					<li>
-						<img src="/resources/image/image1.jpg">
-						<p align=center>상품이름<br>
-						<b>가격</b>
-						</p>
-					</li>
-				</ul>
-		</section>
-	</div>
-</div>
 <div class="footer">
-	<c:import url="/footer.do"/>
+	<div class="w3-border-top"> <c:import url="/footer.do"/> </div>
 </div>
 	
 </body>
