@@ -19,11 +19,9 @@
 			
 				<div class="box-header with-border">
 				<%-- <c:forEach var="postVO" items="${postVOs}"> --%>
-					<h3 class="box-title">게시판이름 가져오기${postVO.post_name}</h3>
+					<h3 class="box-title">${postVO.post_name}기</h3>
 				<%-- </c:forEach> --%>
 				</div>				
-			
-			
 			
 				<table class="table table-bordered">
 					<tr>

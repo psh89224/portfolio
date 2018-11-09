@@ -87,6 +87,7 @@ public class BoardController {
 		logger.info(rttr.toString());
 		
 		return "redirect:/board/listPage";
+		//return "redirect:/board/listPage?post="+post;
 	}
 	
 	// 목록조회 + 페이징 처리 + Search
