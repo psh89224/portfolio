@@ -25,7 +25,8 @@
 </update>
 
 <delete id="delete">
-	delete from tbl_board where bno = #{bno}
+	<!-- delete from tbl_board where bno = #{bno} -->
+	delete from tbl_board where post_category_idx = #{post_category_idx}
 </delete>
 
 <!-- 목록보기 -->

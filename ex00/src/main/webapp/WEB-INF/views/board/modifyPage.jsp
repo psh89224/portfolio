@@ -57,6 +57,7 @@
 					
 					$(".btn-warning").on("click", function() {
 						self.location = "/board/listPage?page=${cri.page}&perPageNum=${cri.perPageNum}"
+						//self.location = "/board/listPage?post=${post}&page=${cri.page}&perPageNum=${cri.perPageNum}"
 								+ "&searchType=${cri.searchType}&keyword=${cri.keyword}";
 					});
 					

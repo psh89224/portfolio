@@ -112,10 +112,12 @@ $(document).ready(function(){
 	console.log(formObj);
 
 	$("#removeBtn").on("click", function() {
+		//formObj.attr("action", "/board/removePage?post=${post}");
 		formObj.attr("action", "/board/removePage");
 		formObj.submit();
 	});
 	$("#modifyBtn").on("click", function() {
+		//formObj.attr("action", "/board/modifyPage?post=${post}");
 		formObj.attr("action", "/board/modifyPage");
 		formObj.attr("method", "get");
 		formObj.submit();
