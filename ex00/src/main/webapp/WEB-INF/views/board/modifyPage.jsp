@@ -20,6 +20,7 @@
 					<input type="hidden" name="perPageNum" value="${cri.perPageNum}">
 					<input type="hidden" name="searchType" value="${cri.searchType}">
 					<input type="hidden" name="keyword" value="${cri.keyword}">
+					<input type="hidden" name="post" value="${post}">
 				
 					<div class="box-body">
 						<div class="form-group">
@@ -29,7 +30,7 @@
 						
 						<div class="form-group">
 							<label for="exampleInputEmail1">제목</label>
-							<input type="text" name="title" class="form-control" value="${boardVO.title }">
+							<input type="text" name="title" class="form-control" value="${boardVO.title}">
 						</div>
 						
 						<div class="form-group">
@@ -56,9 +57,10 @@
 						console.log(formObj);
 					
 					$(".btn-warning").on("click", function() {
-						self.location = "/board/listPage?page=${cri.page}&perPageNum=${cri.perPageNum}"
+						//self.location = "/board/listPage?page=${cri.page}&perPageNum=${cri.perPageNum}"
 						//self.location = "/board/listPage?post=${post}&page=${cri.page}&perPageNum=${cri.perPageNum}"
-								+ "&searchType=${cri.searchType}&keyword=${cri.keyword}";
+								//+ "&searchType=${cri.searchType}&keyword=${cri.keyword}";
+						self.location ="/board/readPage?${pageMaker.makeSearch(pageMaker.cri.page)}&bno=${boardVO.bno}&post=${post}"
 					});
 					
 					$(".btn-primary").on("click", function() {

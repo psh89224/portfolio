@@ -31,7 +31,7 @@
 						<th>작성일시</th>
 						<th>조회수</th>
 					</tr>
-					<!--  notebook push -->
+
 					<c:forEach items = "${list}" var = "boardVO">
 					<tr>
 						<td>${boardVO.bno}</td>

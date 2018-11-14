@@ -55,6 +55,7 @@ crossorigin="anonymous"></script>
 					<input type="hidden" name="perPageNum" value="${cri.perPageNum}">
 					<input type="hidden" name="searchType" value="${cri.searchType}">
 					<input type="hidden" name="keyword" value="${cri.keyword}">
+					<input type="hidden" name="post" value="${post}">
 				</form>
 				
 				<!-- 댓글부분 -->
@@ -76,7 +77,7 @@ crossorigin="anonymous"></script>
 				<div class="text-center">
 					<ul id="pagination" class="pagination pagination-sm no-margin"></ul>
 				</div>
-				<!-- p.442 수정과 삭제를 위한 Modal 창 -->
+				<!-- p.442 댓글 수정과 삭제를 위한 Modal 창 -->
 				<div id="modifyModal" class="modal modal-primary fade" role="dialog">
 					<div class="modal-dialog">
 						<!-- Modal content -->

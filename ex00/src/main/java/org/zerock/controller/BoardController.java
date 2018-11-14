@@ -29,19 +29,22 @@ public class BoardController {
 	// 등록
 	@RequestMapping(value = "/register", method=RequestMethod.GET)
 	public void registerGET(@ModelAttribute("post") int post) throws Exception {
+	//public void registerGET(BoardVO board, Model model) throws Exception {
 		logger.info("register get .......");
 	}
 	
 	@RequestMapping(value = "/register", method=RequestMethod.POST)
 	public String registPOST(BoardVO board, RedirectAttributes rttr, FileVO fileVO, @RequestParam("post")int post) throws Exception {
+	//public String registPOST(BoardVO board, RedirectAttributes rttr) throws Exception {
 		logger.info("regist post .......");
 		logger.info(board.toString());
 		
 		System.out.println("files = " + fileVO.getImg_name());
 		
 		service.regist(board, fileVO);
+		//service.regist(board);
 		
-		rttr.addFlashAttribute("msg", "success");
+		rttr.addFlashAttribute("result", "success");
 		
 		return "redirect:/board/listPage?post="+post;
 	}
@@ -77,6 +80,7 @@ public class BoardController {
 	public String modifyPagingPOST(BoardVO board, Criteria cri, RedirectAttributes rttr) throws Exception {
 		
 		logger.info(cri.toString());
+		
 		service.modify(board);
 		rttr.addAttribute("page", cri.getPage());
 		rttr.addAttribute("perPageNum", cri.getPerPageNum());
@@ -86,16 +90,17 @@ public class BoardController {
 		
 		logger.info(rttr.toString());
 		
-		return "redirect:/board/listPage";
-		//return "redirect:/board/listPage?post="+post;
+		//return "redirect:/board/listPage";
+		
+		return "redirect:/board/listPage?post=${post}";
 	}
 	
 	// 목록조회 + 페이징 처리 + Search
 	@RequestMapping(value ="/listPage", method = RequestMethod.GET)
 		public void listPage(@ModelAttribute("cri")Criteria cri, Model model, @ModelAttribute("post") int post) throws Exception {
 		
-		logger.info(cri.toString());
-		logger.info(cri.toString1());
+		logger.info(cri.toString());	// 페이징
+		logger.info(cri.toString1());	// 검색
 		cri.setIdx(post);
 		
 		model.addAttribute("list", service.listCriteria(cri));
